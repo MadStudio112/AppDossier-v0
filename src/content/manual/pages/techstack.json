@@ -1,0 +1,553 @@
+{
+  "title": "TEAMCHEF – Techstack",
+  "badge": "Techstack & Architektur · 2025",
+  "subtitle": "Systemarchitektur, Technologieentscheidungen & DevOps",
+  "meta": [
+    {
+      "label": "Stack",
+      "value": "React + Hono + Neon"
+    },
+    {
+      "label": "Deployment",
+      "value": "Vercel"
+    },
+    {
+      "label": "Architektur",
+      "value": "Monorepo (pnpm)"
+    }
+  ],
+  "sections": [
+    {
+      "id": "uebersicht",
+      "number": "01",
+      "nav": "Übersicht",
+      "eyebrow": "Systemübersicht",
+      "title": "Der Stack auf einen Blick",
+      "blocks": [
+        {
+          "highlight": "TEAMCHEF ist als **pnpm-Monorepo** mit zwei Workspaces aufgebaut: **client/** (React SPA) und **server/** (Hono API).\nBeide teilen sich TypeScript-Typen und werden gemeinsam auf **Vercel** deployed. Der Stack ist bewusst lean gehalten –\nmoderne Tooling-Entscheidungen ermöglichen schnelle Iteration bei minimaler Infrastrukturkomplexität."
+        },
+        {
+          "stats": [
+            {
+              "value": "2",
+              "label": "Workspaces"
+            },
+            {
+              "value": "pnpm",
+              "label": "Package Manager"
+            },
+            {
+              "value": "TS",
+              "label": "Durchgängig Typisiert"
+            }
+          ],
+          "columns": 3
+        },
+        {
+          "table": {
+            "title": "Vollständiger Tech-Stack",
+            "variant": "default",
+            "columns": [
+              "Layer",
+              "Technologie"
+            ],
+            "rows": [
+              {
+                "highlight": false,
+                "cells": [
+                  {
+                    "text": "Frontend"
+                  },
+                  {
+                    "text": "React 19, Vite 6, TypeScript, TanStack Router & Query, Tailwind CSS v4"
+                  }
+                ]
+              },
+              {
+                "highlight": false,
+                "cells": [
+                  {
+                    "text": "UI Library"
+                  },
+                  {
+                    "text": "shadcn/ui (Radix Primitives), Lucide Icons, Recharts"
+                  }
+                ]
+              },
+              {
+                "highlight": false,
+                "cells": [
+                  {
+                    "text": "Backend"
+                  },
+                  {
+                    "text": "Hono v4, Node.js, @vercel/node"
+                  }
+                ]
+              },
+              {
+                "highlight": false,
+                "cells": [
+                  {
+                    "text": "ORM"
+                  },
+                  {
+                    "text": "Drizzle ORM, drizzle-kit, drizzle-zod"
+                  }
+                ]
+              },
+              {
+                "highlight": false,
+                "cells": [
+                  {
+                    "text": "Datenbank"
+                  },
+                  {
+                    "text": "PostgreSQL (Neon Serverless)"
+                  }
+                ]
+              },
+              {
+                "highlight": false,
+                "cells": [
+                  {
+                    "text": "Auth"
+                  },
+                  {
+                    "text": "Neon Auth, JWT"
+                  }
+                ]
+              },
+              {
+                "highlight": false,
+                "cells": [
+                  {
+                    "text": "Testing"
+                  },
+                  {
+                    "text": "Vitest, @testing-library/react"
+                  }
+                ]
+              },
+              {
+                "highlight": false,
+                "cells": [
+                  {
+                    "text": "Hosting"
+                  },
+                  {
+                    "text": "Vercel (Frontend + Serverless Functions)"
+                  }
+                ]
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "frontend",
+      "number": "02",
+      "nav": "Frontend",
+      "eyebrow": "Frontend",
+      "title": "Client-Architektur",
+      "blocks": [
+        {
+          "columns": 2,
+          "cards": [
+            {
+              "title": "Kern-Technologien",
+              "list": [
+                "**React 19** — Concurrent Features, Suspense-ready",
+                "**Vite 6** — Blitzschneller Dev-Server & Build",
+                "**TypeScript** — Strikte Typisierung End-to-End",
+                "**TanStack Router** — Type-safe File-based Routing",
+                "**TanStack Query v5** — Server State Management",
+                "**react-hook-form** — Performante Formulare"
+              ]
+            },
+            {
+              "title": "UI & Design",
+              "list": [
+                "**Tailwind CSS v4** — Utility-first Styling",
+                "**shadcn/ui** — 40+ Radix-basierte Komponenten",
+                "**Lucide Icons** — Konsistentes Icon-Set",
+                "**Recharts** — Radar-Charts für Bewertungen",
+                "**Framer Motion** — Micro-Animationen",
+                "**next-themes** — Dark / Light / System Theming"
+              ]
+            }
+          ]
+        },
+        {
+          "card": {
+            "title": "Weitere Libraries",
+            "tags": [
+              {
+                "label": "i18next",
+                "tone": "blue"
+              },
+              {
+                "label": "zod",
+                "tone": "blue"
+              },
+              {
+                "label": "date-fns",
+                "tone": "blue"
+              },
+              {
+                "label": "embla-carousel",
+                "tone": "blue"
+              },
+              {
+                "label": "sonner",
+                "tone": "blue"
+              },
+              {
+                "label": "vaul",
+                "tone": "blue"
+              },
+              {
+                "label": "cmdk",
+                "tone": "blue"
+              },
+              {
+                "label": "ogl",
+                "tone": "blue"
+              },
+              {
+                "label": "class-variance-authority",
+                "tone": "blue"
+              },
+              {
+                "label": "clsx",
+                "tone": "blue"
+              },
+              {
+                "label": "tailwind-merge",
+                "tone": "blue"
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "backend",
+      "number": "03",
+      "nav": "Backend",
+      "eyebrow": "Backend",
+      "title": "API & Server",
+      "blocks": [
+        {
+          "highlight": "Das Backend nutzt **Hono** als leichtgewichtiges HTTP-Framework, das direkt als Vercel Serverless Function läuft.\nAlle API-Routen werden über **@vercel/node** bereitgestellt – kein separater Server nötig."
+        },
+        {
+          "columns": 2,
+          "cards": [
+            {
+              "title": "API Framework",
+              "list": [
+                "**Hono v4** — Edge-ready, Web-Standard-kompatibel",
+                "**@hono/zod-validator** — Request-Validierung mit Zod",
+                "**jsonwebtoken** — JWT Token Verifizierung",
+                "**CORS** — Konfigurierbar (Dev: localhost, Prod: CLIENT_URL)",
+                "**CSRF Protection** — Token-basierter Schutz",
+                "**Rate Limiting** — Middleware für API-Schutz"
+              ]
+            },
+            {
+              "title": "API-Routen",
+              "list": [
+                "**/api/auth** — Registrierung, Login, Session",
+                "**/api/ratings** — Bewertungen CRUD",
+                "**/api/matches** — Spieldaten (104 WM-Spiele)",
+                "**/api/results** — Ergebnisse & Statistiken",
+                "**/api/users** — Nutzerverwaltung",
+                "**/api/admin** — Admin-Operationen"
+              ]
+            }
+          ]
+        },
+        {
+          "architecture": {
+            "title": "Middleware-Stack",
+            "lead": "Requests durchlaufen eine definierte Middleware-Kette:",
+            "nodes": [
+              {
+                "title": "Logging",
+                "subtitle": "Request-Log"
+              },
+              {
+                "title": "CORS",
+                "subtitle": "Origin-Check"
+              },
+              {
+                "title": "Auth",
+                "subtitle": "JWT Verify"
+              },
+              {
+                "title": "CSRF",
+                "subtitle": "Token-Check"
+              },
+              {
+                "title": "Handler",
+                "subtitle": "Business Logic"
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "datenbank",
+      "number": "04",
+      "nav": "Datenbank",
+      "eyebrow": "Datenbank",
+      "title": "Neon Serverless PostgreSQL",
+      "blocks": [
+        {
+          "card": {
+            "title": "Warum Neon?",
+            "text": "Neon bietet serverless PostgreSQL mit automatischem Scaling, Branch-Support für Entwicklung und EU-Hosting für DSGVO-Konformität.\nDer Serverless-Ansatz eliminiert die Notwendigkeit für Datenbankwartung und passt perfekt zum Vercel-Deployment."
+          }
+        },
+        {
+          "stats": [
+            {
+              "value": "PG",
+              "label": "PostgreSQL"
+            },
+            {
+              "value": "∞",
+              "label": "Serverless Scaling"
+            },
+            {
+              "value": "EU",
+              "label": "DSGVO-konform"
+            }
+          ],
+          "columns": 3
+        },
+        {
+          "columns": 2,
+          "cards": [
+            {
+              "title": "Drizzle ORM",
+              "list": [
+                "**Type-safe Queries** — SQL-nah, voll typisiert",
+                "**drizzle-kit** — Schema-Migrationen",
+                "**drizzle-zod** — Automatische Zod-Schemas aus DB",
+                "**Relations** — One-to-Many, Referenzen"
+              ]
+            },
+            {
+              "title": "Schema-Übersicht",
+              "list": [
+                "**users** — Auth & Profildaten",
+                "**matches** — 104 WM 2026 Spiele",
+                "**ratings** — 5-Kriterien-Bewertungen",
+                "**teams** — Mannschaftsdaten"
+              ]
+            }
+          ]
+        },
+        {
+          "highlight": "**Bewertungskriterien im Schema:** Kraft, Ausdauer, Schnelligkeit, Spielintelligenz, Siegeswillen — jeweils 0-10 Skala mit automatischen Aggregaten."
+        }
+      ]
+    },
+    {
+      "id": "architektur",
+      "number": "05",
+      "nav": "Architektur",
+      "eyebrow": "Architektur",
+      "title": "Systemdiagramm",
+      "blocks": [
+        {
+          "architecture": {
+            "title": "Request-Flow",
+            "lead": "Vom Browser bis zur Datenbank — der komplette Datenfluss:",
+            "nodes": [
+              {
+                "title": "Browser",
+                "subtitle": "User"
+              },
+              {
+                "title": "Vercel CDN",
+                "subtitle": "Edge Network"
+              },
+              {
+                "title": "React SPA",
+                "subtitle": "Vite Build"
+              },
+              {
+                "title": "Hono API",
+                "subtitle": "Serverless Fn"
+              },
+              {
+                "title": "Neon DB",
+                "subtitle": "PostgreSQL"
+              }
+            ]
+          }
+        },
+        {
+          "columns": 3,
+          "cards": [
+            {
+              "title": "Client Layer",
+              "list": [
+                "React 19 SPA",
+                "TanStack Router (File-based)",
+                "TanStack Query (Cache)",
+                "Type-safe Hono Client"
+              ]
+            },
+            {
+              "title": "API Layer",
+              "list": [
+                "Hono Routes",
+                "Zod Validation",
+                "Service Layer",
+                "Auth Middleware"
+              ]
+            },
+            {
+              "title": "Data Layer",
+              "list": [
+                "Drizzle ORM",
+                "Neon Serverless Driver",
+                "Schema Migrations",
+                "Relation Queries"
+              ]
+            }
+          ]
+        },
+        {
+          "table": {
+            "title": "Monorepo-Struktur",
+            "variant": "default",
+            "columns": [
+              "Verzeichnis",
+              "Inhalt"
+            ],
+            "rows": [
+              {
+                "highlight": false,
+                "cells": [
+                  {
+                    "text": "/",
+                    "code": true
+                  },
+                  {
+                    "text": "Root: pnpm-workspace.yaml, tsconfig.base.json, package.json"
+                  }
+                ]
+              },
+              {
+                "highlight": false,
+                "cells": [
+                  {
+                    "text": "/client",
+                    "code": true
+                  },
+                  {
+                    "text": "React App: src/, public/, vite.config.ts"
+                  }
+                ]
+              },
+              {
+                "highlight": false,
+                "cells": [
+                  {
+                    "text": "/server",
+                    "code": true
+                  },
+                  {
+                    "text": "Hono API: src/routes, src/database, src/middleware"
+                  }
+                ]
+              },
+              {
+                "highlight": false,
+                "cells": [
+                  {
+                    "text": "/api",
+                    "code": true
+                  },
+                  {
+                    "text": "Vercel Serverless Entry Point: api/index.ts"
+                  }
+                ]
+              },
+              {
+                "highlight": false,
+                "cells": [
+                  {
+                    "text": "/docs",
+                    "code": true
+                  },
+                  {
+                    "text": "Projekt-Dokumentation (dieses Dossier)"
+                  }
+                ]
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "devops",
+      "number": "06",
+      "nav": "DevOps",
+      "eyebrow": "DevOps & CI/CD",
+      "title": "Build, Test & Deploy",
+      "blocks": [
+        {
+          "columns": 2,
+          "cards": [
+            {
+              "title": "Build & Deploy",
+              "list": [
+                "**pnpm workspaces** — Gemeinsame Dependencies",
+                "**Vercel** — Auto-Deploy from Git",
+                "**vercel.json** — API-Rewrites konfiguriert",
+                "**concurrently** — Client + Server parallel starten",
+                "**Vite Build** — Optimiertes Code-Splitting"
+              ]
+            },
+            {
+              "title": "Testing & QA",
+              "list": [
+                "**Vitest** — Unit & Integration Tests",
+                "**@testing-library/react** — Component Tests",
+                "**@vitest/coverage-v8** — Code Coverage",
+                "**TypeScript strict** — Compile-time Safety",
+                "**Zod Validation** — Runtime Type Safety"
+              ]
+            }
+          ]
+        },
+        {
+          "card": {
+            "title": "Developer Tooling",
+            "list": [
+              "**ESLint** — Code-Qualität",
+              "**Prettier** — Formatierung (+ Tailwind Plugin)",
+              "**nodemon** — Server Hot-Reload",
+              "**tsx** — TypeScript Script Runner",
+              "**tsc-alias** — Path-Alias Resolution",
+              "**rimraf** — Clean Builds"
+            ]
+          }
+        },
+        {
+          "highlight": "**Environment Variables:** Server benötigt `DATABASE_URL`, `JWT_SECRET`, `AUTH_SECRET_KEY`, `CLIENT_URL`.\nClient nutzt `VITE_API_URL` und `VITE_NEON_AUTH_URL`."
+        }
+      ]
+    }
+  ]
+}

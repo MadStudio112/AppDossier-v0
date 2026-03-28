@@ -1,0 +1,557 @@
+{
+  "title": "TEAMCHEF – Finanzplan",
+  "badge": "Kosten & Finanzplan · 2025",
+  "subtitle": "Budget, laufende Kosten, Break-Even & Prognosen",
+  "meta": [
+    {
+      "label": "Phase",
+      "value": "Pre-Seed → MVP"
+    },
+    {
+      "label": "Modell",
+      "value": "Freemium + Sponsoring"
+    },
+    {
+      "label": "Zielmarkt",
+      "value": "DACH"
+    }
+  ],
+  "sections": [
+    {
+      "id": "budget",
+      "number": "01",
+      "nav": "Budget",
+      "eyebrow": "Budget-Übersicht",
+      "title": "Investitions-Verteilung",
+      "blocks": [
+        {
+          "highlight": "TEAMCHEF verfolgt eine **Lean-Startup-Strategie**: Cloud-first, keine eigene Infrastruktur, Free-Tier-optimiert.\nDas Budget ist auf maximale Effizienz ausgelegt — jeder Euro fließt direkt in Produktentwicklung oder Nutzerakquise."
+        },
+        {
+          "investment": [
+            {
+              "label": "Entwicklung",
+              "value": "~40%",
+              "description": "MVP Frontend + Backend, Design, QA & Testing. Kernprodukt-Entwicklung bis zum Public Launch.",
+              "filledSegments": 4,
+              "totalSegments": 10
+            },
+            {
+              "label": "Marketing & Launch",
+              "value": "~30%",
+              "description": "User Acquisition, Vereinspartnerschaften, Social Media, Content, PR zum WM-Start.",
+              "filledSegments": 3,
+              "totalSegments": 10
+            },
+            {
+              "label": "Infrastruktur & Betrieb",
+              "value": "~15%",
+              "description": "Cloud-Hosting, Monitoring, DSGVO-Compliance, Rechtsberatung, Support-Tooling.",
+              "filledSegments": 2,
+              "totalSegments": 10
+            },
+            {
+              "label": "Reserve",
+              "value": "~15%",
+              "description": "Pivot-Buffer, unvorhergesehene Kosten, Opportunitäten. Sicherheitsnetz für Flexibilität.",
+              "filledSegments": 2,
+              "totalSegments": 10
+            }
+          ]
+        },
+        {
+          "stats": [
+            {
+              "value": "40%",
+              "label": "Entwicklung"
+            },
+            {
+              "value": "30%",
+              "label": "Marketing"
+            },
+            {
+              "value": "30%",
+              "label": "Infra + Reserve"
+            }
+          ],
+          "columns": 3
+        }
+      ]
+    },
+    {
+      "id": "laufend",
+      "number": "02",
+      "nav": "Laufend",
+      "eyebrow": "Laufende Kosten",
+      "title": "Monatliche Fixkosten (MVP-Phase)",
+      "blocks": [
+        {
+          "table": {
+            "variant": "default",
+            "columns": [
+              "Kostenart",
+              "Monatlich",
+              "Jährlich",
+              "Anmerkung"
+            ],
+            "rows": [
+              {
+                "highlight": false,
+                "cells": [
+                  {
+                    "text": "Vercel (Hosting)"
+                  },
+                  {
+                    "text": "$0–20"
+                  },
+                  {
+                    "text": "$0–240"
+                  },
+                  {
+                    "text": "Free Tier für MVP ausreichend"
+                  }
+                ]
+              },
+              {
+                "highlight": false,
+                "cells": [
+                  {
+                    "text": "Neon DB"
+                  },
+                  {
+                    "text": "$0–19"
+                  },
+                  {
+                    "text": "$0–228"
+                  },
+                  {
+                    "text": "Free: 0.5 GB, Scale: $19/Mo"
+                  }
+                ]
+              },
+              {
+                "highlight": false,
+                "cells": [
+                  {
+                    "text": "Domain"
+                  },
+                  {
+                    "text": "—"
+                  },
+                  {
+                    "text": "~$15"
+                  },
+                  {
+                    "text": ".com oder .de Registration"
+                  }
+                ]
+              },
+              {
+                "highlight": false,
+                "cells": [
+                  {
+                    "text": "E-Mail / Support"
+                  },
+                  {
+                    "text": "$0–10"
+                  },
+                  {
+                    "text": "$0–120"
+                  },
+                  {
+                    "text": "Free-Tier Tools (Resend, etc.)"
+                  }
+                ]
+              },
+              {
+                "highlight": false,
+                "cells": [
+                  {
+                    "text": "Monitoring"
+                  },
+                  {
+                    "text": "$0"
+                  },
+                  {
+                    "text": "$0"
+                  },
+                  {
+                    "text": "Vercel Analytics inklusive"
+                  }
+                ]
+              },
+              {
+                "highlight": false,
+                "cells": [
+                  {
+                    "text": "Marketing (initial)"
+                  },
+                  {
+                    "text": "$200–500"
+                  },
+                  {
+                    "text": "$2.400–6.000"
+                  },
+                  {
+                    "text": "Social Ads, Content Creation"
+                  }
+                ]
+              },
+              {
+                "highlight": false,
+                "cells": [
+                  {
+                    "text": "Rechtsberatung"
+                  },
+                  {
+                    "text": "—"
+                  },
+                  {
+                    "text": "$500–1.000"
+                  },
+                  {
+                    "text": "DSGVO, Gewinnspielrecht"
+                  }
+                ]
+              }
+            ]
+          }
+        },
+        {
+          "highlight": "**Lean-Stack-Vorteil:** Durch Vercel + Neon Free Tiers sind die Infrastrukturkosten in der MVP-Phase nahezu null.\nErst ab signifikantem Traffic (>100K Requests/Mo) fallen relevante Hosting-Kosten an."
+        },
+        {
+          "stats": [
+            {
+              "value": "~$250",
+              "label": "Min. monatlich (MVP)"
+            },
+            {
+              "value": "~$600",
+              "label": "Max. monatlich (MVP)"
+            }
+          ],
+          "columns": 2
+        }
+      ]
+    },
+    {
+      "id": "breakeven",
+      "number": "03",
+      "nav": "Break-Even",
+      "eyebrow": "Break-Even-Analyse",
+      "title": "Wann wird TEAMCHEF profitabel?",
+      "blocks": [
+        {
+          "card": {
+            "title": "Annahmen & Kalkulation",
+            "text": "Break-Even wird primär über Sponsoring-Revenue erreicht. Die niedrigen Fixkosten ermöglichen einen frühen Break-Even bereits mit wenigen aktiven Sponsorenverträgen."
+          }
+        },
+        {
+          "units": [
+            {
+              "label": "Sponsor-Revenue / Spiel",
+              "value": "€200–500",
+              "description": "Pro Spieltag-Sponsoring"
+            },
+            {
+              "label": "Spiele / Monat",
+              "value": "4–8",
+              "description": "Abhängig von Saison"
+            },
+            {
+              "label": "Monatl. Revenue (MVP)",
+              "value": "€800–4K",
+              "description": "Bei aktiven Sponsoren"
+            },
+            {
+              "label": "Monatl. Fixkosten",
+              "value": "€250–600",
+              "description": "Infrastruktur + Marketing"
+            },
+            {
+              "label": "Break-Even ab",
+              "value": "2–3",
+              "description": "Aktive Sponsorenverträge"
+            },
+            {
+              "label": "Premium (Phase 2)",
+              "value": "€4–9",
+              "description": "Pro User / Monat"
+            }
+          ]
+        },
+        {
+          "highlight": "**Fazit:** Break-Even ist bei 2–3 aktiven Sponsorenverträgen und 4+ Spielen pro Monat erreichbar.\nDie niedrige Kostenstruktur macht TEAMCHEF bereits mit minimalem Revenue profitabel."
+        }
+      ]
+    },
+    {
+      "id": "burnrate",
+      "number": "04",
+      "nav": "Burn Rate",
+      "eyebrow": "Burn Rate",
+      "title": "Runway & Verbrauch",
+      "blocks": [
+        {
+          "table": {
+            "title": "Pre-Revenue Burn (monatlich)",
+            "variant": "default",
+            "columns": [
+              "Kategorie",
+              "Min.",
+              "Max."
+            ],
+            "rows": [
+              {
+                "highlight": false,
+                "cells": [
+                  {
+                    "text": "Entwicklung (Freelancer / Team)"
+                  },
+                  {
+                    "text": "€2.000"
+                  },
+                  {
+                    "text": "€5.000"
+                  }
+                ]
+              },
+              {
+                "highlight": false,
+                "cells": [
+                  {
+                    "text": "Infrastruktur"
+                  },
+                  {
+                    "text": "€50"
+                  },
+                  {
+                    "text": "€200"
+                  }
+                ]
+              },
+              {
+                "highlight": false,
+                "cells": [
+                  {
+                    "text": "Marketing & Content"
+                  },
+                  {
+                    "text": "€200"
+                  },
+                  {
+                    "text": "€500"
+                  }
+                ]
+              },
+              {
+                "highlight": false,
+                "cells": [
+                  {
+                    "text": "Recht & Admin"
+                  },
+                  {
+                    "text": "€50"
+                  },
+                  {
+                    "text": "€150"
+                  }
+                ]
+              },
+              {
+                "highlight": false,
+                "cells": [
+                  {
+                    "text": "**Gesamt monatlich**"
+                  },
+                  {
+                    "text": "**€2.300**"
+                  },
+                  {
+                    "text": "**€5.850**"
+                  }
+                ]
+              }
+            ]
+          }
+        },
+        {
+          "timeline": {
+            "title": "Burn-Trajectory",
+            "variant": "default",
+            "items": [
+              {
+                "title": "Monat 1–3: Pure Development",
+                "body": "Höchster Burn — MVP-Entwicklung, kein Revenue. Fokus auf Kernprodukt-Features."
+              },
+              {
+                "title": "Monat 4–6: Beta + Sponsor-Talks",
+                "body": "Erste Nutzer testen, Sponsoren-Akquise beginnt. Burn bleibt hoch, aber erste Gespräche laufen."
+              },
+              {
+                "title": "Monat 7–9: Revenue startet",
+                "body": "Erste Sponsorenverträge aktiv, Netto-Burn sinkt. Marketing-Spend steigt für Wachstum."
+              },
+              {
+                "title": "Monat 10–12: Break-Even Ziel",
+                "body": "Mehrere aktive Sponsoren, Premium in Vorbereitung. Break-Even operativ erreichbar."
+              }
+            ]
+          }
+        },
+        {
+          "stats": [
+            {
+              "value": "12+",
+              "label": "Monate Runway (Ziel)"
+            },
+            {
+              "value": "M7–9",
+              "label": "Erster Revenue"
+            }
+          ],
+          "columns": 2
+        }
+      ]
+    },
+    {
+      "id": "prognosen",
+      "number": "05",
+      "nav": "Prognosen",
+      "eyebrow": "Finanzprognosen",
+      "title": "Szenario-Analyse",
+      "blocks": [
+        {
+          "table": {
+            "title": "3-Jahres-Szenarien",
+            "variant": "default",
+            "columns": [
+              "Szenario",
+              "User (J1)",
+              "Revenue (J1)",
+              "User (J2)",
+              "Revenue (J2)"
+            ],
+            "rows": [
+              {
+                "highlight": false,
+                "cells": [
+                  {
+                    "text": "Konservativ",
+                    "tone": "red"
+                  },
+                  {
+                    "text": "1.000"
+                  },
+                  {
+                    "text": "€10–20K"
+                  },
+                  {
+                    "text": "5.000"
+                  },
+                  {
+                    "text": "€60–100K"
+                  }
+                ]
+              },
+              {
+                "highlight": false,
+                "cells": [
+                  {
+                    "text": "Basis",
+                    "tone": "green"
+                  },
+                  {
+                    "text": "3.000"
+                  },
+                  {
+                    "text": "€30–50K"
+                  },
+                  {
+                    "text": "15.000"
+                  },
+                  {
+                    "text": "€150–250K"
+                  }
+                ]
+              },
+              {
+                "highlight": false,
+                "cells": [
+                  {
+                    "text": "Optimistisch",
+                    "tone": "blue"
+                  },
+                  {
+                    "text": "5.000"
+                  },
+                  {
+                    "text": "€50–80K"
+                  },
+                  {
+                    "text": "30.000"
+                  },
+                  {
+                    "text": "€300–500K"
+                  }
+                ]
+              }
+            ]
+          }
+        },
+        {
+          "swot": {
+            "variant": "full",
+            "items": [
+              {
+                "quadrant": "s",
+                "title": "Stärken",
+                "items": [
+                  "Extrem niedrige Fixkosten durch Cloud-first",
+                  "5+ unabhängige Revenue Streams",
+                  "Sponsor-finanzierte Preise (kein eigenes Budget)",
+                  "Skaliert ohne proportionale Kostensteigerung"
+                ]
+              },
+              {
+                "quadrant": "o",
+                "title": "Chancen",
+                "items": [
+                  "WM 2026 als perfekter Launch-Katalysator",
+                  "Virales Wachstum durch Social Sharing",
+                  "Premium-Upsell ab 5.000+ Nutzern",
+                  "Daten-Lizenzierung als B2B-Revenue"
+                ]
+              },
+              {
+                "quadrant": "w",
+                "title": "Schwächen",
+                "items": [
+                  "Revenue hängt initial an Sponsor-Akquise",
+                  "Kleines Team, begrenzte Kapazität",
+                  "Cold-Start-Problem bei Community-Aufbau",
+                  "Saisonale Schwankungen im Fußball"
+                ]
+              },
+              {
+                "quadrant": "t",
+                "title": "Risiken",
+                "items": [
+                  "Nutzerwachstum langsamer als erwartet",
+                  "Konkurrenz durch größere Plattformen",
+                  "Regulatorische Änderungen (DSGVO, Gewinnspielrecht)",
+                  "Sponsor-Markt-Unsicherheit"
+                ]
+              }
+            ]
+          }
+        },
+        {
+          "highlight": "**Zentrale Erkenntnis:** Selbst im konservativen Szenario erreicht TEAMCHEF operativen Break-Even in Jahr 1.\nDer Schlüssel liegt in der extremen Kosteneffizienz des Cloud-first Stacks und der diversifizierten Revenue-Strategie."
+        }
+      ]
+    }
+  ]
+}

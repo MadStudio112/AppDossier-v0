@@ -1,0 +1,304 @@
+{
+  "title": "TEAMCHEF – Investorenbrief",
+  "badge": "Investorenbrief · 2025",
+  "subtitle": "Vertraulich — Für qualifizierte Investoren",
+  "meta": [
+    {
+      "label": "Typ",
+      "value": "Pre-Seed Investment"
+    },
+    {
+      "label": "Stage",
+      "value": "Concept → MVP"
+    },
+    {
+      "label": "Markt",
+      "value": "Sport-Tech / Fan-Engagement"
+    }
+  ],
+  "sections": [
+    {
+      "id": "brief",
+      "number": "—",
+      "nav": "Brief",
+      "title": "Brief",
+      "blocks": [
+        {
+          "letter": {
+            "date": "Wien, 2025",
+            "salutation": "Sehr geehrte Investorin, sehr geehrter Investor,",
+            "paragraphs": [
+              "der globale Fußballmarkt ist einer der größten und leidenschaftlichsten Märkte der Welt –\ndoch eine fundamentale Frage bleibt unbeantwortet: **Wer bewertet Spieler und Teams\nwirklich objektiv?** Experten? Scouts? Journalisten? All diese Quellen sind subjektiv,\nintransparent und für den Fan unzugänglich.",
+              "Mit TEAMCHEF schließen wir diese Lücke. Wir entwickeln\neine webbasierte Plattform, auf der Fans, Spieler und Trainer gemeinsam durch\n**Schwarmintelligenz** objektive, transparente Leistungsbewertungen erstellen.\nEin gamifiziertes System mit echten Preisen sorgt für nachhaltige Nutzerbindung. Werbepartner\nund Sponsoren finden hier einen direkten, messbaren Kanal zu einer engagierten Zielgruppe.",
+              "Es gibt **keinen direkten Wettbewerber**, der genau diesen Mix aus objektiver\nCrowd-Bewertung, Gamification, Community und Sponsoring-Integration anbietet. Wir sind\nFirst Mover in einer klar definierten Nische mit globaler Skalierungsmöglichkeit.",
+              "Dieser Brief richtet sich an Investoren, die an der Schnittstelle von Sport-Tech,\nFan-Engagement und Community-Plattformen eine überzeugende Frühphasen-Opportunität suchen.\nWir laden Sie ein, an der Entstehung des **globalen Marktführers für Spielerbewertung**\nteilzunehmen.",
+              "Die folgenden Seiten beschreiben die Marktopportunität, unser Produkt, das Geschäftsmodell\nsowie unsere konkrete Investitionsanfrage. Wir freuen uns auf ein persönliches Gespräch."
+            ],
+            "kpis": [
+              {
+                "value": "500M+",
+                "label": "Fußballfans Europa"
+              },
+              {
+                "value": "0",
+                "label": "Direkte Konkurrenten"
+              },
+              {
+                "value": "5+",
+                "label": "Revenue-Streams"
+              },
+              {
+                "value": "∞",
+                "label": "Sportarten skalierbar"
+              }
+            ],
+            "signName": "TEAMCHEF — Gründerteam",
+            "signTitle": "mind-added-design · Wien, Österreich · 2025"
+          }
+        }
+      ]
+    },
+    {
+      "id": "opportunitaet",
+      "number": "01",
+      "nav": "Opportunity",
+      "eyebrow": "Die Opportunität",
+      "title": "Ein Markt, der auf uns wartet",
+      "blocks": [
+        {
+          "columns": 2,
+          "cards": [
+            {
+              "title": "Riesiger Markt",
+              "list": [
+                "Fußball ist Europas größte Sport-Community mit Milliarden Followern weltweit",
+                "25.000+ Fußballvereine allein in Deutschland, 7M+ registrierte Spieler",
+                "Hohe App-Affinität bei Fans, besonders 16–35 Jahre",
+                "Wachsender Trend zu Fan-Partizipation und Gamification im Sport"
+              ]
+            },
+            {
+              "title": "Strukturelle Lücke",
+              "list": [
+                "Keine Plattform kombiniert Schwarmbewertung + Gamification + Preise",
+                "Sofascore, Scorito, Transfermarkt lösen das Problem nur fragmentiert",
+                "First-Mover-Vorteil für TEAMCHEF: Timing ist entscheidend",
+                "Community-Netzwerkeffekte schützen den Vorteil langfristig"
+              ]
+            }
+          ]
+        },
+        {
+          "highlight": "**Timing:** Gamification, Fan-Partizipation und Schwarmbewertungen gewinnen gesellschaftlich\nan Bedeutung. Der Moment für eine dedizierte Plattform ist **jetzt** – bevor ein größerer\nPlayer das Konzept kopiert."
+        }
+      ]
+    },
+    {
+      "id": "produkt",
+      "number": "02",
+      "nav": "Produkt",
+      "eyebrow": "Das Produkt",
+      "title": "TEAMCHEF in 60 Sekunden",
+      "blocks": [
+        {
+          "card": {
+            "title": "Kernmechanik",
+            "text": "Fan wählt Spiel → bewertet Team nach 5 Kriterien (0–10) → Radar Chart zeigt Position zum Durchschnitt → wer am nächsten am Community-Mittel liegt, gewinnt Preise → Ranking motiviert zur Wiederkehr."
+          }
+        },
+        {
+          "columns": 2,
+          "cards": [
+            {
+              "title": "MVP-Features",
+              "list": [
+                "Bewertungsflow mit Live-Radar-Chart",
+                "One-Vote-System (Anti-Manipulation)",
+                "Leaderboard & Saisonwertung",
+                "Badges & Geldpreise",
+                "Sponsoren-Branding Integration",
+                "Mobile-first, Web-App"
+              ]
+            },
+            {
+              "title": "Techstack",
+              "list": [
+                "**Frontend:** React + Vite + TailwindCSS",
+                "**Backend:** Supabase (PostgreSQL, Auth, Edge Functions)",
+                "**Deployment:** Vercel (Frontend), Supabase Cloud",
+                "**Skalierung:** Cloud-native, horizontal skalierbar",
+                "**DSGVO:** EU-Hosting, Privacy by Design"
+              ]
+            }
+          ]
+        },
+        {
+          "swot": {
+            "variant": "mini",
+            "items": [
+              {
+                "quadrant": "s",
+                "title": "Stärken",
+                "items": [
+                  "Innovatives, einzigartiges Konzept",
+                  "Niedrige Einstiegshürde",
+                  "Starke Gamification",
+                  "Skalierbar auf alle Sportarten"
+                ]
+              },
+              {
+                "quadrant": "o",
+                "title": "Chancen",
+                "items": [
+                  "First Mover in klarer Nische",
+                  "Wachsender Fan-Partizipation-Trend",
+                  "Internationale Expansion möglich",
+                  "Sponsoring-Markt groß"
+                ]
+              },
+              {
+                "quadrant": "w",
+                "title": "Schwächen",
+                "items": [
+                  "Community-Abhängigkeit",
+                  "Manipulationsrisiko",
+                  "Erklärungsbedarf beim Konzept"
+                ]
+              },
+              {
+                "quadrant": "t",
+                "title": "Risiken",
+                "items": [
+                  "Kopierbarkeit durch Größere",
+                  "Rechtliche DSGVO-Themen",
+                  "Engagement-Abfall ohne Content"
+                ]
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "markt",
+      "number": "03",
+      "nav": "Markt",
+      "eyebrow": "Markt & Wachstumspfad",
+      "title": "Von DACH zum globalen Markt",
+      "blocks": [
+        {
+          "timeline": {
+            "title": "Stufenplan",
+            "variant": "default",
+            "items": [
+              {
+                "title": "Stufe 1: DACH-Markt (Jahr 1)",
+                "body": "Start mit Fußball in Österreich, Deutschland, Schweiz. Fokus auf Amateurvereine, Community-Aufbau, erste Sponsorenpartnerschaften. Ziel: 10.000 aktive Nutzer."
+              },
+              {
+                "title": "Stufe 2: Europa (Jahr 2–3)",
+                "body": "Ausdehnung auf westeuropäische Märkte (DE, AT, CH, UK, ES, IT). Mehrsprachigkeit, lokale Vereinspartnerschaften. Ziel: 100.000 aktive Nutzer."
+              },
+              {
+                "title": "Stufe 3: Global + Multi-Sport (Jahr 3–5)",
+                "body": "Internationale Expansion, weitere Sportarten (Basketball, Handball, Volleyball). White-Label für Verbände. Ziel: 1M+ aktive Nutzer."
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "invest",
+      "number": "04",
+      "nav": "Investment",
+      "eyebrow": "Investitionsanfrage",
+      "title": "Was wir suchen",
+      "blocks": [
+        {
+          "highlight": "Wir suchen **Pre-Seed Kapital** für die Fertigstellung des MVP, den Market Launch\nund das erste Nutzerwachstum. Neben Kapital sind strategische Partner mit Netzwerk im\nSport-Ökosystem besonders wertvoll."
+        },
+        {
+          "investment": [
+            {
+              "label": "Verwendungszweck #1",
+              "value": "MVP Entwicklung",
+              "description": "Frontend, Backend, Design-System, Anti-Manipulation-Layer, Admin-Panel. Ca. 40% des Budgets.",
+              "filledSegments": 2,
+              "totalSegments": 5
+            },
+            {
+              "label": "Verwendungszweck #2",
+              "value": "Marketing & Launch",
+              "description": "User Acquisition, Vereinspartnerschaften, erste Sponsorenakquise, Social Media. Ca. 30% des Budgets.",
+              "filledSegments": 1,
+              "totalSegments": 5
+            },
+            {
+              "label": "Verwendungszweck #3",
+              "value": "Infrastruktur & Betrieb",
+              "description": "Cloud-Kosten, Monitoring, Security, DSGVO-Beratung, Support. Ca. 15% des Budgets.",
+              "filledSegments": 0,
+              "totalSegments": 5
+            },
+            {
+              "label": "Verwendungszweck #4",
+              "value": "Reserve & Pivot-Buffer",
+              "description": "Runway für Iteration nach Nutzerfeedback, unvorhergesehene Kosten. Ca. 15% des Budgets.",
+              "filledSegments": 0,
+              "totalSegments": 5
+            }
+          ]
+        },
+        {
+          "features": [
+            "Beteiligung an einer klar definierten, unbesetzten Marknische mit globaler Reichweite",
+            "Technisch skalierbare Basis (API-first, Cloud-native, DSGVO-ready)",
+            "Mehrere parallele Revenue-Streams ab Phase 1 (Sponsoring, Werbung)",
+            "First-Mover-Vorteil mit Community-Netzwerkeffekten als Schutzwall",
+            "Vollständige Transparenz: offene Bücher, regelmäßiges Reporting"
+          ],
+          "title": "Was wir bieten"
+        }
+      ]
+    },
+    {
+      "id": "vision",
+      "number": "05",
+      "nav": "Vision",
+      "eyebrow": "Langfristige Vision",
+      "title": "Wo wir hinwollen",
+      "blocks": [
+        {
+          "quote": "„TEAMCHEF wird die Referenzplattform für objektive Leistungsbewertung im Sport – für alle Länder, alle Sportarten, alle Fans.\""
+        },
+        {
+          "columns": 2,
+          "cards": [
+            {
+              "title": "Technologische Vision",
+              "list": [
+                "KI-gestützte Manipulationserkennung in Echtzeit",
+                "API-Marktplatz für Vereine, Scouts und Medien",
+                "Datenbasierte Scouting-Intelligence als Premium-Service",
+                "White-Label-Lösungen für nationale Verbände und Ligen"
+              ]
+            },
+            {
+              "title": "Marktposition",
+              "list": [
+                "Globaler Marktführer für Community-Spielerbewertung",
+                "Expansion auf alle Teamsportarten (Basketball, Eishockey, Handball...)",
+                "Weitere Anwendungsgebiete: E-Sports, Bildung, Corporate Teams",
+                "Eigenständiges Datennetzwerk: „Crowd-Intelligence as a Service\""
+              ]
+            }
+          ]
+        },
+        {
+          "highlight": "Wir laden Sie ein, diese Reise von Anfang an mitzugestalten.\nFür ein persönliches Gespräch, weitere Unterlagen oder eine Demo des aktuellen Entwicklungsstands\nstehen wir jederzeit zur Verfügung."
+        }
+      ]
+    }
+  ]
+}

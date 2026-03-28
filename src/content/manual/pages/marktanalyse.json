@@ -1,0 +1,830 @@
+{
+  "title": "TEAMCHEF – Marktanalyse",
+  "badge": "Marktanalyse · 2025",
+  "subtitle": "Marktgröße, Wettbewerb, Trends & Positionierung",
+  "meta": [
+    {
+      "label": "Fokus",
+      "value": "Sport-Tech / Fan-Engagement"
+    },
+    {
+      "label": "Region",
+      "value": "DACH → Europa → Global"
+    },
+    {
+      "label": "Stand",
+      "value": "2025"
+    }
+  ],
+  "sections": [
+    {
+      "id": "marktgroesse",
+      "number": "01",
+      "nav": "Marktgröße",
+      "eyebrow": "Marktgröße",
+      "title": "TAM · SAM · SOM",
+      "blocks": [
+        {
+          "highlight": "TEAMCHEF adressiert die Schnittstelle zwischen **Fan-Engagement**, **Gamification** und **Sport-Sponsoring**. Der adressierbare Markt ist enorm, weil Fußball die größte Sport-Community weltweit ist – und keine Plattform existiert, die Schwarmbewertung, Preise und Community kombiniert."
+        },
+        {
+          "market": {
+            "variant": "tam",
+            "columns": 3,
+            "items": [
+              {
+                "value": "3,5 Mrd.",
+                "title": "TAM",
+                "description": "Globale Fußballfans mit Internetzugang. Jeder, der potenziell bewerten könnte – über alle Ligen, Altersgruppen und Regionen.",
+                "tone": "green"
+              },
+              {
+                "value": "80–120 Mio.",
+                "title": "SAM",
+                "description": "Aktive Sport-App-Nutzer in Europa (16–45 J.), die regelmäßig Apps nutzen und für Gamification empfänglich sind.",
+                "tone": "blue"
+              },
+              {
+                "value": "500K–2 Mio.",
+                "title": "SOM",
+                "description": "Realistisch erreichbar in 3 Jahren: DACH-Start, Amateurvereine, Community-Akquise.",
+                "tone": "amber"
+              }
+            ]
+          }
+        },
+        {
+          "table": {
+            "title": "Marktdaten im Detail",
+            "variant": "default",
+            "columns": [
+              "Kennzahl",
+              "Wert",
+              "Kontext"
+            ],
+            "rows": [
+              {
+                "highlight": false,
+                "cells": [
+                  {
+                    "text": "**Registrierte Fußballspieler DE**"
+                  },
+                  {
+                    "text": "7,4 Mio."
+                  },
+                  {
+                    "text": "DFB-Mitgliederbericht"
+                  }
+                ]
+              },
+              {
+                "highlight": false,
+                "cells": [
+                  {
+                    "text": "**Fußballvereine Deutschland**"
+                  },
+                  {
+                    "text": "~25.000"
+                  },
+                  {
+                    "text": "DFB-Strukturdaten"
+                  }
+                ]
+              },
+              {
+                "highlight": false,
+                "cells": [
+                  {
+                    "text": "**Fußballfans Europa (aktiv)**"
+                  },
+                  {
+                    "text": "~500 Mio."
+                  },
+                  {
+                    "text": "UEFA-Schätzung"
+                  }
+                ]
+              },
+              {
+                "highlight": false,
+                "cells": [
+                  {
+                    "text": "**Globaler Sport-App-Markt**"
+                  },
+                  {
+                    "text": "$5,2 Mrd. (2024)"
+                  },
+                  {
+                    "text": "Statista / Allied Market Research"
+                  }
+                ]
+              },
+              {
+                "highlight": false,
+                "cells": [
+                  {
+                    "text": "**Fan-Engagement CAGR**"
+                  },
+                  {
+                    "text": "~17% p.a."
+                  },
+                  {
+                    "text": "Wachstum 2024–2030"
+                  }
+                ]
+              },
+              {
+                "highlight": false,
+                "cells": [
+                  {
+                    "text": "**Sponsoring-Markt DACH Sport**"
+                  },
+                  {
+                    "text": "~€3,5 Mrd."
+                  },
+                  {
+                    "text": "Nielsen Sports"
+                  }
+                ]
+              },
+              {
+                "highlight": false,
+                "cells": [
+                  {
+                    "text": "**Digital-Sport-Nutzer DE 16–35**"
+                  },
+                  {
+                    "text": "~18 Mio."
+                  },
+                  {
+                    "text": "ARD/ZDF-Onlinestudie"
+                  }
+                ]
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "segmente",
+      "number": "02",
+      "nav": "Segmente",
+      "eyebrow": "Marktsegmente",
+      "title": "Wen wir zuerst erreichen",
+      "blocks": [
+        {
+          "market": {
+            "variant": "segment",
+            "columns": 2,
+            "items": [
+              {
+                "value": "7,4M",
+                "title": "Amateurbereich DE",
+                "description": "Registrierte Spieler in Deutschland. Breite Basis, hohe Fußball-Affinität. Geringe digitale Abdeckung – TEAMCHEF als Einstieg ins digitale Fan-Engagement.",
+                "tags": [
+                  {
+                    "label": "Primärziel MVP",
+                    "tone": "green"
+                  },
+                  {
+                    "label": "Hohe Erreichbarkeit",
+                    "tone": "blue"
+                  }
+                ]
+              },
+              {
+                "value": "18M",
+                "title": "Digital-Sport-Fans 16–35",
+                "description": "App-affine Fußballfans in DE, die mindestens wöchentlich Sport-Content konsumieren. Höchste Conversion-Wahrscheinlichkeit für Gamification.",
+                "tags": [
+                  {
+                    "label": "Kernzielgruppe",
+                    "tone": "green"
+                  },
+                  {
+                    "label": "Viral-Potenzial",
+                    "tone": "amber"
+                  }
+                ]
+              }
+            ]
+          }
+        },
+        {
+          "market": {
+            "variant": "segment",
+            "columns": 2,
+            "items": [
+              {
+                "value": "~25K",
+                "title": "Vereine (DE)",
+                "description": "Fußballvereine als Multiplikatoren: Ein Verein = 50–200 aktive Fans. 50 Partnerschaften = 2.500–10.000 Nutzer ohne Paid-Akquise.",
+                "tags": [
+                  {
+                    "label": "B2B-Kanal",
+                    "tone": "blue"
+                  },
+                  {
+                    "label": "Multiplikator",
+                    "tone": "green"
+                  }
+                ]
+              },
+              {
+                "value": "€3,5 Mrd.",
+                "title": "Sponsoring-Markt DACH",
+                "description": "Unternehmen suchen direkten Fan-Zugang. TEAMCHEF bietet messbaren, zielgruppenspezifischen Werbekanal.",
+                "tags": [
+                  {
+                    "label": "Monetarisierung",
+                    "tone": "amber"
+                  },
+                  {
+                    "label": "Phase 1 Revenue",
+                    "tone": "blue"
+                  }
+                ]
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "wettbewerb",
+      "number": "03",
+      "nav": "Wettbewerb",
+      "eyebrow": "Wettbewerbsanalyse",
+      "title": "Wer macht was – und was fehlt",
+      "blocks": [
+        {
+          "text": "Kein existierender Anbieter kombiniert alle Elemente von TEAMCHEF. Jeder deckt nur Teilaspekte ab."
+        },
+        {
+          "stack": {
+            "variant": "competition",
+            "items": [
+              {
+                "title": "Sofascore",
+                "description": "Live-Scores, algorithmische Spielerbewertungen. Kein Community-Input, keine Gamification, keine Preise.",
+                "tag": {
+                  "label": "Stats-App",
+                  "tone": "blue"
+                }
+              },
+              {
+                "title": "Transfermarkt",
+                "description": "Marktwert-Datenbank mit Community-Diskussion. Kein strukturiertes Bewertungssystem, kein Gamification-Layer.",
+                "tag": {
+                  "label": "Datenbank",
+                  "tone": "blue"
+                }
+              },
+              {
+                "title": "Scorito",
+                "description": "Fantasy-Sport (Benelux/DACH). Gamification + Preise, aber Fantasy-Manager-Mechanik statt Bewertung realer Leistung.",
+                "tag": {
+                  "label": "Fantasy",
+                  "tone": "amber"
+                }
+              },
+              {
+                "title": "FotMob",
+                "description": "Live-Daten, algorithmische Ratings. Ähnlich Sofascore – keine Community-Partizipation.",
+                "tag": {
+                  "label": "Stats-App",
+                  "tone": "blue"
+                }
+              },
+              {
+                "title": "OneFootball",
+                "description": "News-Aggregator mit großer Nutzerbasis. Community nur Kommentare. Keine Bewertungsmechanik.",
+                "tag": {
+                  "label": "News",
+                  "tone": "amber"
+                }
+              },
+              {
+                "title": "Kickbase",
+                "description": "Fantasy-Manager (DACH). Kauf/Verkauf virtueller Spieler. Andere Mechanik, kein Sponsoring-Layer.",
+                "tag": {
+                  "label": "Fantasy",
+                  "tone": "amber"
+                }
+              }
+            ]
+          }
+        },
+        {
+          "matrix": {
+            "title": "Feature-Matrix",
+            "columns": [
+              "Crowd-Bewertung",
+              "Gamification",
+              "Preise",
+              "Community",
+              "Sponsoring",
+              "Radar-Viz",
+              "Multi-Sport"
+            ],
+            "rows": [
+              {
+                "label": {
+                  "text": "Sofascore"
+                },
+                "highlight": false,
+                "cells": [
+                  {
+                    "text": "✗",
+                    "tone": "red"
+                  },
+                  {
+                    "text": "✗",
+                    "tone": "red"
+                  },
+                  {
+                    "text": "✗",
+                    "tone": "red"
+                  },
+                  {
+                    "text": "✗",
+                    "tone": "red"
+                  },
+                  {
+                    "text": "~",
+                    "tone": "amber"
+                  },
+                  {
+                    "text": "~",
+                    "tone": "amber"
+                  },
+                  {
+                    "text": "✓",
+                    "tone": "green"
+                  }
+                ]
+              },
+              {
+                "label": {
+                  "text": "Transfermarkt"
+                },
+                "highlight": false,
+                "cells": [
+                  {
+                    "text": "~",
+                    "tone": "amber"
+                  },
+                  {
+                    "text": "✗",
+                    "tone": "red"
+                  },
+                  {
+                    "text": "✗",
+                    "tone": "red"
+                  },
+                  {
+                    "text": "✓",
+                    "tone": "green"
+                  },
+                  {
+                    "text": "✗",
+                    "tone": "red"
+                  },
+                  {
+                    "text": "✗",
+                    "tone": "red"
+                  },
+                  {
+                    "text": "✗",
+                    "tone": "red"
+                  }
+                ]
+              },
+              {
+                "label": {
+                  "text": "Scorito"
+                },
+                "highlight": false,
+                "cells": [
+                  {
+                    "text": "✗",
+                    "tone": "red"
+                  },
+                  {
+                    "text": "✓",
+                    "tone": "green"
+                  },
+                  {
+                    "text": "✓",
+                    "tone": "green"
+                  },
+                  {
+                    "text": "~",
+                    "tone": "amber"
+                  },
+                  {
+                    "text": "✗",
+                    "tone": "red"
+                  },
+                  {
+                    "text": "✗",
+                    "tone": "red"
+                  },
+                  {
+                    "text": "~",
+                    "tone": "amber"
+                  }
+                ]
+              },
+              {
+                "label": {
+                  "text": "FotMob"
+                },
+                "highlight": false,
+                "cells": [
+                  {
+                    "text": "✗",
+                    "tone": "red"
+                  },
+                  {
+                    "text": "✗",
+                    "tone": "red"
+                  },
+                  {
+                    "text": "✗",
+                    "tone": "red"
+                  },
+                  {
+                    "text": "✗",
+                    "tone": "red"
+                  },
+                  {
+                    "text": "~",
+                    "tone": "amber"
+                  },
+                  {
+                    "text": "~",
+                    "tone": "amber"
+                  },
+                  {
+                    "text": "✓",
+                    "tone": "green"
+                  }
+                ]
+              },
+              {
+                "label": {
+                  "text": "OneFootball"
+                },
+                "highlight": false,
+                "cells": [
+                  {
+                    "text": "✗",
+                    "tone": "red"
+                  },
+                  {
+                    "text": "✗",
+                    "tone": "red"
+                  },
+                  {
+                    "text": "✗",
+                    "tone": "red"
+                  },
+                  {
+                    "text": "~",
+                    "tone": "amber"
+                  },
+                  {
+                    "text": "✓",
+                    "tone": "green"
+                  },
+                  {
+                    "text": "✗",
+                    "tone": "red"
+                  },
+                  {
+                    "text": "✗",
+                    "tone": "red"
+                  }
+                ]
+              },
+              {
+                "label": {
+                  "text": "Kickbase"
+                },
+                "highlight": false,
+                "cells": [
+                  {
+                    "text": "✗",
+                    "tone": "red"
+                  },
+                  {
+                    "text": "✓",
+                    "tone": "green"
+                  },
+                  {
+                    "text": "~",
+                    "tone": "amber"
+                  },
+                  {
+                    "text": "✓",
+                    "tone": "green"
+                  },
+                  {
+                    "text": "✗",
+                    "tone": "red"
+                  },
+                  {
+                    "text": "✗",
+                    "tone": "red"
+                  },
+                  {
+                    "text": "✗",
+                    "tone": "red"
+                  }
+                ]
+              },
+              {
+                "label": {
+                  "text": "TEAMCHEF"
+                },
+                "highlight": true,
+                "cells": [
+                  {
+                    "text": "✓",
+                    "tone": "green"
+                  },
+                  {
+                    "text": "✓",
+                    "tone": "green"
+                  },
+                  {
+                    "text": "✓",
+                    "tone": "green"
+                  },
+                  {
+                    "text": "✓",
+                    "tone": "green"
+                  },
+                  {
+                    "text": "✓",
+                    "tone": "green"
+                  },
+                  {
+                    "text": "✓",
+                    "tone": "green"
+                  },
+                  {
+                    "text": "✓",
+                    "tone": "green"
+                  }
+                ]
+              }
+            ],
+            "note": "✓ = Kernfeature · ~ = teilweise · ✗ = nicht vorhanden"
+          }
+        },
+        {
+          "highlight": "**Fazit:** Kein Anbieter vereint Community-Bewertung + Gamification + Preise + Sponsoring. Die Lücke ist strukturell – und heute unbesetzt."
+        }
+      ]
+    },
+    {
+      "id": "trends",
+      "number": "04",
+      "nav": "Trends",
+      "eyebrow": "Markttrends",
+      "title": "Warum jetzt der richtige Zeitpunkt ist",
+      "blocks": [
+        {
+          "trends": [
+            {
+              "icon": "📈",
+              "title": "Fan-Partizipation wächst",
+              "body": "Passive Zuschauer werden aktive Teilnehmer. Twitch, Discord, Fan-Token (Socios) zeigen: Fans wollen mitbestimmen. TEAMCHEF nutzt das für strukturierte Beteiligung."
+            },
+            {
+              "icon": "🎮",
+              "title": "Gamification ist Standard",
+              "body": "Duolingo, Strava, Wordle – Punkte, Streaks, Badges sind keine Innovation mehr, sondern Erwartung. Sport-Apps ohne Gamification verlieren Engagement."
+            },
+            {
+              "icon": "🧠",
+              "title": "Schwarmintelligenz als Datenmethode",
+              "body": "Von Wikipedia über Prediction Markets bis Polymarket: Kollektive Einschätzungen sind oft genauer als Einzelurteile. TEAMCHEF wendet das auf Sport an."
+            },
+            {
+              "icon": "💰",
+              "title": "Sponsoring wird digital & messbar",
+              "body": "Budgets verlagern sich von Bandenwerbung zu digitalen Kanälen mit messbarem ROI. Plattformen mit direktem Fan-Zugang sind die attraktivsten Partner."
+            },
+            {
+              "icon": "📱",
+              "title": "Mobile-First ist Pflicht",
+              "body": "75%+ der Sport-Content-Nutzung auf dem Smartphone. Web-Apps (PWA) schließen den Gap zwischen App-Store-Hürde und nativer Experience."
+            },
+            {
+              "icon": "⚡",
+              "title": "Amateursport digitalisiert sich",
+              "body": "Der Profi-Bereich ist übersättigt. Der Amateurbereich – 99% aller Vereine – ist digital unterversorgt. Hier startet TEAMCHEF: niedrige Konkurrenz, hohe Loyalität."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "swot",
+      "number": "05",
+      "nav": "SWOT",
+      "eyebrow": "SWOT-Analyse",
+      "title": "Stärken, Schwächen, Chancen, Risiken",
+      "blocks": [
+        {
+          "swot": {
+            "variant": "full",
+            "items": [
+              {
+                "quadrant": "s",
+                "title": "Stärken",
+                "items": [
+                  "Einzigartiges Konzept: Schwarmbewertung + Gamification + Preise",
+                  "Niedrige Einstiegshürde (Web-App, simpel)",
+                  "Starke Gamification-Loop: Bewertung → Vergleich → Ranking → Preis → Wiederkehr",
+                  "Skalierbar auf jede Sportart und Region",
+                  "Tech-Stack modern, kosteneffizient",
+                  "Kein Content-Lizenzproblem: Spielpläne sind öffentlich",
+                  "Community-Netzwerkeffekte als langfristiger Schutz"
+                ]
+              },
+              {
+                "quadrant": "o",
+                "title": "Chancen",
+                "items": [
+                  "First Mover in klar definierter, unbesetzter Nische",
+                  "Wachsende Trends: Fan-Partizipation, Gamification, digitaler Amateursport",
+                  "Sponsoring-Markt DACH >€3,5 Mrd. – Bruchteil reicht",
+                  "Virale Mechanik: Rankings werden organisch geteilt",
+                  "Expansion auf Basketball, Handball, E-Sports",
+                  "Daten als Asset: Community-Ratings für Scouts & Medien",
+                  "White-Label als hochmargiger B2B-Kanal"
+                ]
+              },
+              {
+                "quadrant": "w",
+                "title": "Schwächen",
+                "items": [
+                  "Community-abhängig: ohne Nutzer kein Wert",
+                  "Cold-Start-Problem: Mindestanzahl an Bewertungen nötig",
+                  "Manipulationsrisiko bei geringer Nutzerzahl verstärkt",
+                  "Erklärungsbedarf: Schwarmintelligenz nicht sofort intuitiv",
+                  "Initialer Content-Pflegeaufwand (Spielpläne manuell)",
+                  "Kleine Team-Größe limitiert Geschwindigkeit",
+                  "Keine bestehende Markenbekanntheit"
+                ]
+              },
+              {
+                "quadrant": "t",
+                "title": "Risiken",
+                "items": [
+                  "Kopierbarkeit durch große Player (Sofascore, Kickbase)",
+                  "Engagement-Abfall in Saisonpausen",
+                  "DSGVO-Komplexität: Gewinnspielrecht variiert nach Land",
+                  "Akzeptanz bei Spielern/Trainern unsicher",
+                  "Sponsoren-Akquise ohne Nutzerzahlen schwierig",
+                  "Kompetitives Funding-Umfeld für Sport-Startups"
+                ]
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "positionierung",
+      "number": "06",
+      "nav": "Positionierung",
+      "eyebrow": "Marktpositionierung",
+      "title": "Wo TEAMCHEF steht",
+      "blocks": [
+        {
+          "highlight": "TEAMCHEF positioniert sich als **erste Community-Bewertungsplattform für Sport** – an der Kreuzung von Fan-Engagement, Gamification und Sport-Sponsoring. Kein Stats-Tool. Kein Fantasy-Manager. **Die Stimme der Fans – messbar, spielerisch, mit echtem Wert.**"
+        },
+        {
+          "columns": 2,
+          "cards": [
+            {
+              "title": "vs. Stats-Apps",
+              "list": [
+                "Sofascore/FotMob = **algorithmisch**; TEAMCHEF = **menschlich**",
+                "Stats-Apps sind passiv (lesen), TEAMCHEF ist aktiv (bewerten, gewinnen)",
+                "Kein Experten-Gatekeeping: jeder Fan hat eine gleichwertige Stimme",
+                "Kein Datenlizenz-Modell nötig: Community-Daten eigenproduziert"
+              ]
+            },
+            {
+              "title": "vs. Fantasy-Apps",
+              "list": [
+                "Kickbase/Scorito = Kauf/Verkauf; TEAMCHEF = Leistungsbewertung",
+                "Fantasy braucht Vorwissen + Zeit; TEAMCHEF dauert 2 Minuten",
+                "TEAMCHEF ist spielfokussiert (pro Match), nicht saisonlang bindend",
+                "Einstiegshürde deutlich niedriger → breitere Zielgruppe"
+              ]
+            }
+          ]
+        },
+        {
+          "table": {
+            "title": "Strategische Moats",
+            "variant": "default",
+            "columns": [
+              "Schutzwall",
+              "Wirkung",
+              "Zeitrahmen"
+            ],
+            "rows": [
+              {
+                "highlight": false,
+                "cells": [
+                  {
+                    "text": "**Community-Netzwerkeffekt**"
+                  },
+                  {
+                    "text": "Mehr Nutzer = bessere Bewertungen = mehr Wert. Wechselkosten steigen."
+                  },
+                  {
+                    "text": "Ab M2",
+                    "tone": "green"
+                  }
+                ]
+              },
+              {
+                "highlight": false,
+                "cells": [
+                  {
+                    "text": "**Datenvorteil**"
+                  },
+                  {
+                    "text": "Historische Bewertungsdaten einzigartig und nicht replizierbar."
+                  },
+                  {
+                    "text": "Ab Phase 2",
+                    "tone": "blue"
+                  }
+                ]
+              },
+              {
+                "highlight": false,
+                "cells": [
+                  {
+                    "text": "**First-Mover-Brand**"
+                  },
+                  {
+                    "text": "Erste Plattform in dieser Kategorie. Name = Kategorie."
+                  },
+                  {
+                    "text": "Ab Launch",
+                    "tone": "green"
+                  }
+                ]
+              },
+              {
+                "highlight": false,
+                "cells": [
+                  {
+                    "text": "**Sponsor-Exklusivität**"
+                  },
+                  {
+                    "text": "Langfristige Verträge binden Budgets und schaffen Switching Costs."
+                  },
+                  {
+                    "text": "Ab M3",
+                    "tone": "amber"
+                  }
+                ]
+              },
+              {
+                "highlight": false,
+                "cells": [
+                  {
+                    "text": "**Vereinspartnerschaften**"
+                  },
+                  {
+                    "text": "Integrierte Vereine als Kanäle, schwer zu replizieren."
+                  },
+                  {
+                    "text": "Ab Phase 2",
+                    "tone": "blue"
+                  }
+                ]
+              }
+            ]
+          }
+        },
+        {
+          "quote": "„Der Markt für Fan-Bewertungsplattformen existiert heute nicht – weil ihn noch niemand geschaffen hat. TEAMCHEF definiert die Kategorie.\""
+        }
+      ]
+    }
+  ]
+}

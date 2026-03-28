@@ -1,0 +1,389 @@
+{
+  "title": "TEAMCHEF – Pitch",
+  "badge": "Pitch Deck · 2025",
+  "subtitle": "Deine Stimme. Dein Team. Dein Ranking.",
+  "meta": [
+    {
+      "label": "Typ",
+      "value": "Stakeholder Pitch"
+    },
+    {
+      "label": "Markt",
+      "value": "DACH → Europa → Global"
+    },
+    {
+      "label": "Phase",
+      "value": "Pre-Seed / MVP"
+    }
+  ],
+  "lead": {
+    "claim": "Wer bewertet Fußball wirklich objektiv?",
+    "intro": "Keine Einzelmeinung. Kein Expertenurteil. Nur die kollektive Intelligenz der Community – transparent, spielerisch, mit echten Preisen."
+  },
+  "sections": [
+    {
+      "id": "problem",
+      "number": "01",
+      "nav": "Problem",
+      "eyebrow": "Das Problem",
+      "title": "Was fehlt im Markt?",
+      "blocks": [
+        {
+          "market": {
+            "variant": "problem",
+            "columns": 2,
+            "items": [
+              {
+                "title": "Keine objektive Bewertungsplattform",
+                "description": "Es gibt keine Plattform, die Fans, Spieler und Trainer vereint, um Leistungen systematisch und transparent zu bewerten."
+              },
+              {
+                "title": "Schwarmintelligenz ungenutzt",
+                "description": "Millionen Fußballfans haben eine Meinung – aber keine App nutzt diese kollektive Intelligenz, um objektive Bewertungen zu erzeugen."
+              },
+              {
+                "title": "Bewertung ohne Anreiz",
+                "description": "Fans bewerten auf Social Media, aber ohne Feedback, Vergleich oder Belohnung. Engagement verpufft, Community entsteht nicht."
+              },
+              {
+                "title": "Transparenz fehlt komplett",
+                "description": "Spielerbewertungen in Medien und Apps sind intransparent, subjektiv und nicht nachvollziehbar. Vertrauen fehlt."
+              },
+              {
+                "title": "Sponsoren ohne direkten Kanal",
+                "description": "Firmen können Vereine und Turniere nicht direkt als Werbepartner begleiten und Fans gezielt ansprechen."
+              },
+              {
+                "title": "Kein First Mover am Markt",
+                "description": "Kein globaler Marktführer für Spieler- und Teambewertung existiert. Die Nische ist offen – der Zeitpunkt ist jetzt."
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "loesung",
+      "number": "02",
+      "nav": "Lösung",
+      "eyebrow": "Die Lösung",
+      "title": "TEAMCHEF löst das Problem",
+      "blocks": [
+        {
+          "highlight": "TEAMCHEF ist eine Web-App, auf der Fußballfans Teams und Spieler nach\n**5 festen Kriterien** (0–10 Punkte) bewerten. Der Durchschnitt aller\nBewertungen ergibt das Community-Urteil. Wer am nächsten am Durchschnitt liegt,\ngewinnt – echte **Geld- und Sachpreise**. Gamification sorgt für\nWiederkehr, Sponsoren für Monetarisierung."
+        },
+        {
+          "market": {
+            "variant": "solution",
+            "columns": 1,
+            "items": [
+              {
+                "title": "Schritt 1: Spiel auswählen",
+                "description": "Fan wählt ein aktives Spiel aus der Übersicht – direkt nach Login, keine langen Onboarding-Prozesse."
+              },
+              {
+                "title": "Schritt 2: Team bewerten (in 2 Minuten)",
+                "description": "5 Kriterien per Slider oder Sterne (0–10). Radar Chart zeigt live, wie die eigene Einschätzung im Vergleich zum Durchschnitt liegt."
+              },
+              {
+                "title": "Schritt 3: Ranking & Preise",
+                "description": "Nach Bewertungsende werden Rankings automatisch berechnet. Wer die Community am besten einschätzt, gewinnt. Badges und Punkte für die Saisonwertung."
+              },
+              {
+                "title": "Schritt 4: Wiederkehr durch Gamification",
+                "description": "Leaderboard, Saisonrankings, Push-Reminder vor dem nächsten Spiel – der Loop hält Nutzer aktiv und motiviert."
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "usp",
+      "number": "03",
+      "nav": "USPs",
+      "eyebrow": "Alleinstellungsmerkmale",
+      "title": "Warum TEAMCHEF gewinnt",
+      "blocks": [
+        {
+          "stack": {
+            "variant": "usp",
+            "items": [
+              {
+                "label": "1",
+                "title": "Echte Schwarmintelligenz",
+                "description": "Statistische Bewertung statt Einzelmeinung. Objektivität durch Masse – keine App macht das vergleichbar."
+              },
+              {
+                "label": "2",
+                "title": "Gamification mit echten Preisen",
+                "description": "Ähnlich wie Sportwetten-Logik: Bewertung ist kein Selbstzweck, sondern mit echter Belohnung verbunden. Motivationsanker, der wirkt."
+              },
+              {
+                "label": "3",
+                "title": "Instant Feedback",
+                "description": "Jeder sieht sofort nach der Bewertung seine Position im Vergleich zum Durchschnitt. Echtzeit-Radar-Chart als visueller Hook."
+              },
+              {
+                "label": "4",
+                "title": "Sponsored by Werbepartner",
+                "description": "Firmen zahlen für Branding im Bewertungsflow und stiften Preise. Direkter, messbarer Kanal zu Fußballfans."
+              },
+              {
+                "label": "5",
+                "title": "Modular & skalierbar",
+                "description": "DACH-Start mit Fußball, aber sofort auf Basketball, Handball, andere Sportarten und internationale Märkte adaptierbar."
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "markt",
+      "number": "04",
+      "nav": "Markt",
+      "eyebrow": "Markt & Potenzial",
+      "title": "Die Chance ist riesig",
+      "blocks": [
+        {
+          "market": {
+            "variant": "stat",
+            "columns": 3,
+            "items": [
+              {
+                "value": "25.000",
+                "description": "Fußballvereine in Deutschland allein"
+              },
+              {
+                "value": "7M+",
+                "description": "Registrierte Fußballspieler in Deutschland"
+              },
+              {
+                "value": "500M+",
+                "description": "Fußballfans in Europa"
+              }
+            ]
+          }
+        },
+        {
+          "table": {
+            "title": "Kein direkter Wettbewerber",
+            "intro": [
+              "Plattformen wie Sofascore, Scorito oder Transfermarkt bieten Teilaspekte – aber kein Anbieter kombiniert objektive Schwarmbewertung + Gamification + Preise + Community + Sponsoring. TEAMCHEF ist First Mover in dieser Nische."
+            ],
+            "variant": "default",
+            "columns": [
+              "Anbieter",
+              "Bewertung",
+              "Gamification",
+              "Preise",
+              "Community"
+            ],
+            "rows": [
+              {
+                "highlight": false,
+                "cells": [
+                  {
+                    "text": "Sofascore"
+                  },
+                  {
+                    "text": "Teilweise",
+                    "tone": "amber"
+                  },
+                  {
+                    "text": "Nein",
+                    "tone": "red"
+                  },
+                  {
+                    "text": "Nein",
+                    "tone": "red"
+                  },
+                  {
+                    "text": "Begrenzt",
+                    "tone": "amber"
+                  }
+                ]
+              },
+              {
+                "highlight": false,
+                "cells": [
+                  {
+                    "text": "Scorito"
+                  },
+                  {
+                    "text": "Nein",
+                    "tone": "red"
+                  },
+                  {
+                    "text": "Ja",
+                    "tone": "green"
+                  },
+                  {
+                    "text": "Ja",
+                    "tone": "green"
+                  },
+                  {
+                    "text": "Begrenzt",
+                    "tone": "amber"
+                  }
+                ]
+              },
+              {
+                "highlight": false,
+                "cells": [
+                  {
+                    "text": "Transfermarkt"
+                  },
+                  {
+                    "text": "Teilweise",
+                    "tone": "amber"
+                  },
+                  {
+                    "text": "Nein",
+                    "tone": "red"
+                  },
+                  {
+                    "text": "Nein",
+                    "tone": "red"
+                  },
+                  {
+                    "text": "Ja",
+                    "tone": "green"
+                  }
+                ]
+              },
+              {
+                "highlight": false,
+                "cells": [
+                  {
+                    "text": "TEAMCHEF"
+                  },
+                  {
+                    "text": "Ja ✓",
+                    "tone": "green"
+                  },
+                  {
+                    "text": "Ja ✓",
+                    "tone": "green"
+                  },
+                  {
+                    "text": "Ja ✓",
+                    "tone": "green"
+                  },
+                  {
+                    "text": "Ja ✓",
+                    "tone": "green"
+                  }
+                ]
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "modell",
+      "number": "05",
+      "nav": "Modell",
+      "eyebrow": "Geschäftsmodell (Kurzversion)",
+      "title": "Wie verdienen wir Geld?",
+      "blocks": [
+        {
+          "columns": 2,
+          "cards": [
+            {
+              "title": "Phase 1 (MVP)",
+              "list": [
+                "**Sponsoring:** Firmen finanzieren Preise und erhalten Branding im Bewertungsflow",
+                "**Werbeplatzierungen:** Native Ads im Ranking-Bereich und im Onboarding"
+              ]
+            },
+            {
+              "title": "Phase 2+",
+              "list": [
+                "**Premium-Features:** Detailanalysen, Statistikzugang für Vereine & Scouts",
+                "**Daten-Insights:** Aggregierte Community-Daten als Service",
+                "**White-Label:** Plattform für Verbände und Ligen"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "roadmap",
+      "number": "06",
+      "nav": "Roadmap",
+      "eyebrow": "Roadmap",
+      "title": "Der Weg nach vorne",
+      "blocks": [
+        {
+          "stack": {
+            "variant": "roadmap",
+            "items": [
+              {
+                "label": "Phase 0\nKickoff",
+                "title": "Konzept & Setup",
+                "description": "PRD finalisiert, Technologiestack festgelegt (React, Supabase), Design-System, Team-Setup, MVP-Kriterien gesetzt."
+              },
+              {
+                "label": "Phase 1\nMVP",
+                "title": "Launch & erster Test",
+                "description": "Vollständiger Bewertungsflow, Ranking, Gamification, Anti-Manipulation, Admin-Panel. Closed Beta mit echten Nutzern (Pilotverein)."
+              },
+              {
+                "label": "Milestone\nM1",
+                "title": "1.000 aktive Nutzer",
+                "description": "Öffentlicher Launch. Erste Sponsoren-Kampagne aktiv. Push-/E-Mail-Reminder integriert. User-Feedback eingearbeitet."
+              },
+              {
+                "label": "Phase 2\nWachstum",
+                "title": "Community & Mobile",
+                "description": "PWA oder nativer Wrapper. Community-Features. Trainer/Spieler-Bewertung. Premium-Features & Vereins-API. Mehrsprachigkeit."
+              },
+              {
+                "label": "Phase 3\nScale",
+                "title": "Internationalisierung",
+                "description": "Rollout Europa, dann global. Weitere Sportarten. Partnerintegration. White-Label-Angebote für Verbände."
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "cta",
+      "number": "07",
+      "nav": "Call to Action",
+      "eyebrow": "Call to Action",
+      "title": "Let's go",
+      "blocks": [
+        {
+          "cta": {
+            "title": "Die Nische ist offen.Der Zeitpunkt ist jetzt.",
+            "subtitle": "TEAMCHEF ist die erste Plattform, die objektive Schwarmbewertung, Gamification und Sponsoring für den Fußball kombiniert. First Mover. Klarer USP. Globales Skalierungspotenzial.",
+            "slogan": "Bewerte. Gewinne. Gestalte den Fußball von morgen."
+          }
+        },
+        {
+          "stats": [
+            {
+              "value": "0",
+              "label": "Direkter Konkurrent in dieser Nische"
+            },
+            {
+              "value": "5",
+              "label": "Revenue-Streams planbar"
+            },
+            {
+              "value": "∞",
+              "label": "Sportarten erweiterbar"
+            }
+          ],
+          "columns": 3
+        }
+      ]
+    }
+  ]
+}

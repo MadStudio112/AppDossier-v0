@@ -1,0 +1,401 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>TEAMCHEF – Techstack</title>
+<link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+
+<header class="doc-header">
+  <div class="header-inner">
+    <div class="doc-badge">Techstack & Architektur · 2025</div>
+    <h1 class="doc-title">TEAM<span>CHEF</span></h1>
+    <p class="doc-subtitle">Systemarchitektur, Technologieentscheidungen & DevOps</p>
+    <div class="doc-meta">
+      <div class="meta-item"><span class="meta-label">Stack</span><span class="meta-value">React + Hono + Neon</span></div>
+      <div class="meta-item"><span class="meta-label">Deployment</span><span class="meta-value">Vercel</span></div>
+      <div class="meta-item"><span class="meta-label">Architektur</span><span class="meta-value">Monorepo (pnpm)</span></div>
+    </div>
+  </div>
+</header>
+
+<nav class="doc-nav">
+  <div class="nav-inner">
+    <a href="#uebersicht" class="nav-link active"><span class="nav-num">01</span> Übersicht</a>
+    <a href="#frontend" class="nav-link"><span class="nav-num">02</span> Frontend</a>
+    <a href="#backend" class="nav-link"><span class="nav-num">03</span> Backend</a>
+    <a href="#datenbank" class="nav-link"><span class="nav-num">04</span> Datenbank</a>
+    <a href="#architektur" class="nav-link"><span class="nav-num">05</span> Architektur</a>
+    <a href="#devops" class="nav-link"><span class="nav-num">06</span> DevOps</a>
+  </div>
+</nav>
+
+<main>
+
+  <!-- 01 ÜBERSICHT -->
+  <section class="section" id="uebersicht">
+    <div class="section-label">01 — Systemübersicht</div>
+    <h2 class="section-title">Der Stack auf einen Blick</h2>
+    <div class="divider"></div>
+
+    <div class="highlight">
+      <p class="inl-029">
+        TEAMCHEF ist als <strong>pnpm-Monorepo</strong> mit zwei Workspaces aufgebaut: <strong>client/</strong> (React SPA) und <strong>server/</strong> (Hono API).
+        Beide teilen sich TypeScript-Typen und werden gemeinsam auf <strong>Vercel</strong> deployed. Der Stack ist bewusst lean gehalten –
+        moderne Tooling-Entscheidungen ermöglichen schnelle Iteration bei minimaler Infrastrukturkomplexität.
+      </p>
+    </div>
+
+    <div class="grid-3">
+      <div class="stat-card">
+        <div class="stat-value">2</div>
+        <div class="stat-label">Workspaces</div>
+      </div>
+      <div class="stat-card">
+        <div class="stat-value">pnpm</div>
+        <div class="stat-label">Package Manager</div>
+      </div>
+      <div class="stat-card">
+        <div class="stat-value">TS</div>
+        <div class="stat-label">Durchgängig Typisiert</div>
+      </div>
+    </div>
+
+    <div class="card inl-012">
+      <h3 class="card-title">Vollständiger Tech-Stack</h3>
+      <table class="doc-table">
+        <thead>
+          <tr><th>Layer</th><th>Technologie</th></tr>
+        </thead>
+        <tbody>
+          <tr><td>Frontend</td><td>React 19, Vite 6, TypeScript, TanStack Router & Query, Tailwind CSS v4</td></tr>
+          <tr><td>UI Library</td><td>shadcn/ui (Radix Primitives), Lucide Icons, Recharts</td></tr>
+          <tr><td>Backend</td><td>Hono v4, Node.js, @vercel/node</td></tr>
+          <tr><td>ORM</td><td>Drizzle ORM, drizzle-kit, drizzle-zod</td></tr>
+          <tr><td>Datenbank</td><td>PostgreSQL (Neon Serverless)</td></tr>
+          <tr><td>Auth</td><td>Neon Auth, JWT</td></tr>
+          <tr><td>Testing</td><td>Vitest, @testing-library/react</td></tr>
+          <tr><td>Hosting</td><td>Vercel (Frontend + Serverless Functions)</td></tr>
+        </tbody>
+      </table>
+    </div>
+  </section>
+
+  <!-- 02 FRONTEND -->
+  <section class="section" id="frontend">
+    <div class="section-label">02 — Frontend</div>
+    <h2 class="section-title">Client-Architektur</h2>
+    <div class="divider"></div>
+
+    <div class="grid-2">
+      <div class="card">
+        <h3 class="card-title">Kern-Technologien</h3>
+        <ul class="feature-list">
+          <li><strong>React 19</strong> — Concurrent Features, Suspense-ready</li>
+          <li><strong>Vite 6</strong> — Blitzschneller Dev-Server & Build</li>
+          <li><strong>TypeScript</strong> — Strikte Typisierung End-to-End</li>
+          <li><strong>TanStack Router</strong> — Type-safe File-based Routing</li>
+          <li><strong>TanStack Query v5</strong> — Server State Management</li>
+          <li><strong>react-hook-form</strong> — Performante Formulare</li>
+        </ul>
+      </div>
+      <div class="card">
+        <h3 class="card-title">UI & Design</h3>
+        <ul class="feature-list">
+          <li><strong>Tailwind CSS v4</strong> — Utility-first Styling</li>
+          <li><strong>shadcn/ui</strong> — 40+ Radix-basierte Komponenten</li>
+          <li><strong>Lucide Icons</strong> — Konsistentes Icon-Set</li>
+          <li><strong>Recharts</strong> — Radar-Charts für Bewertungen</li>
+          <li><strong>Framer Motion</strong> — Micro-Animationen</li>
+          <li><strong>next-themes</strong> — Dark / Light / System Theming</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="card">
+      <h3 class="card-title">Weitere Libraries</h3>
+      <div class="pill-row">
+        <span class="tag tag-blue">i18next</span>
+        <span class="tag tag-blue">zod</span>
+        <span class="tag tag-blue">date-fns</span>
+        <span class="tag tag-blue">embla-carousel</span>
+        <span class="tag tag-blue">sonner</span>
+        <span class="tag tag-blue">vaul</span>
+        <span class="tag tag-blue">cmdk</span>
+        <span class="tag tag-blue">ogl</span>
+        <span class="tag tag-blue">class-variance-authority</span>
+        <span class="tag tag-blue">clsx</span>
+        <span class="tag tag-blue">tailwind-merge</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- 03 BACKEND -->
+  <section class="section" id="backend">
+    <div class="section-label">03 — Backend</div>
+    <h2 class="section-title">API & Server</h2>
+    <div class="divider"></div>
+
+    <div class="highlight">
+      <p class="inl-029">
+        Das Backend nutzt <strong>Hono</strong> als leichtgewichtiges HTTP-Framework, das direkt als Vercel Serverless Function läuft.
+        Alle API-Routen werden über <strong>@vercel/node</strong> bereitgestellt – kein separater Server nötig.
+      </p>
+    </div>
+
+    <div class="grid-2">
+      <div class="card">
+        <h3 class="card-title">API Framework</h3>
+        <ul class="feature-list">
+          <li><strong>Hono v4</strong> — Edge-ready, Web-Standard-kompatibel</li>
+          <li><strong>@hono/zod-validator</strong> — Request-Validierung mit Zod</li>
+          <li><strong>jsonwebtoken</strong> — JWT Token Verifizierung</li>
+          <li><strong>CORS</strong> — Konfigurierbar (Dev: localhost, Prod: CLIENT_URL)</li>
+          <li><strong>CSRF Protection</strong> — Token-basierter Schutz</li>
+          <li><strong>Rate Limiting</strong> — Middleware für API-Schutz</li>
+        </ul>
+      </div>
+      <div class="card">
+        <h3 class="card-title">API-Routen</h3>
+        <ul class="feature-list">
+          <li><strong>/api/auth</strong> — Registrierung, Login, Session</li>
+          <li><strong>/api/ratings</strong> — Bewertungen CRUD</li>
+          <li><strong>/api/matches</strong> — Spieldaten (104 WM-Spiele)</li>
+          <li><strong>/api/results</strong> — Ergebnisse & Statistiken</li>
+          <li><strong>/api/users</strong> — Nutzerverwaltung</li>
+          <li><strong>/api/admin</strong> — Admin-Operationen</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="card">
+      <h3 class="card-title">Middleware-Stack</h3>
+      <p>Requests durchlaufen eine definierte Middleware-Kette:</p>
+      <div class="arch-flow inl-011">
+        <div class="arch-node"><div class="arch-node-title">Logging</div><div class="arch-node-sub">Request-Log</div></div>
+        <div class="arch-arrow">→</div>
+        <div class="arch-node"><div class="arch-node-title">CORS</div><div class="arch-node-sub">Origin-Check</div></div>
+        <div class="arch-arrow">→</div>
+        <div class="arch-node"><div class="arch-node-title">Auth</div><div class="arch-node-sub">JWT Verify</div></div>
+        <div class="arch-arrow">→</div>
+        <div class="arch-node"><div class="arch-node-title">CSRF</div><div class="arch-node-sub">Token-Check</div></div>
+        <div class="arch-arrow">→</div>
+        <div class="arch-node"><div class="arch-node-title">Handler</div><div class="arch-node-sub">Business Logic</div></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 04 DATENBANK -->
+  <section class="section" id="datenbank">
+    <div class="section-label">04 — Datenbank</div>
+    <h2 class="section-title">Neon Serverless PostgreSQL</h2>
+    <div class="divider"></div>
+
+    <div class="card">
+      <h3 class="card-title">Warum Neon?</h3>
+      <p>Neon bietet serverless PostgreSQL mit automatischem Scaling, Branch-Support für Entwicklung und EU-Hosting für DSGVO-Konformität.
+        Der Serverless-Ansatz eliminiert die Notwendigkeit für Datenbankwartung und passt perfekt zum Vercel-Deployment.</p>
+    </div>
+
+    <div class="grid-3">
+      <div class="stat-card">
+        <div class="stat-value">PG</div>
+        <div class="stat-label">PostgreSQL</div>
+      </div>
+      <div class="stat-card">
+        <div class="stat-value">∞</div>
+        <div class="stat-label">Serverless Scaling</div>
+      </div>
+      <div class="stat-card">
+        <div class="stat-value">EU</div>
+        <div class="stat-label">DSGVO-konform</div>
+      </div>
+    </div>
+
+    <div class="grid-2 inl-012">
+      <div class="card">
+        <h3 class="card-title">Drizzle ORM</h3>
+        <ul class="feature-list">
+          <li><strong>Type-safe Queries</strong> — SQL-nah, voll typisiert</li>
+          <li><strong>drizzle-kit</strong> — Schema-Migrationen</li>
+          <li><strong>drizzle-zod</strong> — Automatische Zod-Schemas aus DB</li>
+          <li><strong>Relations</strong> — One-to-Many, Referenzen</li>
+        </ul>
+      </div>
+      <div class="card">
+        <h3 class="card-title">Schema-Übersicht</h3>
+        <ul class="feature-list">
+          <li><strong>users</strong> — Auth & Profildaten</li>
+          <li><strong>matches</strong> — 104 WM 2026 Spiele</li>
+          <li><strong>ratings</strong> — 5-Kriterien-Bewertungen</li>
+          <li><strong>teams</strong> — Mannschaftsdaten</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="highlight">
+      <p class="inl-018">
+        <strong class="inl-006">Bewertungskriterien im Schema:</strong> Kraft, Ausdauer, Schnelligkeit, Spielintelligenz, Siegeswillen — jeweils 0-10 Skala mit automatischen Aggregaten.
+      </p>
+    </div>
+  </section>
+
+  <!-- 05 ARCHITEKTUR -->
+  <section class="section" id="architektur">
+    <div class="section-label">05 — Architektur</div>
+    <h2 class="section-title">Systemdiagramm</h2>
+    <div class="divider"></div>
+
+    <div class="card">
+      <h3 class="card-title">Request-Flow</h3>
+      <p>Vom Browser bis zur Datenbank — der komplette Datenfluss:</p>
+      <div class="arch-flow inl-011">
+        <div class="arch-node"><div class="arch-node-title">Browser</div><div class="arch-node-sub">User</div></div>
+        <div class="arch-arrow">→</div>
+        <div class="arch-node"><div class="arch-node-title">Vercel CDN</div><div class="arch-node-sub">Edge Network</div></div>
+        <div class="arch-arrow">→</div>
+        <div class="arch-node"><div class="arch-node-title">React SPA</div><div class="arch-node-sub">Vite Build</div></div>
+        <div class="arch-arrow">→</div>
+        <div class="arch-node"><div class="arch-node-title">Hono API</div><div class="arch-node-sub">Serverless Fn</div></div>
+        <div class="arch-arrow">→</div>
+        <div class="arch-node"><div class="arch-node-title">Neon DB</div><div class="arch-node-sub">PostgreSQL</div></div>
+      </div>
+    </div>
+
+    <div class="grid-3 inl-012">
+      <div class="card">
+        <h3 class="card-title">Client Layer</h3>
+        <ul class="feature-list">
+          <li>React 19 SPA</li>
+          <li>TanStack Router (File-based)</li>
+          <li>TanStack Query (Cache)</li>
+          <li>Type-safe Hono Client</li>
+        </ul>
+      </div>
+      <div class="card">
+        <h3 class="card-title">API Layer</h3>
+        <ul class="feature-list">
+          <li>Hono Routes</li>
+          <li>Zod Validation</li>
+          <li>Service Layer</li>
+          <li>Auth Middleware</li>
+        </ul>
+      </div>
+      <div class="card">
+        <h3 class="card-title">Data Layer</h3>
+        <ul class="feature-list">
+          <li>Drizzle ORM</li>
+          <li>Neon Serverless Driver</li>
+          <li>Schema Migrations</li>
+          <li>Relation Queries</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="card">
+      <h3 class="card-title">Monorepo-Struktur</h3>
+      <table class="doc-table">
+        <thead>
+          <tr><th>Verzeichnis</th><th>Inhalt</th></tr>
+        </thead>
+        <tbody>
+          <tr><td><code class="inl-015">/</code></td><td>Root: pnpm-workspace.yaml, tsconfig.base.json, package.json</td></tr>
+          <tr><td><code class="inl-015">/client</code></td><td>React App: src/, public/, vite.config.ts</td></tr>
+          <tr><td><code class="inl-015">/server</code></td><td>Hono API: src/routes, src/database, src/middleware</td></tr>
+          <tr><td><code class="inl-015">/api</code></td><td>Vercel Serverless Entry Point: api/index.ts</td></tr>
+          <tr><td><code class="inl-015">/docs</code></td><td>Projekt-Dokumentation (dieses Dossier)</td></tr>
+        </tbody>
+      </table>
+    </div>
+  </section>
+
+  <!-- 06 DEVOPS -->
+  <section class="section" id="devops">
+    <div class="section-label">06 — DevOps & CI/CD</div>
+    <h2 class="section-title">Build, Test & Deploy</h2>
+    <div class="divider"></div>
+
+    <div class="grid-2">
+      <div class="card">
+        <h3 class="card-title">Build & Deploy</h3>
+        <ul class="feature-list">
+          <li><strong>pnpm workspaces</strong> — Gemeinsame Dependencies</li>
+          <li><strong>Vercel</strong> — Auto-Deploy from Git</li>
+          <li><strong>vercel.json</strong> — API-Rewrites konfiguriert</li>
+          <li><strong>concurrently</strong> — Client + Server parallel starten</li>
+          <li><strong>Vite Build</strong> — Optimiertes Code-Splitting</li>
+        </ul>
+      </div>
+      <div class="card">
+        <h3 class="card-title">Testing & QA</h3>
+        <ul class="feature-list">
+          <li><strong>Vitest</strong> — Unit & Integration Tests</li>
+          <li><strong>@testing-library/react</strong> — Component Tests</li>
+          <li><strong>@vitest/coverage-v8</strong> — Code Coverage</li>
+          <li><strong>TypeScript strict</strong> — Compile-time Safety</li>
+          <li><strong>Zod Validation</strong> — Runtime Type Safety</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="card">
+      <h3 class="card-title">Developer Tooling</h3>
+      <div class="grid-2">
+        <ul class="feature-list">
+          <li><strong>ESLint</strong> — Code-Qualität</li>
+          <li><strong>Prettier</strong> — Formatierung (+ Tailwind Plugin)</li>
+          <li><strong>nodemon</strong> — Server Hot-Reload</li>
+        </ul>
+        <ul class="feature-list">
+          <li><strong>tsx</strong> — TypeScript Script Runner</li>
+          <li><strong>tsc-alias</strong> — Path-Alias Resolution</li>
+          <li><strong>rimraf</strong> — Clean Builds</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="highlight">
+      <p class="inl-018">
+        <strong class="inl-006">Environment Variables:</strong> Server benötigt <code class="inl-015">DATABASE_URL</code>, <code class="inl-015">JWT_SECRET</code>, <code class="inl-015">AUTH_SECRET_KEY</code>, <code class="inl-015">CLIENT_URL</code>.
+        Client nutzt <code class="inl-015">VITE_API_URL</code> und <code class="inl-015">VITE_NEON_AUTH_URL</code>.
+      </p>
+    </div>
+  </section>
+
+</main>
+
+<footer class="doc-footer">
+  <a class="footer-brand" href="index.html">TEAMCHEF</a>
+  <nav class="footer-nav" aria-label="Dokument Navigation">
+    <a class="footer-nav-link" href="prd.html">PRD</a>
+    <a class="footer-nav-link" href="pitch.html">Pitch Deck</a>
+    <a class="footer-nav-link" href="investorenbrief.html">Investor</a>
+    <a class="footer-nav-link" href="geschaeftsmodell.html">Geschäftsmodell</a>
+    <a class="footer-nav-link" href="marktanalyse.html">Marktanalyse</a>
+    <a class="footer-nav-link" href="usecases.html">Use Cases</a>
+    <a class="footer-nav-link active" href="techstack.html">Techstack</a>
+    <a class="footer-nav-link" href="roadmap.html">Roadmap</a>
+    <a class="footer-nav-link" href="designsystem.html">Design System</a>
+    <a class="footer-nav-link" href="finanzplan.html">Finanzplan</a>
+  </nav>
+</footer>
+
+<script>
+const links = document.querySelectorAll('.nav-link');
+const sections = document.querySelectorAll('.section');
+const observer = new IntersectionObserver((entries) => {
+  entries.forEach(e => {
+    if (e.isIntersecting) {
+      links.forEach(l => l.classList.remove('active'));
+      const active = document.querySelector(`.nav-link[href="#${e.target.id}"]`);
+      if (active) active.classList.add('active');
+    }
+  });
+}, { rootMargin: '-20% 0px -70% 0px' });
+sections.forEach(s => observer.observe(s));
+</script>
+</body>
+</html>

@@ -1,0 +1,21 @@
+# Dependencies
+node_modules
+
+# Build
+dist
+*.local
+
+# Logs & cache
+npm-debug.log*
+vite-dev.*.log
+.vite
+coverage
+
+# Local tooling
+.claude/
+
+# OS / editor
+.DS_Store
+Thumbs.db
+*.swp
+.idea

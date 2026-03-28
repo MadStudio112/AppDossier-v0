@@ -1,0 +1,167 @@
+{
+  "title": "TEAMCHEF – Roadmap",
+  "badge": "Roadmap · 2025 / 2026",
+  "subtitle": "Phasen, Meilensteine & Timeline",
+  "meta": [
+    {
+      "label": "Start",
+      "value": "Q1 2025"
+    },
+    {
+      "label": "MVP Launch",
+      "value": "Q1 2026"
+    },
+    {
+      "label": "Vision",
+      "value": "Global Scale"
+    }
+  ],
+  "sections": [
+    {
+      "id": "phasen",
+      "number": "01",
+      "nav": "Phasen",
+      "eyebrow": "Phasen",
+      "title": "Von der Idee zum Scale",
+      "blocks": [
+        {
+          "highlight": "TEAMCHEF wird in **5 klar definierten Phasen** entwickelt. Jede Phase hat einen konkreten Fokus und messbare Ergebnisse.\nDer WM 2026 Start ist der zentrale Timing-Vorteil."
+        },
+        {
+          "stack": {
+            "variant": "roadmap",
+            "items": [
+              {
+                "label": "Phase 0",
+                "title": "Konzept & Setup",
+                "description": "PRD, Techstack-Entscheidungen, Design System, Dossier-Dokumentation, Monorepo-Setup, Datenbankschema."
+              },
+              {
+                "label": "Phase 1 · MVP",
+                "title": "Kernprodukt",
+                "description": "Rating-Flow (5 Kriterien, Radar-Chart), Ranking-Algorithmus, User-Auth, Profil & Badges, Anti-Manipulation, Admin-Panel, 104 WM-Spiele."
+              },
+              {
+                "label": "Phase 1.1",
+                "title": "Polish & Monetarisierung",
+                "description": "Push-Notifications (E-Mail & PWA), Sponsor-Branding, historische Statistiken, Referral-Tracking, Performance-Optimierung."
+              },
+              {
+                "label": "Phase 2",
+                "title": "Growth & Community",
+                "description": "Premium-Features (erweiterte Stats), Multi-Language (DE/EN), Community-Features, Vereins-API, Daten-Lizenzierung."
+              },
+              {
+                "label": "Phase 3",
+                "title": "Scale & International",
+                "description": "Europäische Expansion, Multi-Sport, White-Label für Vereine, strategische Partnerschaften, globale Infrastruktur."
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "meilensteine",
+      "number": "02",
+      "nav": "Meilensteine",
+      "eyebrow": "Meilensteine",
+      "title": "Key Milestones",
+      "blocks": [
+        {
+          "milestones": {
+            "items": [
+              {
+                "icon": "🎯",
+                "title": "M0 — Konzept finalisiert",
+                "body": "PRD, Techstack, Design System, Dossier komplett. Entwicklung kann starten."
+              },
+              {
+                "icon": "🚀",
+                "title": "M1 — MVP Live (Closed Beta)",
+                "body": "Bewertungs-Flow funktioniert, Ranking berechnet, erste Nutzer testen."
+              },
+              {
+                "icon": "👥",
+                "title": "M2 — 1.000 aktive Nutzer",
+                "body": "Community wächst organisch, 50+ Bewertungen pro Spiel erreicht."
+              },
+              {
+                "icon": "💰",
+                "title": "M3 — Erster Revenue",
+                "body": "Mindestens 2 aktive Sponsorenverträge, Break-Even in Sicht."
+              },
+              {
+                "icon": "📱",
+                "title": "M4 — PWA & Community",
+                "body": "Push-Notifications aktiv, Premium-Features live, Retention über 30%."
+              },
+              {
+                "icon": "🌍",
+                "title": "M5 — Internationalisierung",
+                "body": "Multi-Language live, erste Nutzer außerhalb DACH, Partner in Europa."
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "timeline",
+      "number": "03",
+      "nav": "Timeline",
+      "eyebrow": "Timeline",
+      "title": "Zeitstrahl",
+      "blocks": [
+        {
+          "timeline": {
+            "variant": "default",
+            "items": [
+              {
+                "title": "Q1 2025 — Konzept & PRD",
+                "body": "Produktvision, Anforderungen, Marktanalyse, Geschäftsmodell, Design System. Alle Dokumente finalisiert."
+              },
+              {
+                "title": "Q2–Q3 2025 — MVP Entwicklung",
+                "body": "Frontend + Backend aufbauen. Rating-Flow, Auth, Ranking, Admin-Panel. Iteratives Testing."
+              },
+              {
+                "title": "Q4 2025 — Closed Beta",
+                "body": "Ausgewählte Vereine & Fans testen. Feedback einarbeiten, Anti-Manipulation härten, Performance optimieren."
+              },
+              {
+                "title": "Q1 2026 — Public Launch 🏆",
+                "body": "WM 2026 als Katalysator. Öffentlicher Start mit Marketing-Push, Sponsor-Onboarding, PR."
+              },
+              {
+                "title": "Q2–Q4 2026 — Growth & Revenue",
+                "body": "Nutzerbasis skalieren, Premium einführen, Daten-Lizenzierung starten, Community aufbauen."
+              },
+              {
+                "title": "2027+ — Scale & International",
+                "body": "Europäische Expansion, Multi-Sport, White-Label, strategische Partnerschaften."
+              }
+            ]
+          }
+        },
+        {
+          "stats": [
+            {
+              "value": "6",
+              "label": "Monate MVP"
+            },
+            {
+              "value": "5",
+              "label": "Phasen"
+            },
+            {
+              "value": "2026",
+              "label": "Public Launch"
+            }
+          ],
+          "columns": 3
+        }
+      ]
+    }
+  ]
+}

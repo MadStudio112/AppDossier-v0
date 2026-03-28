@@ -1,0 +1,735 @@
+{
+  "title": "TEAMCHEF – Use Cases & User Flow",
+  "badge": "Use Cases & User Flow · 2025",
+  "subtitle": "Nutzerflüsse, Anwendungsfälle & Feature-Architektur",
+  "meta": [
+    {
+      "label": "Phase",
+      "value": "MVP / Phase 1"
+    },
+    {
+      "label": "Zielgruppe",
+      "value": "Fußballfans (B2C)"
+    },
+    {
+      "label": "Basis",
+      "value": "PRD v1.0"
+    }
+  ],
+  "sections": [
+    {
+      "id": "userflow",
+      "number": "01",
+      "nav": "User Flow",
+      "eyebrow": "Haupt-User-Flow",
+      "title": "Vom ersten Besuch bis zum Ranking",
+      "blocks": [
+        {
+          "highlight": "Der Kern-Flow ist auf **maximale Einfachheit** ausgelegt: Ein neuer Nutzer soll innerhalb von **3 Minuten** seine erste Bewertung abgegeben haben – inklusive Registrierung."
+        },
+        {
+          "flow": {
+            "title": "Neuer Nutzer (First-Time)",
+            "variant": "default",
+            "steps": [
+              {
+                "id": "1",
+                "title": "Landing Page",
+                "body": "Nutzer kommt über Social-Link, Vereins-Website oder direkten Aufruf. Sieht sofort: aktuelle Spiele, Claim, CTA „Jetzt bewerten\".",
+                "detailTitle": "Schlüsselelemente",
+                "detailItems": [
+                  "Aktuelle Spiele mit Countdown „Bewertung noch X Stunden offen\"",
+                  "Social Proof: „487 Fans haben bereits bewertet\"",
+                  "Kein Login-Wall vor der Spieleübersicht"
+                ]
+              },
+              {
+                "id": "2",
+                "title": "Registrierung / Login",
+                "body": "Login-Aufforderung erst wenn Nutzer „Bewerten\" klickt. Social Login (Google, Apple) als Default. E-Mail als Fallback.",
+                "detailTitle": "Entscheidungspunkte",
+                "detailItems": [
+                  "Social Login (1-Click) als Default-Option",
+                  "E-Mail-Registrierung als Fallback",
+                  "Magic Link als passwortlose Alternative (Phase 1.1)",
+                  "E-Mail-Verifizierung nicht blockierend, erst für Ranking"
+                ]
+              },
+              {
+                "id": "3",
+                "title": "Onboarding (nur First-Time)",
+                "body": "Kurzes Overlay (3 Screens max): Was ist TEAMCHEF? → Wie funktioniert Bewertung? → Was kannst du gewinnen? Skippable.",
+                "detailTitle": "Design-Regeln",
+                "detailItems": [
+                  "Max. 3 Screens, je 1 Satz + 1 Illustration",
+                  "Skip-Button immer sichtbar",
+                  "Wird nur beim allerersten Login gezeigt",
+                  "Tooltips im Bewertungsflow ergänzen Onboarding"
+                ]
+              },
+              {
+                "id": "4",
+                "title": "Spiel auswählen",
+                "body": "Spieleübersicht: aktive Spiele prominent, vergangene darunter. Filter nach Liga, Verein, Datum.",
+                "detailTitle": "Status-Logik",
+                "detailItems": [
+                  "OFFEN Bewertung aktiv – CTA „Jetzt bewerten\"",
+                  "BALD Spiel steht bevor – Reminder setzen",
+                  "GESCHLOSSEN Bewertungsende – Ergebnis anzeigen"
+                ]
+              },
+              {
+                "id": "5",
+                "title": "Bewertung abgeben",
+                "body": "Kerninteraktion: 5 Kriterien (Slider 0–10). Radar Chart aktualisiert sich live. Alle Kriterien sind Pflichtfelder.",
+                "detailTitle": "UI-Mechanik",
+                "detailItems": [
+                  "Slider pro Kriterium mit numerischem Wert",
+                  "Radar Chart: eigene Werte (grün) vs. Durchschnitt (grau)",
+                  "Durchschnitt sichtbar ab 3 gesetzten Kriterien",
+                  "Submit erst aktiv wenn alle 5 Kriterien ausgefüllt",
+                  "Zielzeit: unter 2 Minuten"
+                ]
+              },
+              {
+                "id": "6",
+                "title": "Bestätigung & Sofortfeedback",
+                "body": "Bestätigungsscreen: eigener Radar vs. Community-Durchschnitt. Position im aktuellen Ranking. Share-Button prominent.",
+                "detailTitle": "Elemente",
+                "detailItems": [
+                  "Radar Chart Overlay: eigene Werte vs. Durchschnitt",
+                  "Vorläufiges Ranking: „Du bist aktuell Platz X von Y\"",
+                  "Badge-Vergabe (z.B. „Erste Bewertung\")",
+                  "Share-CTA: Social Media, WhatsApp, Copy-Link",
+                  "Sponsor-Branding (dezent, kontextuell)"
+                ]
+              },
+              {
+                "id": "7",
+                "title": "Ranking & Preise",
+                "body": "Nach Bewertungsende: finales Ranking. Top-Bewerter (nächste am Durchschnitt) erhalten Preise.",
+                "detailTitle": "Ranking-Logik",
+                "detailItems": [
+                  "Distanz zum Community-Durchschnitt (niedrigste = beste)",
+                  "Mindestens 30 Bewertungen für offizielles Ranking",
+                  "Top 3 erhalten Preise (Sponsor-finanziert)",
+                  "Alle Teilnehmer erhalten Punkte für Saisonwertung"
+                ]
+              }
+            ]
+          }
+        },
+        {
+          "flow": {
+            "title": "Returning User",
+            "variant": "returning",
+            "steps": [
+              {
+                "id": "R1",
+                "title": "Push/E-Mail Reminder",
+                "body": "„Neues Spiel offen – bewerte jetzt!\" oder „Dein Ranking ist da!\". Direkt-Link zum Bewertungsscreen."
+              },
+              {
+                "id": "R2",
+                "title": "Dashboard (Home)",
+                "body": "Aktive Spiele, letzte Bewertungen, Saisonrang, Badges. Direkt in den Bewertungsflow springen."
+              },
+              {
+                "id": "R3",
+                "title": "Bewertung → Ranking → Wiederkehr",
+                "body": "Gleicher Flow (Schritte 4–7), ohne Onboarding. Bewertung in unter 1 Minute für erfahrene Nutzer."
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "usecases",
+      "number": "02",
+      "nav": "Use Cases",
+      "eyebrow": "Use Cases",
+      "title": "Wer macht was – und warum",
+      "blocks": [
+        {
+          "useCases": [
+            {
+              "id": "UC-01",
+              "tag": {
+                "label": "MVP",
+                "tone": "green"
+              },
+              "title": "Spiel bewerten",
+              "description": "Als Fan möchte ich ein Fußballspiel nach 5 Kriterien bewerten, damit meine Einschätzung Teil des Community-Rankings wird und ich Preise gewinnen kann.",
+              "precondition": "Eingeloggt. Spiel im Status „offen\". Noch nicht bewertet.",
+              "result": "Bewertung gespeichert. Radar Chart angezeigt. Ranking-Position sichtbar. Share-Option verfügbar."
+            },
+            {
+              "id": "UC-02",
+              "tag": {
+                "label": "MVP",
+                "tone": "green"
+              },
+              "title": "Ranking einsehen",
+              "description": "Als Fan möchte ich nach Bewertungsende das Ranking sehen, um zu wissen wie nah ich am Community-Durchschnitt lag.",
+              "precondition": "Bewertungszeitraum abgelaufen. Min. 30 Bewertungen. Nutzer hat teilgenommen.",
+              "result": "Finales Ranking. Eigene Position markiert. Preise vergeben. Saisonpunkte addiert."
+            },
+            {
+              "id": "UC-03",
+              "tag": {
+                "label": "MVP",
+                "tone": "green"
+              },
+              "title": "Registrierung & Login",
+              "description": "Als neuer Nutzer möchte ich mich schnell registrieren, um sofort an einer Bewertung teilzunehmen.",
+              "precondition": "Keine Session. CTA „Bewerten\" geklickt.",
+              "result": "Account erstellt. Session aktiv. Weiterleitung zum Bewertungsflow."
+            },
+            {
+              "id": "UC-04",
+              "tag": {
+                "label": "MVP",
+                "tone": "green"
+              },
+              "title": "Ergebnis teilen",
+              "description": "Als Fan möchte ich mein Ergebnis in Social Media teilen, um Freunde zur Teilnahme zu motivieren.",
+              "precondition": "Bewertung abgegeben. Bestätigungs- oder Ranking-Screen aktiv.",
+              "result": "Share-Card generiert (Bild + Link). Deeplink führt neue Nutzer direkt zum Spiel."
+            },
+            {
+              "id": "UC-05",
+              "tag": {
+                "label": "MVP",
+                "tone": "green"
+              },
+              "title": "Profil & Badges",
+              "description": "Als regelmäßiger Nutzer möchte ich meine Badges, Saisonwertung und Bewertungshistorie sehen.",
+              "precondition": "Eingeloggt. Min. 1 Bewertung abgegeben.",
+              "result": "Profilseite: Badges, Punkte, Saisonrang, alle bewerteten Spiele."
+            },
+            {
+              "id": "UC-06",
+              "tag": {
+                "label": "Phase 1.1",
+                "tone": "blue"
+              },
+              "title": "Push-Reminder",
+              "description": "Als Fan möchte ich benachrichtigt werden, wenn ein Spiel offen ist oder mein Ranking veröffentlicht wurde.",
+              "precondition": "Notifications aktiviert. Min. 1 Bewertung.",
+              "result": "Benachrichtigung gesendet. Deeplink öffnet Bewertungs- oder Ranking-Screen."
+            },
+            {
+              "id": "UC-07",
+              "tag": {
+                "label": "Phase 1.1",
+                "tone": "blue"
+              },
+              "title": "Admin: Spiel verwalten",
+              "description": "Als Admin möchte ich Spiele anlegen, Zeiträume setzen und Ergebnisse freigeben.",
+              "precondition": "Admin-Rolle. Zugang zum Admin-Panel.",
+              "result": "Spiel erstellt. Status-Management: Entwurf → Offen → Geschlossen → Archiv."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "sitemap",
+      "number": "03",
+      "nav": "Sitemap",
+      "eyebrow": "Sitemap & Navigation",
+      "title": "Seitenstruktur (MVP)",
+      "blocks": [
+        {
+          "sitemap": {
+            "nodes": [
+              {
+                "name": "Landing / Home",
+                "route": "/",
+                "children": [
+                  {
+                    "name": "Spieleübersicht",
+                    "route": "/spiele",
+                    "tone": "blue",
+                    "children": [
+                      {
+                        "name": "Spiel-Detail",
+                        "route": "/spiele/:id",
+                        "tone": "muted"
+                      },
+                      {
+                        "name": "Bewertungsscreen",
+                        "route": "/spiele/:id/bewerten",
+                        "tone": "muted"
+                      },
+                      {
+                        "name": "Ranking / Ergebnis",
+                        "route": "/spiele/:id/ranking",
+                        "tone": "muted"
+                      }
+                    ]
+                  },
+                  {
+                    "name": "Leaderboard",
+                    "route": "/leaderboard",
+                    "tone": "blue"
+                  },
+                  {
+                    "name": "Profil",
+                    "route": "/profil",
+                    "tone": "blue",
+                    "children": [
+                      {
+                        "name": "Meine Bewertungen",
+                        "route": "/profil/bewertungen",
+                        "tone": "muted"
+                      },
+                      {
+                        "name": "Badges",
+                        "route": "/profil/badges",
+                        "tone": "muted"
+                      },
+                      {
+                        "name": "Einstellungen",
+                        "route": "/profil/settings",
+                        "tone": "muted"
+                      }
+                    ]
+                  },
+                  {
+                    "name": "Auth",
+                    "route": "/auth",
+                    "tone": "blue",
+                    "children": [
+                      {
+                        "name": "Login",
+                        "route": "/auth/login",
+                        "tone": "muted"
+                      },
+                      {
+                        "name": "Registrierung",
+                        "route": "/auth/register",
+                        "tone": "muted"
+                      },
+                      {
+                        "name": "Passwort vergessen",
+                        "route": "/auth/reset",
+                        "tone": "muted"
+                      }
+                    ]
+                  },
+                  {
+                    "name": "Statische Seiten",
+                    "tone": "blue",
+                    "children": [
+                      {
+                        "name": "FAQ",
+                        "route": "/faq",
+                        "tone": "muted"
+                      },
+                      {
+                        "name": "So funktioniert's",
+                        "route": "/how-it-works",
+                        "tone": "muted"
+                      },
+                      {
+                        "name": "Datenschutz",
+                        "route": "/datenschutz",
+                        "tone": "muted"
+                      },
+                      {
+                        "name": "Impressum",
+                        "route": "/impressum",
+                        "tone": "muted"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          }
+        },
+        {
+          "sitemap": {
+            "title": "Admin-Bereich (geschützt)",
+            "nodes": [
+              {
+                "name": "Admin Dashboard",
+                "route": "/admin",
+                "tone": "amber",
+                "children": [
+                  {
+                    "name": "Spiele verwalten",
+                    "route": "/admin/spiele",
+                    "tone": "amber"
+                  },
+                  {
+                    "name": "Sponsoren",
+                    "route": "/admin/sponsoren",
+                    "tone": "amber"
+                  },
+                  {
+                    "name": "User Management",
+                    "route": "/admin/users",
+                    "tone": "amber"
+                  },
+                  {
+                    "name": "Bewertungen & Flags",
+                    "route": "/admin/bewertungen",
+                    "tone": "amber"
+                  }
+                ]
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "features",
+      "number": "04",
+      "nav": "Features",
+      "eyebrow": "Feature-Architektur",
+      "title": "Was wird gebaut – nach Bereich",
+      "blocks": [
+        {
+          "featureGrid": {
+            "columns": 2,
+            "items": [
+              {
+                "title": "Authentifizierung",
+                "tag": {
+                  "label": "MVP",
+                  "tone": "green"
+                },
+                "items": [
+                  "E-Mail + Passwort Registrierung",
+                  "Social Login (Google, Apple)",
+                  "E-Mail-Verifizierung (nicht blockierend)",
+                  "Passwort-Reset per E-Mail",
+                  "Session Management (Supabase Auth)",
+                  "Rate Limiting auf Auth-Endpoints"
+                ]
+              },
+              {
+                "title": "Bewertungs-Engine",
+                "tag": {
+                  "label": "MVP",
+                  "tone": "green"
+                },
+                "items": [
+                  "5 feste Bewertungskriterien (0–10 Slider)",
+                  "One-Vote-Logik pro Spiel pro User",
+                  "Live-Radar-Chart (eigene vs. Durchschnitt)",
+                  "Zeitfenster-Steuerung (offen/geschlossen)",
+                  "Pflichtfelder-Validierung",
+                  "Optimistic UI mit Error Recovery"
+                ]
+              },
+              {
+                "title": "Ranking & Gamification",
+                "tag": {
+                  "label": "MVP",
+                  "tone": "green"
+                },
+                "items": [
+                  "Automatische Ranking-Berechnung",
+                  "Distanz-basierter Algorithmus",
+                  "Mindest-30-Bewertungen-Schwelle",
+                  "Badges: Erste Bewertung, Streak, Top, Saison",
+                  "Saisonwertung (Punkte über alle Spiele)",
+                  "Leaderboard (global + pro Spiel)"
+                ]
+              },
+              {
+                "title": "Anti-Manipulation",
+                "tag": {
+                  "label": "MVP",
+                  "tone": "green"
+                },
+                "items": [
+                  "One-Vote pro Account-ID",
+                  "E-Mail-Verifizierung für Ranking-Teilnahme",
+                  "Ausreißer-Erkennung (statistisches Flagging)",
+                  "Account-Alter-Check",
+                  "IP-basierte Heuristiken (Flagging, kein Blocking)",
+                  "Admin-Review für geflaggte Bewertungen"
+                ]
+              },
+              {
+                "title": "Spielverwaltung (Admin)",
+                "tag": {
+                  "label": "MVP",
+                  "tone": "green"
+                },
+                "items": [
+                  "Spiel anlegen: Teams, Datum, Liga, Zeitraum",
+                  "Status: Entwurf → Offen → Geschlossen → Archiv",
+                  "Sponsor-Zuordnung pro Spiel",
+                  "Bewertungsübersicht & Export",
+                  "User-Flagging & Moderation"
+                ]
+              },
+              {
+                "title": "Social & Sharing",
+                "tag": {
+                  "label": "MVP",
+                  "tone": "green"
+                },
+                "items": [
+                  "Share-Card-Generator (OG Image)",
+                  "Deeplinks pro Spiel & Ranking",
+                  "WhatsApp, Instagram, X, Copy-Link",
+                  "Referral-Tracking"
+                ]
+              },
+              {
+                "title": "Sponsor-Integration",
+                "tag": {
+                  "label": "Phase 1.1",
+                  "tone": "blue"
+                },
+                "items": [
+                  "Logo + Claim im Bewertungsflow",
+                  "Sponsor-Bestätigungsscreen",
+                  "Kampagnen-Reporting",
+                  "Flexible Platzierungen"
+                ]
+              },
+              {
+                "title": "Notifications",
+                "tag": {
+                  "label": "Phase 1.1",
+                  "tone": "blue"
+                },
+                "items": [
+                  "E-Mail: Neues Spiel, Ranking veröffentlicht",
+                  "Push (PWA): Spielstart-Reminder",
+                  "Opt-in/Opt-out in Profileinstellungen",
+                  "Frequency Capping (max 2/Woche)"
+                ]
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "loops",
+      "number": "05",
+      "nav": "Retention",
+      "eyebrow": "Retention Loops",
+      "title": "Was hält Nutzer aktiv?",
+      "blocks": [
+        {
+          "highlight": "TEAMCHEF basiert auf drei ineinandergreifenden Loops. Jeder adressiert einen anderen psychologischen Treiber."
+        },
+        {
+          "loop": {
+            "title": "Loop 1: Bewertungs-Loop (pro Spiel)",
+            "titleTone": "green",
+            "nodes": [
+              {
+                "title": "Spiel offen",
+                "subtitle": "Trigger"
+              },
+              {
+                "title": "Bewerten",
+                "subtitle": "Aktion"
+              },
+              {
+                "title": "Radar Chart",
+                "subtitle": "Feedback"
+              },
+              {
+                "title": "Ranking",
+                "subtitle": "Belohnung"
+              },
+              {
+                "title": "Teilen",
+                "subtitle": "Viral"
+              }
+            ],
+            "note": "Treiber: **Neugier** + **Wettbewerb**"
+          }
+        },
+        {
+          "loop": {
+            "title": "Loop 2: Saison-Loop (langfristig)",
+            "titleTone": "blue",
+            "nodes": [
+              {
+                "title": "Saisonstart",
+                "subtitle": "Trigger"
+              },
+              {
+                "title": "Regelmäßig bewerten",
+                "subtitle": "Habit"
+              },
+              {
+                "title": "Punkte sammeln",
+                "subtitle": "Progression"
+              },
+              {
+                "title": "Saisonranking",
+                "subtitle": "Status"
+              }
+            ],
+            "note": "Treiber: **Progression** + **Konsistenz**"
+          }
+        },
+        {
+          "loop": {
+            "title": "Loop 3: Social Loop (Wachstum)",
+            "titleTone": "amber",
+            "nodes": [
+              {
+                "title": "Ergebnis teilen",
+                "subtitle": "Trigger"
+              },
+              {
+                "title": "Freund sieht Post",
+                "subtitle": "Reach"
+              },
+              {
+                "title": "Klickt Deeplink",
+                "subtitle": "Acquisition"
+              },
+              {
+                "title": "Registriert sich",
+                "subtitle": "Conversion"
+              }
+            ],
+            "note": "Treiber: **Identität** + **Wettbewerb**"
+          }
+        }
+      ]
+    },
+    {
+      "id": "edge",
+      "number": "06",
+      "nav": "Edge Cases",
+      "eyebrow": "Edge Cases",
+      "title": "Was passiert wenn…",
+      "blocks": [
+        {
+          "table": {
+            "variant": "default",
+            "columns": [
+              "Szenario",
+              "Verhalten",
+              "UI-Feedback"
+            ],
+            "rows": [
+              {
+                "cells": [
+                  {
+                    "text": "**< 30 Bewertungen**"
+                  },
+                  {
+                    "text": "Kein offizielles Ranking. Ergebnisse als „vorläufig\" markiert."
+                  },
+                  {
+                    "text": "Banner: „Noch X Bewertungen nötig\""
+                  }
+                ]
+              },
+              {
+                "cells": [
+                  {
+                    "text": "**Doppelte Bewertung**"
+                  },
+                  {
+                    "text": "Technisch gesperrt (One-Vote). Button deaktiviert."
+                  },
+                  {
+                    "text": "„Du hast bereits bewertet\""
+                  }
+                ]
+              },
+              {
+                "cells": [
+                  {
+                    "text": "**Zeitraum abgelaufen**"
+                  },
+                  {
+                    "text": "Bewertungs-UI gesperrt. Nur Ergebnis sichtbar."
+                  },
+                  {
+                    "text": "Status „Geschlossen\" + nächstes Spiel"
+                  }
+                ]
+              },
+              {
+                "cells": [
+                  {
+                    "text": "**Nicht verifiziert**"
+                  },
+                  {
+                    "text": "Bewertung möglich, aber nicht ranking-qualifiziert."
+                  },
+                  {
+                    "text": "„E-Mail bestätigen für Ranking\""
+                  }
+                ]
+              },
+              {
+                "cells": [
+                  {
+                    "text": "**Manipulationsverdacht**"
+                  },
+                  {
+                    "text": "Intern geflaggt. Vom Algorithmus gewichtet."
+                  },
+                  {
+                    "text": "Kein Feedback (Silent Flagging)"
+                  }
+                ]
+              },
+              {
+                "cells": [
+                  {
+                    "text": "**Server-Fehler**"
+                  },
+                  {
+                    "text": "Optimistic UI + Retry. Lokaler Cache. Max 3 Retries."
+                  },
+                  {
+                    "text": "Toast mit Retry-Button"
+                  }
+                ]
+              },
+              {
+                "cells": [
+                  {
+                    "text": "**Bewertung abgebrochen**"
+                  },
+                  {
+                    "text": "Session Storage Cache. Bei Rückkehr wiederhergestellt."
+                  },
+                  {
+                    "text": "„Angefangene Bewertung fortsetzen?\""
+                  }
+                ]
+              },
+              {
+                "cells": [
+                  {
+                    "text": "**Kein Spiel offen**"
+                  },
+                  {
+                    "text": "Vergangene Spiele + „Nächstes Spiel in X Tagen\"."
+                  },
+                  {
+                    "text": "CTA: Reminder aktivieren"
+                  }
+                ]
+              }
+            ]
+          }
+        }
+      ]
+    }
+  ]
+}

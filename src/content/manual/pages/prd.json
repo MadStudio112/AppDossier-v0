@@ -1,0 +1,414 @@
+{
+  "title": "TEAMCHEF – PRD",
+  "badge": "PRD · v1.0",
+  "subtitle": "Product Requirements Document — Nicht-technische Fassung",
+  "meta": [
+    {
+      "label": "Produkt",
+      "value": "TEAMCHEF Web App"
+    },
+    {
+      "label": "Phase",
+      "value": "MVP / Phase 1"
+    },
+    {
+      "label": "Version",
+      "value": "1.0 – 2025"
+    },
+    {
+      "label": "Status",
+      "value": "In Entwicklung"
+    }
+  ],
+  "sections": [
+    {
+      "id": "vision",
+      "number": "01",
+      "nav": "Vision",
+      "eyebrow": "Produktvision",
+      "title": "Was ist TEAMCHEF?",
+      "blocks": [
+        {
+          "highlight": "TEAMCHEF ist eine webbasierte Plattform, auf der Fußballfans Spieler und Teams\nanhand von **5 festen Kriterien** bewerten. Die Bewertungen aller\nTeilnehmer ergeben durch **Schwarmintelligenz** ein objektives, transparentes\nRanking. Wer am nächsten am Community-Durchschnitt liegt, gewinnt – mit echten\nGeld- und Sachpreisen."
+        },
+        {
+          "quote": "„Objektivität durch Masse – die Community entscheidet über Leistung, nicht Einzelpersonen oder Experten.\""
+        },
+        {
+          "stats": [
+            {
+              "value": "5",
+              "label": "Bewertungskriterien"
+            },
+            {
+              "value": "0–10",
+              "label": "Punkteskala"
+            },
+            {
+              "value": "<2min",
+              "label": "Bewertungszeit"
+            }
+          ],
+          "columns": 3
+        }
+      ]
+    },
+    {
+      "id": "ziele",
+      "number": "02",
+      "nav": "Ziele",
+      "eyebrow": "Ziele & Erfolgskriterien",
+      "title": "Was müssen wir erreichen?",
+      "blocks": [
+        {
+          "columns": 2,
+          "cards": [
+            {
+              "title": "Produktziele",
+              "list": [
+                "Objektive Leistungsbewertung durch kollektive Intelligenz der Community",
+                "Maximale Einfachheit: Bewertung in unter 2 Minuten, intuitiv für alle",
+                "Hohe Nutzerbeteiligung durch Gamification, Ranking und Preise",
+                "Faire, manipulationssichere Plattform mit transparenten Regeln",
+                "Skalierbare Basis für Expansion in neue Sportarten und Länder"
+              ]
+            },
+            {
+              "title": "Erfolgskennzahlen (MVP)",
+              "list": [
+                "**50+** Bewertungen pro Spiel (Ziel für statistische Verlässlichkeit)",
+                "**1.000+** aktive Nutzer im ersten Quartal nach Launch",
+                "**30 %** aller registrierten Nutzer nehmen pro Spiel teil",
+                "**<1 %** Manipulationsrate (erkannte Fake-Bewertungen)",
+                "**<5 %** Support-Quote (Onboarding & FAQ sind effektiv)"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "zielgruppe",
+      "number": "03",
+      "nav": "Zielgruppe",
+      "eyebrow": "Zielgruppe & Personas",
+      "title": "Für wen bauen wir TEAMCHEF?",
+      "blocks": [
+        {
+          "text": "TEAMCHEF richtet sich primär an Fußballfans – vom Gelegenheitszuschauer bis zum\neingefleischten Supporter. Die Plattform ist bewusst offen gehalten: keine Fachkenntnisse\nnötig, kein Vereinshintergrund erforderlich."
+        },
+        {
+          "personas": [
+            {
+              "avatar": "M",
+              "name": "Max, 25",
+              "role": "Aktiver Fußballfan",
+              "needs": "Verfolgt Spiele regelmäßig. Möchte seine Meinung teilen und sehen, wie er im Vergleich zu anderen liegt. Liebt Gamification und Wettbewerb."
+            },
+            {
+              "avatar": "S",
+              "name": "Sarah, 38",
+              "role": "Fußball-Mama",
+              "needs": "Begleitet Sohn zu Spielen. Möchte die Leistung fair beurteilen. Braucht simple Bedienung, keine App-Kenntnisse vorausgesetzt."
+            },
+            {
+              "avatar": "T",
+              "name": "Timo, 17",
+              "role": "Amateurkicker",
+              "needs": "Spielt selbst und ist auch Fan. Will sehen wie „die Community\" sein Team einschätzt. Motiviert durch Preise und Rankings."
+            }
+          ]
+        },
+        {
+          "card": {
+            "title": "Sekundäre Zielgruppen (spätere Phasen)",
+            "tags": [
+              {
+                "label": "Trainer & Spieler",
+                "tone": "blue"
+              },
+              {
+                "label": "Scouts & Vereinsmanager",
+                "tone": "blue"
+              },
+              {
+                "label": "Sponsoren & Werbepartner",
+                "tone": "blue"
+              },
+              {
+                "label": "Eltern (Jugendbereich)",
+                "tone": "blue"
+              },
+              {
+                "label": "Andere Sportarten",
+                "tone": "amber"
+              },
+              {
+                "label": "Internationale Märkte",
+                "tone": "amber"
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "features",
+      "number": "04",
+      "nav": "Features",
+      "eyebrow": "Features (MoSCoW)",
+      "title": "Was bauen wir wann?",
+      "blocks": [
+        {
+          "moscow": [
+            {
+              "quadrant": "must",
+              "title": "Must Have · MVP",
+              "items": [
+                "Registrierung & Login (E-Mail, Social)",
+                "Spieleübersicht mit Status (offen/geschlossen)",
+                "Bewertungs-UI: 5 Kriterien, Skala 0–10, Pflichtfelder",
+                "Eine Bewertung pro Spiel & User (One-Vote)",
+                "Live Radar Chart (eigene vs. Durchschnitt)",
+                "Ranking & Leaderboard nach Bewertungsende",
+                "Badges für Top-Bewerter",
+                "Manipulationsschutz & Account-Checks",
+                "Onboarding, Tooltips, FAQ"
+              ]
+            },
+            {
+              "quadrant": "should",
+              "title": "Should Have · Release 1.1",
+              "items": [
+                "Push-/E-Mail-Erinnerungen vor Spielende",
+                "Sponsoren-Branding & Preisintegration",
+                "Badges für regelmäßige Teilnahme",
+                "Admin-Panel für Spielverwaltung",
+                "Historische Statistiken & Filter",
+                "Progressive Web App (PWA)"
+              ]
+            },
+            {
+              "quadrant": "could",
+              "title": "Could Have · Phase 2+",
+              "items": [
+                "Community-Gruppen & Fan-Channels",
+                "Social Sharing für eigene Platzierung",
+                "Premium-Features & Analytics",
+                "Vereins-API-Integration",
+                "Mehrsprachigkeit (i18n)",
+                "Trainer-/Spielerbewertung (bilateral)"
+              ]
+            },
+            {
+              "quadrant": "wont",
+              "title": "Won't Have · MVP ausgeschlossen",
+              "items": [
+                "Freie Kriterienwahl durch User",
+                "Live-Tracking externer Statistiken",
+                "Internes Messaging / Chat",
+                "Automatisierte Preisauszahlung",
+                "White-Label-Plattform"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "scope",
+      "number": "05",
+      "nav": "Scope",
+      "eyebrow": "Scope & Abgrenzung",
+      "title": "Was ist TEAMCHEF nicht?",
+      "blocks": [
+        {
+          "columns": 2,
+          "cards": [
+            {
+              "title": "✓ Im Scope (MVP)",
+              "titleTone": "green",
+              "list": [
+                "Bewertungsplattform für Fußballspiele & Teams",
+                "Community-Ranking auf Basis von Schwarmintelligenz",
+                "Gamification: Punkte, Badges, Preise",
+                "Echtzeit-Visualisierung (Radar Chart)",
+                "Grundlegendes Anti-Manipulation-System",
+                "Web-App (mobil-optimiert, keine native App)"
+              ]
+            },
+            {
+              "title": "✗ Außerhalb Scope (MVP)",
+              "titleTone": "red",
+              "list": [
+                "Kein Live-Spielscore-Tracking",
+                "Keine Trainer- oder Spieler-spezifischen Accounts",
+                "Keine freien Kommentarfelder oder Freitext",
+                "Keine externe Vereins-/Ligadaten-Integration",
+                "Kein Video-Content oder Stream-Anbindung",
+                "Keine Zahlungsabwicklung im MVP"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "akzeptanz",
+      "number": "06",
+      "nav": "Akzeptanz",
+      "eyebrow": "Akzeptanzkriterien",
+      "title": "Wann ist das Produkt „fertig\"?",
+      "blocks": [
+        {
+          "acceptance": {
+            "items": [
+              {
+                "number": "1",
+                "title": "Bewertungszeitraum",
+                "body": "Bewertungen sind nur während des aktiven Spiels und bis max. 1 Stunde nach Spielende möglich. Das System zeigt klar an, ob Bewertung offen oder geschlossen ist."
+              },
+              {
+                "number": "2",
+                "title": "One-Vote-Logik",
+                "body": "Pro Spiel kann jeder Nutzer genau eine vollständige Bewertung abgeben. Alle 5 Kriterien müssen ausgefüllt sein. Wiederholung ist technisch gesperrt."
+              },
+              {
+                "number": "3",
+                "title": "Echtzeit-Feedback",
+                "body": "Während der Eingabe aktualisiert sich der Radar Chart sofort. Der Nutzer sieht live seine Werte und den aktuellen Durchschnitt aller bisherigen Bewertungen."
+              },
+              {
+                "number": "4",
+                "title": "Ranking & Gamification",
+                "body": "Nach Bewertungsende wird das Ranking automatisch berechnet und veröffentlicht. Preise und Badges werden korrekt vergeben und im UI angezeigt."
+              },
+              {
+                "number": "5",
+                "title": "Manipulationsschutz",
+                "body": "Jede User-ID kann pro Spiel nur einmal bewerten. Für ein offizielles Ranking sind mindestens 30 Bewertungen erforderlich. Auffällige Muster werden erkannt und markiert."
+              },
+              {
+                "number": "6",
+                "title": "Zugänglichkeit & Support",
+                "body": "Tooltips, FAQ und Kontaktformular sind jederzeit erreichbar. Das UI ist barrierefrei gestaltet (WCAG AA), vollständig mobil-optimiert und in unter 1 Minute erlernbar."
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "risiken",
+      "number": "07",
+      "nav": "Risiken",
+      "eyebrow": "Risikoübersicht",
+      "title": "Was kann schiefgehen?",
+      "blocks": [
+        {
+          "table": {
+            "variant": "default",
+            "columns": [
+              "Risiko",
+              "Wahrscheinlichkeit",
+              "Auswirkung",
+              "Gegenmaßnahme"
+            ],
+            "rows": [
+              {
+                "cells": [
+                  {
+                    "text": "**Manipulation / Fake-Accounts**"
+                  },
+                  {
+                    "text": "Mittel",
+                    "tone": "amber"
+                  },
+                  {
+                    "text": "Hoch",
+                    "tone": "red"
+                  },
+                  {
+                    "text": "Account-Verifikation, algorithmisches Flagging, Mindest-Vote-Schwelle"
+                  }
+                ]
+              },
+              {
+                "cells": [
+                  {
+                    "text": "**Geringe Nutzerbeteiligung**"
+                  },
+                  {
+                    "text": "Mittel",
+                    "tone": "amber"
+                  },
+                  {
+                    "text": "Hoch",
+                    "tone": "red"
+                  },
+                  {
+                    "text": "Gamification, Push-Reminder, virales Teilen, Vereinspartnerschaften"
+                  }
+                ]
+              },
+              {
+                "cells": [
+                  {
+                    "text": "**DSGVO & Datenschutz**"
+                  },
+                  {
+                    "text": "Niedrig",
+                    "tone": "green"
+                  },
+                  {
+                    "text": "Hoch",
+                    "tone": "red"
+                  },
+                  {
+                    "text": "Privacy by Design, Supabase EU-Hosting, juristische Prüfung vor Launch"
+                  }
+                ]
+              },
+              {
+                "cells": [
+                  {
+                    "text": "**Akzeptanz bei Spielern/Trainern**"
+                  },
+                  {
+                    "text": "Mittel",
+                    "tone": "amber"
+                  },
+                  {
+                    "text": "Mittel",
+                    "tone": "amber"
+                  },
+                  {
+                    "text": "Transparente Kommunikation der Methode, Beta-Tests mit echter Zielgruppe"
+                  }
+                ]
+              },
+              {
+                "cells": [
+                  {
+                    "text": "**Kopierbarkeit durch größere Anbieter**"
+                  },
+                  {
+                    "text": "Mittel",
+                    "tone": "amber"
+                  },
+                  {
+                    "text": "Mittel",
+                    "tone": "amber"
+                  },
+                  {
+                    "text": "First-Mover-Vorteil, schneller Launch, Community-Bindung aufbauen"
+                  }
+                ]
+              }
+            ]
+          }
+        }
+      ]
+    }
+  ]
+}

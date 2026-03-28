@@ -1,0 +1,467 @@
+{
+  "title": "TEAMCHEF – Design System",
+  "badge": "Design System · 2025",
+  "subtitle": "Farben, Typografie, Komponenten & Brand Guidelines",
+  "meta": [
+    {
+      "label": "UI Library",
+      "value": "shadcn/ui + Radix"
+    },
+    {
+      "label": "Styling",
+      "value": "Tailwind CSS v4"
+    },
+    {
+      "label": "Theming",
+      "value": "Dark / Light / System"
+    }
+  ],
+  "sections": [
+    {
+      "id": "farben",
+      "number": "01",
+      "nav": "Farben",
+      "eyebrow": "Farbpalette",
+      "title": "Farben & Token",
+      "blocks": [
+        {
+          "highlight": "Das Farbsystem basiert auf **CSS Custom Properties** und ist in semantische Token aufgeteilt.\nAlle Farben sind über **:root**-Variablen definiert und ermöglichen konsistentes Theming über die gesamte Plattform."
+        },
+        {
+          "palette": {
+            "title": "Primärfarben",
+            "colors": [
+              {
+                "name": "Green",
+                "hex": "#00e676"
+              },
+              {
+                "name": "Green Dim",
+                "hex": "#00c95e"
+              },
+              {
+                "name": "Amber",
+                "hex": "#ffc107"
+              },
+              {
+                "name": "Blue",
+                "hex": "#4fc3f7"
+              },
+              {
+                "name": "Red",
+                "hex": "#ff4444"
+              }
+            ]
+          }
+        },
+        {
+          "palette": {
+            "title": "Hintergründe & Oberflächen",
+            "colors": [
+              {
+                "name": "BG",
+                "hex": "#0a0c10"
+              },
+              {
+                "name": "BG 2",
+                "hex": "#111418"
+              },
+              {
+                "name": "BG 3",
+                "hex": "#181c22"
+              },
+              {
+                "name": "Surface",
+                "hex": "#1e232c"
+              },
+              {
+                "name": "Border",
+                "hex": "#2a3040"
+              }
+            ]
+          }
+        },
+        {
+          "palette": {
+            "title": "Text",
+            "colors": [
+              {
+                "name": "White",
+                "hex": "#ffffff"
+              },
+              {
+                "name": "Text",
+                "hex": "#e8eaf0"
+              },
+              {
+                "name": "Text Dim",
+                "hex": "#8890a4"
+              },
+              {
+                "name": "Text Muted",
+                "hex": "#525c72"
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "typografie",
+      "number": "02",
+      "nav": "Typografie",
+      "eyebrow": "Typografie",
+      "title": "Schriften & Skala",
+      "blocks": [
+        {
+          "columns": 2,
+          "cards": [
+            {
+              "title": "Dokumentation (Dossier)",
+              "list": [
+                "**Barlow Condensed** — Headings (900, 700, 600)",
+                "**DM Sans** — Body & UI Text (300–500)",
+                "Google Fonts CDN",
+                "Dark-first Design"
+              ]
+            },
+            {
+              "title": "Application (Web-App)",
+              "list": [
+                "**Space Grotesk** — Body & UI Text",
+                "**Syne** — Display Headlines (Landing)",
+                "System Font Fallbacks",
+                "Dark / Light / System Theming"
+              ]
+            }
+          ]
+        },
+        {
+          "table": {
+            "title": "Typografie-Skala (Dossier)",
+            "variant": "default",
+            "columns": [
+              "Element",
+              "Größe",
+              "Gewicht",
+              "Font"
+            ],
+            "rows": [
+              {
+                "highlight": false,
+                "cells": [
+                  {
+                    "text": "doc-title"
+                  },
+                  {
+                    "text": "clamp(42px, 7vw, 72px)"
+                  },
+                  {
+                    "text": "900"
+                  },
+                  {
+                    "text": "Barlow Condensed"
+                  }
+                ]
+              },
+              {
+                "highlight": false,
+                "cells": [
+                  {
+                    "text": "section-title"
+                  },
+                  {
+                    "text": "32px"
+                  },
+                  {
+                    "text": "700"
+                  },
+                  {
+                    "text": "Barlow Condensed"
+                  }
+                ]
+              },
+              {
+                "highlight": false,
+                "cells": [
+                  {
+                    "text": "card-title"
+                  },
+                  {
+                    "text": "18px"
+                  },
+                  {
+                    "text": "700"
+                  },
+                  {
+                    "text": "Barlow Condensed"
+                  }
+                ]
+              },
+              {
+                "highlight": false,
+                "cells": [
+                  {
+                    "text": "stat-value"
+                  },
+                  {
+                    "text": "40px"
+                  },
+                  {
+                    "text": "900"
+                  },
+                  {
+                    "text": "Barlow Condensed"
+                  }
+                ]
+              },
+              {
+                "highlight": false,
+                "cells": [
+                  {
+                    "text": "body"
+                  },
+                  {
+                    "text": "15px"
+                  },
+                  {
+                    "text": "400"
+                  },
+                  {
+                    "text": "DM Sans"
+                  }
+                ]
+              },
+              {
+                "highlight": false,
+                "cells": [
+                  {
+                    "text": "small / meta"
+                  },
+                  {
+                    "text": "13px"
+                  },
+                  {
+                    "text": "400"
+                  },
+                  {
+                    "text": "DM Sans"
+                  }
+                ]
+              },
+              {
+                "highlight": false,
+                "cells": [
+                  {
+                    "text": "label"
+                  },
+                  {
+                    "text": "10–11px"
+                  },
+                  {
+                    "text": "600–700"
+                  },
+                  {
+                    "text": "DM Sans"
+                  }
+                ]
+              }
+            ]
+          }
+        },
+        {
+          "highlight": "**Responsive Type:** Der `doc-title` nutzt `clamp()` für flüssige Skalierung. Alle Labels verwenden `text-transform: uppercase` mit `letter-spacing` für bessere Lesbarkeit."
+        }
+      ]
+    },
+    {
+      "id": "komponenten",
+      "number": "03",
+      "nav": "Komponenten",
+      "eyebrow": "Komponenten",
+      "title": "UI-Bibliothek",
+      "blocks": [
+        {
+          "highlight": "Die Applikation nutzt **shadcn/ui** als Komponentenbasis — gebaut auf **Radix UI Primitives**,\ngestylt mit **Tailwind CSS**. Über 40 Komponenten sind konfiguriert und anpassbar."
+        },
+        {
+          "columns": 2,
+          "cards": [
+            {
+              "title": "Input & Formulare",
+              "list": [
+                "Button, Input, Textarea, Label",
+                "Select, Checkbox, Radio Group, Switch",
+                "Slider (Rating-Kriterien)",
+                "Dialog, Alert Dialog, Popover",
+                "Input OTP, Toggle, Toast",
+                "Accordion, Dropdown Menu"
+              ]
+            },
+            {
+              "title": "Layout & Navigation",
+              "list": [
+                "Avatar, Badge, Separator",
+                "Tabs, Navigation Menu, Menubar",
+                "Scroll Area, Collapsible",
+                "Tooltip, Hover Card, Context Menu",
+                "Progress, Skeleton",
+                "Sidebar (Radix-basiert)"
+              ]
+            }
+          ]
+        },
+        {
+          "features": [
+            "**TanStack Table** — Sortierbare, filterbare Datentabellen",
+            "**Recharts** — Radar-Charts für 5-Kriterien-Bewertungen",
+            "**Embla Carousel** — Touch-fähige Karusselle",
+            "**cmdk** — Command Palette (Cmd+K)",
+            "**Vaul** — Mobile Drawer-Komponente",
+            "**Sonner** — Toast-Notifications"
+          ],
+          "title": "Daten & Visualisierung"
+        },
+        {
+          "card": {
+            "title": "Custom Components",
+            "list": [
+              "**QCard** — Match-Rating-Widget",
+              "**StarRating** — Rating-Input",
+              "**AppLogo** — SVG-Logo mit Varianten",
+              "**AuthGuard** — Rollen-basierter Schutz",
+              "**LanguageSwitcher** — DE/EN Toggle",
+              "**CookieBanner** — DSGVO-konform"
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "brand",
+      "number": "04",
+      "nav": "Brand",
+      "eyebrow": "Brand",
+      "title": "Markenidentität",
+      "blocks": [
+        {
+          "card": {
+            "title": "Name & Logo",
+            "text": "Der Name wird konsequent als **TEAMCHEF** geschrieben — in zwei Teilen:",
+            "list": [
+              "**TEAM** in Weiß — steht für Gemeinschaft & Community",
+              "**CHEF** in Grün — steht für Führung & Entscheidung",
+              "**Tagline:** „Deine Stimme. Dein Team. Dein Ranking.\""
+            ]
+          }
+        },
+        {
+          "columns": 2,
+          "cards": [
+            {
+              "title": "Visuelles Konzept",
+              "list": [
+                "**Dark-first** — Dunkle Backgrounds als Standard",
+                "**Grün als Primärfarbe** — Energie, Fußballrasen",
+                "**Noise Texture** — SVG Fractal Noise Overlay",
+                "**Gradient Backgrounds** — Subtile Radial-Verläufe",
+                "**Card-based Layout** — Informations-Hierarchie"
+              ]
+            },
+            {
+              "title": "Motion & Animation",
+              "list": [
+                "**Bewusst minimal** — Performance vor Effekt",
+                "**Pulse** — Badge-Indikator Animation",
+                "**Hover Transitions** — 150–200ms, subtle",
+                "**Framer Motion** — Nur für Key-Interactions",
+                "**Chart Animations** — Radar-Chart Reveals"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "wireframes",
+      "number": "05",
+      "nav": "Wireframes",
+      "eyebrow": "Wireframes & Screens",
+      "title": "Key Screens",
+      "blocks": [
+        {
+          "highlight": "Die App besteht aus klar definierten Screens, die den User-Flow von der Landingpage bis zum Ranking abbilden.\nJeder Screen nutzt die oben definierten Design-Token konsistent."
+        },
+        {
+          "sitemap": {
+            "title": "Screen-Übersicht",
+            "nodes": [
+              {
+                "name": "Landing / Home",
+                "route": "/",
+                "children": [
+                  {
+                    "name": "Spieleübersicht",
+                    "route": "/spiele",
+                    "children": [
+                      {
+                        "name": "Spiel-Detail",
+                        "route": "/spiele/:id",
+                        "tone": "blue"
+                      },
+                      {
+                        "name": "Bewertungsscreen",
+                        "route": "/spiele/:id/bewerten",
+                        "tone": "blue"
+                      },
+                      {
+                        "name": "Ranking",
+                        "route": "/spiele/:id/ranking",
+                        "tone": "blue"
+                      }
+                    ]
+                  },
+                  {
+                    "name": "Leaderboard",
+                    "route": "/leaderboard"
+                  },
+                  {
+                    "name": "Profil & Badges",
+                    "route": "/profil"
+                  },
+                  {
+                    "name": "Admin Dashboard",
+                    "route": "/admin",
+                    "tone": "muted"
+                  }
+                ]
+              }
+            ]
+          }
+        },
+        {
+          "card": {
+            "title": "Design-Modi"
+          }
+        },
+        {
+          "stats": [
+            {
+              "value": "40+",
+              "label": "UI Komponenten"
+            },
+            {
+              "value": "14",
+              "label": "Farb-Token"
+            },
+            {
+              "value": "3",
+              "label": "Theme-Modi"
+            }
+          ],
+          "columns": 3
+        }
+      ]
+    }
+  ]
+}

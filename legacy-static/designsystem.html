@@ -1,0 +1,429 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>TEAMCHEF – Design System</title>
+<link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+
+<header class="doc-header">
+  <div class="header-inner">
+    <div class="doc-badge">Design System · 2025</div>
+    <h1 class="doc-title">TEAM<span>CHEF</span></h1>
+    <p class="doc-subtitle">Farben, Typografie, Komponenten & Brand Guidelines</p>
+    <div class="doc-meta">
+      <div class="meta-item"><span class="meta-label">UI Library</span><span class="meta-value">shadcn/ui + Radix</span></div>
+      <div class="meta-item"><span class="meta-label">Styling</span><span class="meta-value">Tailwind CSS v4</span></div>
+      <div class="meta-item"><span class="meta-label">Theming</span><span class="meta-value">Dark / Light / System</span></div>
+    </div>
+  </div>
+</header>
+
+<nav class="doc-nav">
+  <div class="nav-inner">
+    <a href="#farben" class="nav-link active"><span class="nav-num">01</span> Farben</a>
+    <a href="#typografie" class="nav-link"><span class="nav-num">02</span> Typografie</a>
+    <a href="#komponenten" class="nav-link"><span class="nav-num">03</span> Komponenten</a>
+    <a href="#brand" class="nav-link"><span class="nav-num">04</span> Brand</a>
+    <a href="#wireframes" class="nav-link"><span class="nav-num">05</span> Wireframes</a>
+  </div>
+</nav>
+
+<main>
+
+  <!-- 01 FARBEN -->
+  <section class="section" id="farben">
+    <div class="section-label">01 — Farbpalette</div>
+    <h2 class="section-title">Farben & Token</h2>
+    <div class="divider"></div>
+
+    <div class="highlight">
+      <p class="inl-029">
+        Das Farbsystem basiert auf <strong>CSS Custom Properties</strong> und ist in semantische Token aufgeteilt.
+        Alle Farben sind über <strong>:root</strong>-Variablen definiert und ermöglichen konsistentes Theming über die gesamte Plattform.
+      </p>
+    </div>
+
+    <div class="card">
+      <h3 class="card-title">Primärfarben</h3>
+      <div class="color-grid">
+        <div class="color-chip">
+          <div class="color-chip-swatch" style="background: #00e676;"></div>
+          <div class="color-chip-name">Green</div>
+          <div class="color-chip-hex">#00e676</div>
+        </div>
+        <div class="color-chip">
+          <div class="color-chip-swatch" style="background: #00c95e;"></div>
+          <div class="color-chip-name">Green Dim</div>
+          <div class="color-chip-hex">#00c95e</div>
+        </div>
+        <div class="color-chip">
+          <div class="color-chip-swatch" style="background: #ffc107;"></div>
+          <div class="color-chip-name">Amber</div>
+          <div class="color-chip-hex">#ffc107</div>
+        </div>
+        <div class="color-chip">
+          <div class="color-chip-swatch" style="background: #4fc3f7;"></div>
+          <div class="color-chip-name">Blue</div>
+          <div class="color-chip-hex">#4fc3f7</div>
+        </div>
+        <div class="color-chip">
+          <div class="color-chip-swatch" style="background: #ff4444;"></div>
+          <div class="color-chip-name">Red</div>
+          <div class="color-chip-hex">#ff4444</div>
+        </div>
+      </div>
+    </div>
+
+    <div class="card">
+      <h3 class="card-title">Hintergründe & Oberflächen</h3>
+      <div class="color-grid">
+        <div class="color-chip">
+          <div class="color-chip-swatch" style="background: #0a0c10;"></div>
+          <div class="color-chip-name">BG</div>
+          <div class="color-chip-hex">#0a0c10</div>
+        </div>
+        <div class="color-chip">
+          <div class="color-chip-swatch" style="background: #111418;"></div>
+          <div class="color-chip-name">BG 2</div>
+          <div class="color-chip-hex">#111418</div>
+        </div>
+        <div class="color-chip">
+          <div class="color-chip-swatch" style="background: #181c22;"></div>
+          <div class="color-chip-name">BG 3</div>
+          <div class="color-chip-hex">#181c22</div>
+        </div>
+        <div class="color-chip">
+          <div class="color-chip-swatch" style="background: #1e232c;"></div>
+          <div class="color-chip-name">Surface</div>
+          <div class="color-chip-hex">#1e232c</div>
+        </div>
+        <div class="color-chip">
+          <div class="color-chip-swatch" style="background: #2a3040;"></div>
+          <div class="color-chip-name">Border</div>
+          <div class="color-chip-hex">#2a3040</div>
+        </div>
+      </div>
+    </div>
+
+    <div class="card">
+      <h3 class="card-title">Text</h3>
+      <div class="color-grid">
+        <div class="color-chip">
+          <div class="color-chip-swatch" style="background: #ffffff;"></div>
+          <div class="color-chip-name">White</div>
+          <div class="color-chip-hex">#ffffff</div>
+        </div>
+        <div class="color-chip">
+          <div class="color-chip-swatch" style="background: #e8eaf0;"></div>
+          <div class="color-chip-name">Text</div>
+          <div class="color-chip-hex">#e8eaf0</div>
+        </div>
+        <div class="color-chip">
+          <div class="color-chip-swatch" style="background: #8890a4;"></div>
+          <div class="color-chip-name">Text Dim</div>
+          <div class="color-chip-hex">#8890a4</div>
+        </div>
+        <div class="color-chip">
+          <div class="color-chip-swatch" style="background: #525c72;"></div>
+          <div class="color-chip-name">Text Muted</div>
+          <div class="color-chip-hex">#525c72</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 02 TYPOGRAFIE -->
+  <section class="section" id="typografie">
+    <div class="section-label">02 — Typografie</div>
+    <h2 class="section-title">Schriften & Skala</h2>
+    <div class="divider"></div>
+
+    <div class="grid-2">
+      <div class="card">
+        <h3 class="card-title">Dokumentation (Dossier)</h3>
+        <ul class="feature-list">
+          <li><strong>Barlow Condensed</strong> — Headings (900, 700, 600)</li>
+          <li><strong>DM Sans</strong> — Body & UI Text (300–500)</li>
+          <li>Google Fonts CDN</li>
+          <li>Dark-first Design</li>
+        </ul>
+      </div>
+      <div class="card">
+        <h3 class="card-title">Application (Web-App)</h3>
+        <ul class="feature-list">
+          <li><strong>Space Grotesk</strong> — Body & UI Text</li>
+          <li><strong>Syne</strong> — Display Headlines (Landing)</li>
+          <li>System Font Fallbacks</li>
+          <li>Dark / Light / System Theming</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="card">
+      <h3 class="card-title">Typografie-Skala (Dossier)</h3>
+      <table class="doc-table">
+        <thead>
+          <tr><th>Element</th><th>Größe</th><th>Gewicht</th><th>Font</th></tr>
+        </thead>
+        <tbody>
+          <tr><td>doc-title</td><td>clamp(42px, 7vw, 72px)</td><td>900</td><td>Barlow Condensed</td></tr>
+          <tr><td>section-title</td><td>32px</td><td>700</td><td>Barlow Condensed</td></tr>
+          <tr><td>card-title</td><td>18px</td><td>700</td><td>Barlow Condensed</td></tr>
+          <tr><td>stat-value</td><td>40px</td><td>900</td><td>Barlow Condensed</td></tr>
+          <tr><td>body</td><td>15px</td><td>400</td><td>DM Sans</td></tr>
+          <tr><td>small / meta</td><td>13px</td><td>400</td><td>DM Sans</td></tr>
+          <tr><td>label</td><td>10–11px</td><td>600–700</td><td>DM Sans</td></tr>
+        </tbody>
+      </table>
+    </div>
+
+    <div class="highlight">
+      <p class="inl-018">
+        <strong class="inl-006">Responsive Type:</strong> Der <code class="inl-015">doc-title</code> nutzt <code class="inl-015">clamp()</code> für flüssige Skalierung. Alle Labels verwenden <code class="inl-015">text-transform: uppercase</code> mit <code class="inl-015">letter-spacing</code> für bessere Lesbarkeit.
+      </p>
+    </div>
+  </section>
+
+  <!-- 03 KOMPONENTEN -->
+  <section class="section" id="komponenten">
+    <div class="section-label">03 — Komponenten</div>
+    <h2 class="section-title">UI-Bibliothek</h2>
+    <div class="divider"></div>
+
+    <div class="highlight">
+      <p class="inl-029">
+        Die Applikation nutzt <strong>shadcn/ui</strong> als Komponentenbasis — gebaut auf <strong>Radix UI Primitives</strong>,
+        gestylt mit <strong>Tailwind CSS</strong>. Über 40 Komponenten sind konfiguriert und anpassbar.
+      </p>
+    </div>
+
+    <div class="grid-2">
+      <div class="card">
+        <h3 class="card-title">Input & Formulare</h3>
+        <ul class="feature-list">
+          <li>Button, Input, Textarea, Label</li>
+          <li>Select, Checkbox, Radio Group, Switch</li>
+          <li>Slider (Rating-Kriterien)</li>
+          <li>Dialog, Alert Dialog, Popover</li>
+          <li>Input OTP, Toggle, Toast</li>
+          <li>Accordion, Dropdown Menu</li>
+        </ul>
+      </div>
+      <div class="card">
+        <h3 class="card-title">Layout & Navigation</h3>
+        <ul class="feature-list">
+          <li>Avatar, Badge, Separator</li>
+          <li>Tabs, Navigation Menu, Menubar</li>
+          <li>Scroll Area, Collapsible</li>
+          <li>Tooltip, Hover Card, Context Menu</li>
+          <li>Progress, Skeleton</li>
+          <li>Sidebar (Radix-basiert)</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="card">
+      <h3 class="card-title">Daten & Visualisierung</h3>
+      <ul class="feature-list">
+        <li><strong>TanStack Table</strong> — Sortierbare, filterbare Datentabellen</li>
+        <li><strong>Recharts</strong> — Radar-Charts für 5-Kriterien-Bewertungen</li>
+        <li><strong>Embla Carousel</strong> — Touch-fähige Karusselle</li>
+        <li><strong>cmdk</strong> — Command Palette (Cmd+K)</li>
+        <li><strong>Vaul</strong> — Mobile Drawer-Komponente</li>
+        <li><strong>Sonner</strong> — Toast-Notifications</li>
+      </ul>
+    </div>
+
+    <div class="card">
+      <h3 class="card-title">Custom Components</h3>
+      <div class="grid-2">
+        <ul class="feature-list">
+          <li><strong>QCard</strong> — Match-Rating-Widget</li>
+          <li><strong>StarRating</strong> — Rating-Input</li>
+          <li><strong>AppLogo</strong> — SVG-Logo mit Varianten</li>
+        </ul>
+        <ul class="feature-list">
+          <li><strong>AuthGuard</strong> — Rollen-basierter Schutz</li>
+          <li><strong>LanguageSwitcher</strong> — DE/EN Toggle</li>
+          <li><strong>CookieBanner</strong> — DSGVO-konform</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- 04 BRAND -->
+  <section class="section" id="brand">
+    <div class="section-label">04 — Brand</div>
+    <h2 class="section-title">Markenidentität</h2>
+    <div class="divider"></div>
+
+    <div class="card">
+      <h3 class="card-title">Name & Logo</h3>
+      <p>Der Name wird konsequent als <strong>TEAMCHEF</strong> geschrieben — in zwei Teilen:</p>
+      <div class="blockquote">
+        <p style="font-size: 36px; font-family: 'Barlow Condensed', sans-serif; font-weight: 900; font-style: normal; letter-spacing: 0.02em;">TEAM<span style="color: var(--green);">CHEF</span></p>
+      </div>
+      <ul class="feature-list">
+        <li><strong>TEAM</strong> in Weiß — steht für Gemeinschaft & Community</li>
+        <li><strong>CHEF</strong> in Grün — steht für Führung & Entscheidung</li>
+        <li><strong>Tagline:</strong> „Deine Stimme. Dein Team. Dein Ranking."</li>
+      </ul>
+    </div>
+
+    <div class="grid-2">
+      <div class="card">
+        <h3 class="card-title">Visuelles Konzept</h3>
+        <ul class="feature-list">
+          <li><strong>Dark-first</strong> — Dunkle Backgrounds als Standard</li>
+          <li><strong>Grün als Primärfarbe</strong> — Energie, Fußballrasen</li>
+          <li><strong>Noise Texture</strong> — SVG Fractal Noise Overlay</li>
+          <li><strong>Gradient Backgrounds</strong> — Subtile Radial-Verläufe</li>
+          <li><strong>Card-based Layout</strong> — Informations-Hierarchie</li>
+        </ul>
+      </div>
+      <div class="card">
+        <h3 class="card-title">Motion & Animation</h3>
+        <ul class="feature-list">
+          <li><strong>Bewusst minimal</strong> — Performance vor Effekt</li>
+          <li><strong>Pulse</strong> — Badge-Indikator Animation</li>
+          <li><strong>Hover Transitions</strong> — 150–200ms, subtle</li>
+          <li><strong>Framer Motion</strong> — Nur für Key-Interactions</li>
+          <li><strong>Chart Animations</strong> — Radar-Chart Reveals</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- 05 WIREFRAMES -->
+  <section class="section" id="wireframes">
+    <div class="section-label">05 — Wireframes & Screens</div>
+    <h2 class="section-title">Key Screens</h2>
+    <div class="divider"></div>
+
+    <div class="highlight">
+      <p class="inl-029">
+        Die App besteht aus klar definierten Screens, die den User-Flow von der Landingpage bis zum Ranking abbilden.
+        Jeder Screen nutzt die oben definierten Design-Token konsistent.
+      </p>
+    </div>
+
+    <div class="card">
+      <h3 class="card-title">Screen-Übersicht</h3>
+      <div class="sitemap-item">
+        <div class="sitemap-dot"></div>
+        <div class="sitemap-name">Landing / Home</div>
+        <div class="sitemap-route">/</div>
+      </div>
+      <div class="sitemap-level">
+        <div class="sitemap-item">
+          <div class="sitemap-dot"></div>
+          <div class="sitemap-name">Spieleübersicht</div>
+          <div class="sitemap-route">/spiele</div>
+        </div>
+        <div class="sitemap-level">
+          <div class="sitemap-item">
+            <div class="sitemap-dot secondary"></div>
+            <div class="sitemap-name">Spiel-Detail</div>
+            <div class="sitemap-route">/spiele/:id</div>
+          </div>
+          <div class="sitemap-item">
+            <div class="sitemap-dot secondary"></div>
+            <div class="sitemap-name">Bewertungsscreen</div>
+            <div class="sitemap-route">/spiele/:id/bewerten</div>
+          </div>
+          <div class="sitemap-item">
+            <div class="sitemap-dot secondary"></div>
+            <div class="sitemap-name">Ranking</div>
+            <div class="sitemap-route">/spiele/:id/ranking</div>
+          </div>
+        </div>
+        <div class="sitemap-item">
+          <div class="sitemap-dot"></div>
+          <div class="sitemap-name">Leaderboard</div>
+          <div class="sitemap-route">/leaderboard</div>
+        </div>
+        <div class="sitemap-item">
+          <div class="sitemap-dot"></div>
+          <div class="sitemap-name">Profil & Badges</div>
+          <div class="sitemap-route">/profil</div>
+        </div>
+        <div class="sitemap-item">
+          <div class="sitemap-dot tertiary"></div>
+          <div class="sitemap-name">Admin Dashboard</div>
+          <div class="sitemap-route">/admin</div>
+        </div>
+      </div>
+    </div>
+
+    <div class="card">
+      <h3 class="card-title">Design-Modi</h3>
+      <div class="grid-2">
+        <div>
+          <ul class="feature-list">
+            <li><strong>Application Surfaces</strong> — Neutrale semantische Token</li>
+            <li><strong>Landing Pages</strong> — Wärmere Editorial-Palette</li>
+          </ul>
+        </div>
+        <div>
+          <ul class="feature-list">
+            <li><strong>Dark Mode</strong> — Standard, alle Token definiert</li>
+            <li><strong>Light Mode</strong> — Alternative via CSS <code class="inl-015">light-dark()</code></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <div class="grid-3">
+      <div class="stat-card">
+        <div class="stat-value">40+</div>
+        <div class="stat-label">UI Komponenten</div>
+      </div>
+      <div class="stat-card">
+        <div class="stat-value">14</div>
+        <div class="stat-label">Farb-Token</div>
+      </div>
+      <div class="stat-card">
+        <div class="stat-value">3</div>
+        <div class="stat-label">Theme-Modi</div>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer class="doc-footer">
+  <a class="footer-brand" href="index.html">TEAMCHEF</a>
+  <nav class="footer-nav" aria-label="Dokument Navigation">
+    <a class="footer-nav-link" href="prd.html">PRD</a>
+    <a class="footer-nav-link" href="pitch.html">Pitch Deck</a>
+    <a class="footer-nav-link" href="investorenbrief.html">Investor</a>
+    <a class="footer-nav-link" href="geschaeftsmodell.html">Geschäftsmodell</a>
+    <a class="footer-nav-link" href="marktanalyse.html">Marktanalyse</a>
+    <a class="footer-nav-link" href="usecases.html">Use Cases</a>
+    <a class="footer-nav-link" href="techstack.html">Techstack</a>
+    <a class="footer-nav-link" href="roadmap.html">Roadmap</a>
+    <a class="footer-nav-link active" href="designsystem.html">Design System</a>
+    <a class="footer-nav-link" href="finanzplan.html">Finanzplan</a>
+  </nav>
+</footer>
+
+<script>
+const links = document.querySelectorAll('.nav-link');
+const sections = document.querySelectorAll('.section');
+const observer = new IntersectionObserver((entries) => {
+  entries.forEach(e => {
+    if (e.isIntersecting) {
+      links.forEach(l => l.classList.remove('active'));
+      const active = document.querySelector(`.nav-link[href="#${e.target.id}"]`);
+      if (active) active.classList.add('active');
+    }
+  });
+}, { rootMargin: '-20% 0px -70% 0px' });
+sections.forEach(s => observer.observe(s));
+</script>
+</body>
+</html>

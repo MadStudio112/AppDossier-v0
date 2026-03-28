@@ -1,0 +1,373 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>TEAMCHEF – PRD</title>
+<link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+
+<header class="doc-header">
+  <div class="header-inner">
+    <div class="doc-badge">PRD · v1.0</div>
+    <h1 class="doc-title">TEAM<span>CHEF</span></h1>
+    <p class="doc-subtitle">Product Requirements Document — Nicht-technische Fassung</p>
+    <div class="doc-meta">
+      <div class="meta-item"><span class="meta-label">Produkt</span><span class="meta-value">TEAMCHEF Web App</span></div>
+      <div class="meta-item"><span class="meta-label">Phase</span><span class="meta-value">MVP / Phase 1</span></div>
+      <div class="meta-item"><span class="meta-label">Version</span><span class="meta-value">1.0 – 2025</span></div>
+      <div class="meta-item"><span class="meta-label">Status</span><span class="meta-value">In Entwicklung</span></div>
+    </div>
+  </div>
+</header>
+
+<nav class="doc-nav">
+  <div class="nav-inner">
+    <a href="#vision" class="nav-link active"><span class="nav-num">01</span> Vision</a>
+    <a href="#ziele" class="nav-link"><span class="nav-num">02</span> Ziele</a>
+    <a href="#zielgruppe" class="nav-link"><span class="nav-num">03</span> Zielgruppe</a>
+    <a href="#features" class="nav-link"><span class="nav-num">04</span> Features</a>
+    <a href="#scope" class="nav-link"><span class="nav-num">05</span> Scope</a>
+    <a href="#akzeptanz" class="nav-link"><span class="nav-num">06</span> Akzeptanz</a>
+    <a href="#risiken" class="nav-link"><span class="nav-num">07</span> Risiken</a>
+  </div>
+</nav>
+
+<main>
+
+  <!-- 01 VISION -->
+  <section class="section" id="vision">
+    <div class="section-label">01 — Produktvision</div>
+    <h2 class="section-title">Was ist TEAMCHEF?</h2>
+    <div class="divider"></div>
+
+    <div class="highlight">
+      <p class="inl-029">
+        TEAMCHEF ist eine webbasierte Plattform, auf der Fußballfans Spieler und Teams 
+        anhand von <strong>5 festen Kriterien</strong> bewerten. Die Bewertungen aller 
+        Teilnehmer ergeben durch <strong>Schwarmintelligenz</strong> ein objektives, transparentes 
+        Ranking. Wer am nächsten am Community-Durchschnitt liegt, gewinnt – mit echten 
+        Geld- und Sachpreisen.
+      </p>
+    </div>
+
+    <div class="blockquote">
+      <p>„Objektivität durch Masse – die Community entscheidet über Leistung, nicht Einzelpersonen oder Experten."</p>
+    </div>
+
+    <div class="grid-3">
+      <div class="stat-card">
+        <div class="stat-value">5</div>
+        <div class="stat-label">Bewertungskriterien</div>
+      </div>
+      <div class="stat-card">
+        <div class="stat-value">0–10</div>
+        <div class="stat-label">Punkteskala</div>
+      </div>
+      <div class="stat-card">
+        <div class="stat-value">&lt;2min</div>
+        <div class="stat-label">Bewertungszeit</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 02 ZIELE -->
+  <section class="section" id="ziele">
+    <div class="section-label">02 — Ziele & Erfolgskriterien</div>
+    <h2 class="section-title">Was müssen wir erreichen?</h2>
+    <div class="divider"></div>
+
+    <div class="grid-2">
+      <div class="card">
+        <div class="card-title">Produktziele</div>
+        <ul class="feature-list">
+          <li>Objektive Leistungsbewertung durch kollektive Intelligenz der Community</li>
+          <li>Maximale Einfachheit: Bewertung in unter 2 Minuten, intuitiv für alle</li>
+          <li>Hohe Nutzerbeteiligung durch Gamification, Ranking und Preise</li>
+          <li>Faire, manipulationssichere Plattform mit transparenten Regeln</li>
+          <li>Skalierbare Basis für Expansion in neue Sportarten und Länder</li>
+        </ul>
+      </div>
+      <div class="card">
+        <div class="card-title">Erfolgskennzahlen (MVP)</div>
+        <ul class="feature-list">
+          <li><strong>50+</strong> Bewertungen pro Spiel (Ziel für statistische Verlässlichkeit)</li>
+          <li><strong>1.000+</strong> aktive Nutzer im ersten Quartal nach Launch</li>
+          <li><strong>30 %</strong> aller registrierten Nutzer nehmen pro Spiel teil</li>
+          <li><strong>&lt;1 %</strong> Manipulationsrate (erkannte Fake-Bewertungen)</li>
+          <li><strong>&lt;5 %</strong> Support-Quote (Onboarding & FAQ sind effektiv)</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- 03 ZIELGRUPPE -->
+  <section class="section" id="zielgruppe">
+    <div class="section-label">03 — Zielgruppe & Personas</div>
+    <h2 class="section-title">Für wen bauen wir TEAMCHEF?</h2>
+    <div class="divider"></div>
+
+    <p>TEAMCHEF richtet sich primär an Fußballfans – vom Gelegenheitszuschauer bis zum 
+    eingefleischten Supporter. Die Plattform ist bewusst offen gehalten: keine Fachkenntnisse 
+    nötig, kein Vereinshintergrund erforderlich.</p>
+
+    <div class="grid-3 inl-011">
+      <div class="persona-card">
+        <div class="persona-avatar">M</div>
+        <div class="persona-name">Max, 25</div>
+        <div class="persona-role">Aktiver Fußballfan</div>
+        <div class="persona-needs">Verfolgt Spiele regelmäßig. Möchte seine Meinung teilen und sehen, wie er im Vergleich zu anderen liegt. Liebt Gamification und Wettbewerb.</div>
+      </div>
+      <div class="persona-card">
+        <div class="persona-avatar">S</div>
+        <div class="persona-name">Sarah, 38</div>
+        <div class="persona-role">Fußball-Mama</div>
+        <div class="persona-needs">Begleitet Sohn zu Spielen. Möchte die Leistung fair beurteilen. Braucht simple Bedienung, keine App-Kenntnisse vorausgesetzt.</div>
+      </div>
+      <div class="persona-card">
+        <div class="persona-avatar">T</div>
+        <div class="persona-name">Timo, 17</div>
+        <div class="persona-role">Amateurkicker</div>
+        <div class="persona-needs">Spielt selbst und ist auch Fan. Will sehen wie „die Community" sein Team einschätzt. Motiviert durch Preise und Rankings.</div>
+      </div>
+    </div>
+
+    <div class="card inl-030">
+      <div class="card-title">Sekundäre Zielgruppen (spätere Phasen)</div>
+      <div class="pill-row">
+        <span class="tag tag-blue">Trainer & Spieler</span>
+        <span class="tag tag-blue">Scouts & Vereinsmanager</span>
+        <span class="tag tag-blue">Sponsoren & Werbepartner</span>
+        <span class="tag tag-blue">Eltern (Jugendbereich)</span>
+        <span class="tag tag-amber">Andere Sportarten</span>
+        <span class="tag tag-amber">Internationale Märkte</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- 04 FEATURES -->
+  <section class="section" id="features">
+    <div class="section-label">04 — Features (MoSCoW)</div>
+    <h2 class="section-title">Was bauen wir wann?</h2>
+    <div class="divider"></div>
+
+    <div class="moscow">
+      <div class="moscow-q must">
+        <h4>Must Have · MVP</h4>
+        <ul>
+          <li>Registrierung & Login (E-Mail, Social)</li>
+          <li>Spieleübersicht mit Status (offen/geschlossen)</li>
+          <li>Bewertungs-UI: 5 Kriterien, Skala 0–10, Pflichtfelder</li>
+          <li>Eine Bewertung pro Spiel & User (One-Vote)</li>
+          <li>Live Radar Chart (eigene vs. Durchschnitt)</li>
+          <li>Ranking & Leaderboard nach Bewertungsende</li>
+          <li>Badges für Top-Bewerter</li>
+          <li>Manipulationsschutz & Account-Checks</li>
+          <li>Onboarding, Tooltips, FAQ</li>
+        </ul>
+      </div>
+      <div class="moscow-q should">
+        <h4>Should Have · Release 1.1</h4>
+        <ul>
+          <li>Push-/E-Mail-Erinnerungen vor Spielende</li>
+          <li>Sponsoren-Branding & Preisintegration</li>
+          <li>Badges für regelmäßige Teilnahme</li>
+          <li>Admin-Panel für Spielverwaltung</li>
+          <li>Historische Statistiken & Filter</li>
+          <li>Progressive Web App (PWA)</li>
+        </ul>
+      </div>
+      <div class="moscow-q could">
+        <h4>Could Have · Phase 2+</h4>
+        <ul>
+          <li>Community-Gruppen & Fan-Channels</li>
+          <li>Social Sharing für eigene Platzierung</li>
+          <li>Premium-Features & Analytics</li>
+          <li>Vereins-API-Integration</li>
+          <li>Mehrsprachigkeit (i18n)</li>
+          <li>Trainer-/Spielerbewertung (bilateral)</li>
+        </ul>
+      </div>
+      <div class="moscow-q wont">
+        <h4>Won't Have · MVP ausgeschlossen</h4>
+        <ul>
+          <li>Freie Kriterienwahl durch User</li>
+          <li>Live-Tracking externer Statistiken</li>
+          <li>Internes Messaging / Chat</li>
+          <li>Automatisierte Preisauszahlung</li>
+          <li>White-Label-Plattform</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- 05 SCOPE -->
+  <section class="section" id="scope">
+    <div class="section-label">05 — Scope & Abgrenzung</div>
+    <h2 class="section-title">Was ist TEAMCHEF nicht?</h2>
+    <div class="divider"></div>
+
+    <div class="grid-2">
+      <div class="card">
+        <div class="card-title inl-005">✓ Im Scope (MVP)</div>
+        <ul class="feature-list">
+          <li>Bewertungsplattform für Fußballspiele & Teams</li>
+          <li>Community-Ranking auf Basis von Schwarmintelligenz</li>
+          <li>Gamification: Punkte, Badges, Preise</li>
+          <li>Echtzeit-Visualisierung (Radar Chart)</li>
+          <li>Grundlegendes Anti-Manipulation-System</li>
+          <li>Web-App (mobil-optimiert, keine native App)</li>
+        </ul>
+      </div>
+      <div class="card">
+        <div class="card-title inl-031">✗ Außerhalb Scope (MVP)</div>
+        <ul class="feature-list">
+          <li>Kein Live-Spielscore-Tracking</li>
+          <li>Keine Trainer- oder Spieler-spezifischen Accounts</li>
+          <li>Keine freien Kommentarfelder oder Freitext</li>
+          <li>Keine externe Vereins-/Ligadaten-Integration</li>
+          <li>Kein Video-Content oder Stream-Anbindung</li>
+          <li>Keine Zahlungsabwicklung im MVP</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- 06 AKZEPTANZKRITERIEN -->
+  <section class="section" id="akzeptanz">
+    <div class="section-label">06 — Akzeptanzkriterien</div>
+    <h2 class="section-title">Wann ist das Produkt „fertig"?</h2>
+    <div class="divider"></div>
+
+    <div class="card">
+      <div class="ac-row">
+        <div class="ac-num">1</div>
+        <div class="ac-text">
+          <strong>Bewertungszeitraum</strong>
+          Bewertungen sind nur während des aktiven Spiels und bis max. 1 Stunde nach Spielende möglich. Das System zeigt klar an, ob Bewertung offen oder geschlossen ist.
+        </div>
+      </div>
+      <div class="ac-row">
+        <div class="ac-num">2</div>
+        <div class="ac-text">
+          <strong>One-Vote-Logik</strong>
+          Pro Spiel kann jeder Nutzer genau eine vollständige Bewertung abgeben. Alle 5 Kriterien müssen ausgefüllt sein. Wiederholung ist technisch gesperrt.
+        </div>
+      </div>
+      <div class="ac-row">
+        <div class="ac-num">3</div>
+        <div class="ac-text">
+          <strong>Echtzeit-Feedback</strong>
+          Während der Eingabe aktualisiert sich der Radar Chart sofort. Der Nutzer sieht live seine Werte und den aktuellen Durchschnitt aller bisherigen Bewertungen.
+        </div>
+      </div>
+      <div class="ac-row">
+        <div class="ac-num">4</div>
+        <div class="ac-text">
+          <strong>Ranking & Gamification</strong>
+          Nach Bewertungsende wird das Ranking automatisch berechnet und veröffentlicht. Preise und Badges werden korrekt vergeben und im UI angezeigt.
+        </div>
+      </div>
+      <div class="ac-row">
+        <div class="ac-num">5</div>
+        <div class="ac-text">
+          <strong>Manipulationsschutz</strong>
+          Jede User-ID kann pro Spiel nur einmal bewerten. Für ein offizielles Ranking sind mindestens 30 Bewertungen erforderlich. Auffällige Muster werden erkannt und markiert.
+        </div>
+      </div>
+      <div class="ac-row">
+        <div class="ac-num">6</div>
+        <div class="ac-text">
+          <strong>Zugänglichkeit & Support</strong>
+          Tooltips, FAQ und Kontaktformular sind jederzeit erreichbar. Das UI ist barrierefrei gestaltet (WCAG AA), vollständig mobil-optimiert und in unter 1 Minute erlernbar.
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 07 RISIKEN -->
+  <section class="section" id="risiken">
+    <div class="section-label">07 — Risikoübersicht</div>
+    <h2 class="section-title">Was kann schiefgehen?</h2>
+    <div class="divider"></div>
+
+    <table class="doc-table">
+      <thead>
+        <tr>
+          <th>Risiko</th>
+          <th>Wahrscheinlichkeit</th>
+          <th>Auswirkung</th>
+          <th>Gegenmaßnahme</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td><strong>Manipulation / Fake-Accounts</strong></td>
+          <td><span class="tag tag-amber">Mittel</span></td>
+          <td><span class="tag tag-red">Hoch</span></td>
+          <td>Account-Verifikation, algorithmisches Flagging, Mindest-Vote-Schwelle</td>
+        </tr>
+        <tr>
+          <td><strong>Geringe Nutzerbeteiligung</strong></td>
+          <td><span class="tag tag-amber">Mittel</span></td>
+          <td><span class="tag tag-red">Hoch</span></td>
+          <td>Gamification, Push-Reminder, virales Teilen, Vereinspartnerschaften</td>
+        </tr>
+        <tr>
+          <td><strong>DSGVO & Datenschutz</strong></td>
+          <td><span class="tag tag-green">Niedrig</span></td>
+          <td><span class="tag tag-red">Hoch</span></td>
+          <td>Privacy by Design, Supabase EU-Hosting, juristische Prüfung vor Launch</td>
+        </tr>
+        <tr>
+          <td><strong>Akzeptanz bei Spielern/Trainern</strong></td>
+          <td><span class="tag tag-amber">Mittel</span></td>
+          <td><span class="tag tag-amber">Mittel</span></td>
+          <td>Transparente Kommunikation der Methode, Beta-Tests mit echter Zielgruppe</td>
+        </tr>
+        <tr>
+          <td><strong>Kopierbarkeit durch größere Anbieter</strong></td>
+          <td><span class="tag tag-amber">Mittel</span></td>
+          <td><span class="tag tag-amber">Mittel</span></td>
+          <td>First-Mover-Vorteil, schneller Launch, Community-Bindung aufbauen</td>
+        </tr>
+      </tbody>
+    </table>
+  </section>
+
+</main>
+
+<footer class="doc-footer">
+  <a class="footer-brand" href="index.html">TEAMCHEF</a>
+  <nav class="footer-nav" aria-label="Dokument Navigation">
+    <a class="footer-nav-link active" href="prd.html">PRD</a>
+    <a class="footer-nav-link" href="pitch.html">Pitch Deck</a>
+    <a class="footer-nav-link" href="investorenbrief.html">Investor</a>
+    <a class="footer-nav-link" href="geschaeftsmodell.html">Geschäftsmodell</a>
+    <a class="footer-nav-link" href="marktanalyse.html">Marktanalyse</a>
+    <a class="footer-nav-link" href="usecases.html">Use Cases</a>
+    <a class="footer-nav-link" href="techstack.html">Techstack</a>
+    <a class="footer-nav-link" href="roadmap.html">Roadmap</a>
+    <a class="footer-nav-link" href="designsystem.html">Design System</a>
+    <a class="footer-nav-link" href="finanzplan.html">Finanzplan</a>
+  </nav>
+</footer>
+
+<script>
+const links = document.querySelectorAll('.nav-link');
+const sections = document.querySelectorAll('.section');
+const observer = new IntersectionObserver((entries) => {
+  entries.forEach(e => {
+    if (e.isIntersecting) {
+      links.forEach(l => l.classList.remove('active'));
+      const active = document.querySelector(`.nav-link[href="#${e.target.id}"]`);
+      if (active) active.classList.add('active');
+    }
+  });
+}, { rootMargin: '-20% 0px -70% 0px' });
+sections.forEach(s => observer.observe(s));
+</script>
+</body>
+</html>

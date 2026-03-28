@@ -1,0 +1,85 @@
+{
+  "brand": "TEAMCHEF",
+  "locale": "de-AT",
+  "home": {
+    "badge": "Dokumentenübersicht · 2026",
+    "title": "TEAMCHEF",
+    "subtitle": "Alle Kerndokumente – basierend auf der Notion-Datenbank",
+    "meta": [
+      {
+        "label": "Erstellt",
+        "value": "2025"
+      },
+      {
+        "label": "Basis",
+        "value": "Notion DB · mind-added-design"
+      },
+      {
+        "label": "Status",
+        "value": "MVP-Phase"
+      }
+    ],
+    "cards": [
+      {
+        "slug": "prd",
+        "nav": "PRD",
+        "title": "Product Requirements Document",
+        "summary": "Nicht-technische Produktanforderungen. Vision, Ziele, Zielgruppen, Features (MoSCoW), Scope, Akzeptanzkriterien, Risiken."
+      },
+      {
+        "slug": "pitch",
+        "nav": "Pitch Deck",
+        "title": "Pitch Deck",
+        "summary": "Stakeholder-Pitch. Problem, Lösung, USPs, Marktgröße, Wettbewerbsübersicht, Geschäftsmodell-Kurzfassung, Roadmap, Call to Action."
+      },
+      {
+        "slug": "investorenbrief",
+        "nav": "Investor",
+        "title": "Investorenbrief",
+        "summary": "Vertraulich. Marktopportunität, Produkt-Snapshot, SWOT, Investitionsanfrage, Verwendungszwecke, Wachstumspfad, langfristige Vision."
+      },
+      {
+        "slug": "geschaeftsmodell",
+        "nav": "Geschäftsmodell",
+        "title": "Geschäftsmodell",
+        "summary": "Business Model Canvas, alle 5 Revenue Streams (Detail), Freemium-Modell, Unit Economics, Partnerstrategie, Wachstumsmeilensteine."
+      },
+      {
+        "slug": "marktanalyse",
+        "nav": "Marktanalyse",
+        "title": "Marktanalyse",
+        "summary": "TAM/SAM/SOM, Marktsegmente, detaillierte Wettbewerbsmatrix (6 Konkurrenten), Markttrends, SWOT-Analyse, strategische Positionierung & Moats."
+      },
+      {
+        "slug": "usecases",
+        "nav": "Use Cases",
+        "title": "Use Cases & User Flow",
+        "summary": "Kompletter Nutzerfluss (First-Time & Returning), 7 Use Cases, Sitemap mit Routen, Feature-Architektur, Retention Loops, Edge Cases."
+      },
+      {
+        "slug": "techstack",
+        "nav": "Techstack",
+        "title": "Techstack & Architektur",
+        "summary": "Systemarchitektur, Tech-Stack (React, Hono, Neon, Drizzle), Monorepo-Struktur, API-Design, DevOps & CI/CD."
+      },
+      {
+        "slug": "roadmap",
+        "nav": "Roadmap",
+        "title": "Roadmap & Timeline",
+        "summary": "Phasenbasierte Timeline (MVP → Phase 1.1 → Scale), Meilensteine, konkrete Zeitplanung bis 2027+."
+      },
+      {
+        "slug": "designsystem",
+        "nav": "Design System",
+        "title": "Design System / UI",
+        "summary": "Farbpalette, Typografie, Komponentenbibliothek (shadcn/ui), Brand Guidelines, Wireframe-Referenzen."
+      },
+      {
+        "slug": "finanzplan",
+        "nav": "Finanzplan",
+        "title": "Kosten & Finanzplan",
+        "summary": "Budget-Aufschlüsselung, laufende Kosten, Break-Even-Analyse, Burn Rate, Finanzprognosen & Szenario-Analyse."
+      }
+    ]
+  }
+}

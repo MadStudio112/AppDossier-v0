@@ -1,0 +1,548 @@
+{
+  "title": "TEAMCHEF – Geschäftsmodell",
+  "badge": "Geschäftsmodell · 2025",
+  "subtitle": "Business Model Canvas & Revenue-Strategie",
+  "meta": [
+    {
+      "label": "Modell",
+      "value": "Freemium + Sponsoring + Data"
+    },
+    {
+      "label": "Phase",
+      "value": "Pre-Revenue → Scale"
+    },
+    {
+      "label": "Zielmarkt",
+      "value": "B2C + B2B (Sponsoren)"
+    }
+  ],
+  "sections": [
+    {
+      "id": "canvas",
+      "number": "01",
+      "nav": "Canvas",
+      "eyebrow": "Business Model Canvas",
+      "title": "Das Modell auf einen Blick",
+      "blocks": [
+        {
+          "canvas": [
+            {
+              "columns": 3,
+              "blocks": [
+                {
+                  "label": "Wertversprechen",
+                  "title": "Was wir bieten",
+                  "items": [
+                    "Objektive Spielerbewertung durch Schwarmintelligenz",
+                    "Gamification mit echten Geld- und Sachpreisen",
+                    "Echtzeit-Radar-Chart & Community-Vergleich",
+                    "Direkter Werbezugang für Sponsoren zu Fußballfans",
+                    "Transparentes, manipulationssicheres System"
+                  ],
+                  "accent": false
+                },
+                {
+                  "label": "Kundensegmente",
+                  "title": "Für wen",
+                  "items": [
+                    "Fußballfans (B2C, Primär)",
+                    "Amateurvereine & Jugendteams",
+                    "Sponsoren & Werbepartner (B2B)",
+                    "Scouts & Vereinsmanager (B2B, später)",
+                    "Andere Sportarten (Expansion)"
+                  ],
+                  "accent": false
+                },
+                {
+                  "label": "Kanäle",
+                  "title": "Wie wir erreichen",
+                  "items": [
+                    "Web-App (Mobile-First)",
+                    "Social Media & virales Teilen",
+                    "Vereinspartnerschaften",
+                    "Push-/E-Mail-Benachrichtigungen",
+                    "Influencer & Sport-Community"
+                  ],
+                  "accent": false
+                }
+              ]
+            },
+            {
+              "columns": 2,
+              "blocks": [
+                {
+                  "label": "Schlüsselaktivitäten",
+                  "title": "Was wir tun",
+                  "items": [
+                    "Plattform-Entwicklung & Betrieb",
+                    "Community-Aufbau & Engagement",
+                    "Anti-Manipulation & Fairness-System",
+                    "Sponsorenakquise & Kampagnenmanagement",
+                    "Datenauswertung & Reporting"
+                  ],
+                  "accent": false
+                },
+                {
+                  "label": "Schlüsselressourcen",
+                  "title": "Was wir brauchen",
+                  "items": [
+                    "Tech-Team (Frontend, Backend)",
+                    "Community & Nutzerbasis",
+                    "Algorithmen (Ranking, Anti-Fraud)",
+                    "Sponsorennetzwerk",
+                    "Cloud-Infrastruktur (Supabase, Vercel)"
+                  ],
+                  "accent": false
+                }
+              ]
+            },
+            {
+              "columns": 2,
+              "blocks": [
+                {
+                  "label": "Kostenstruktur",
+                  "title": "Was es kostet",
+                  "items": [
+                    "Entwicklung & Betrieb (Cloud, Hosting)",
+                    "Marketing & User Acquisition",
+                    "Preise & Gewinnspielkosten (durch Sponsoren gedeckt)",
+                    "Support & Community-Management",
+                    "DSGVO & Rechtsberatung"
+                  ],
+                  "accent": false
+                },
+                {
+                  "label": "Einnahmequellen",
+                  "title": "Wie wir verdienen",
+                  "items": [
+                    "**Phase 1:** Sponsoring & Werbung",
+                    "**Phase 2:** Premium-Features (Abo)",
+                    "**Phase 2:** Daten & Analytics (B2B)",
+                    "**Phase 3:** White-Label & Lizenzierung",
+                    "**Phase 3:** Affiliate & Partnerschaften"
+                  ],
+                  "accent": true,
+                  "titleTone": "green"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "streams",
+      "number": "02",
+      "nav": "Revenue",
+      "eyebrow": "Revenue Streams (Detail)",
+      "title": "Wie TEAMCHEF Geld verdient",
+      "blocks": [
+        {
+          "revenue": [
+            {
+              "title": "Sponsoring & Preisfinanzierung",
+              "phase": {
+                "label": "Phase 1",
+                "tone": "green"
+              },
+              "description": "Unternehmen finanzieren die Gewinnspielpreise und erhalten dafür prominentes Branding\nim Bewertungsflow (z.B. „Gesponsert von [Firma]\" beim Loading Screen, im Ranking,\nauf der Bestätigungsseite). Direkte, messbare Reichweite zu einer hochaffinen Zielgruppe\nohne Streuverluste.",
+              "mechanics": [
+                "Sponsor stiftet Preis (Geld, Gutscheine, Sachpreise) für ein Spiel oder eine Saison",
+                "Logo + Claim erscheint für alle Bewerter dieses Spiels sichtbar im UI",
+                "Sponsor erhält Kampagnen-Reporting (Impressionen, Klicks, demografische Daten)",
+                "Preisstruktur: Pauschalgebühr pro Spiel oder saisonales Paket"
+              ]
+            },
+            {
+              "title": "Native Advertising",
+              "phase": {
+                "label": "Phase 1",
+                "tone": "green"
+              },
+              "description": "Werbeplatzierungen im Ranking-Bereich, im Onboarding und bei Spielbenachrichtigungen.\nThematisch zum Fußball passend (Sportwetten-Anbieter, Sportartikel, Energydrinks,\nlokale Unternehmen). Kein aggressives Ad-Format – native, kontextuell, respektvoll.",
+              "mechanics": [
+                "CPM- oder CPC-Abrechnung je nach Format",
+                "Targeting nach Sportart, Region, Spieltermin",
+                "Premium-Placement für Exklusiv-Sponsoren möglich"
+              ]
+            },
+            {
+              "title": "Premium-Abonnements",
+              "phase": {
+                "label": "Phase 2",
+                "tone": "blue"
+              },
+              "description": "Nutzer, die tiefer in die Daten einsteigen wollen (z.B. Trainer, Vereinsverantwortliche,\nambitionierte Fans), können ein Premium-Abo abschließen. Dieses bietet erweiterte\nStatistiken, historische Bewertungsverläufe, personalisierte Insights und werbefreie Nutzung.",
+              "mechanics": [
+                "Monatliches oder jährliches Abo (Jahres-Rabatt als Anreiz)",
+                "Werbefreiheit als Kern-Feature des Premium-Tiers",
+                "Radar-Chart-Exporte, Team-Vergleiche, Saisonstatistiken",
+                "Für Vereine: Team-Dashboard mit aggregierten Community-Bewertungen"
+              ]
+            },
+            {
+              "title": "Daten & Analytics B2B",
+              "phase": {
+                "label": "Phase 2",
+                "tone": "blue"
+              },
+              "description": "Anonymisierte, aggregierte Bewertungsdaten sind für Vereine, Scouts und Medien\nhochwertig. Community-Einschätzungen über Spieler und Teams über Saisons hinweg\nergeben einzigartige Datensätze, die klassische Scouting-Methoden sinnvoll ergänzen.",
+              "mechanics": [
+                "API-Zugang für Vereine, Medien und Analyse-Unternehmen gegen Gebühr",
+                "Custom Reports und Daten-Exports für Scouts & Journalisten",
+                "Alle Daten vollständig anonymisiert und DSGVO-konform"
+              ]
+            },
+            {
+              "title": "White-Label & Lizenzierung",
+              "phase": {
+                "label": "Phase 3",
+                "tone": "amber"
+              },
+              "description": "Verbände, Ligen und große Vereine können die TEAMCHEF-Plattform unter eigenem Branding\nbetreiben. Lizenzmodell ermöglicht Skalierung ohne eigene Entwicklungskosten beim Kunden.\nHochmargiger B2B-Revenue-Stream mit langfristiger Vertragsbindung.",
+              "mechanics": [
+                "Einmalige Setup-Gebühr + monatliche Lizenzgebühr",
+                "Anpassbares Branding, eigene Kriterien, eigene Preisvergabe",
+                "Technischer Support und SLA inklusive"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "freemium",
+      "number": "03",
+      "nav": "Freemium",
+      "eyebrow": "Freemium-Modell",
+      "title": "Kostenlos mit Premium-Optionen",
+      "blocks": [
+        {
+          "highlight": "**Strategie:** MVP startet vollständig kostenlos, um maximales Nutzerwachstum zu fördern.\nMonetarisierung erfolgt zuerst über Sponsoren (kein User-Paywall), dann schrittweise über\nPremium-Features. Kein „Dark Pattern\" – alle Nutzer wissen, wie das System finanziert wird."
+        },
+        {
+          "table": {
+            "variant": "freemium",
+            "columns": [
+              "Feature",
+              "Free",
+              "Premium ★"
+            ],
+            "rows": [
+              {
+                "cells": [
+                  {
+                    "text": "Spielebewertung (5 Kriterien)"
+                  },
+                  {
+                    "text": "✓"
+                  },
+                  {
+                    "text": "✓"
+                  }
+                ]
+              },
+              {
+                "cells": [
+                  {
+                    "text": "Live Radar Chart & Durchschnitt"
+                  },
+                  {
+                    "text": "✓"
+                  },
+                  {
+                    "text": "✓"
+                  }
+                ]
+              },
+              {
+                "cells": [
+                  {
+                    "text": "Teilnahme am Ranking & Preisen"
+                  },
+                  {
+                    "text": "✓"
+                  },
+                  {
+                    "text": "✓"
+                  }
+                ]
+              },
+              {
+                "cells": [
+                  {
+                    "text": "Badges & Gamification"
+                  },
+                  {
+                    "text": "✓"
+                  },
+                  {
+                    "text": "✓"
+                  }
+                ]
+              },
+              {
+                "cells": [
+                  {
+                    "text": "Werbeeinblendungen"
+                  },
+                  {
+                    "text": "✓"
+                  },
+                  {
+                    "text": "Werbefrei"
+                  }
+                ]
+              },
+              {
+                "cells": [
+                  {
+                    "text": "Historische Statistiken (Saisonverlauf)"
+                  },
+                  {
+                    "text": "—"
+                  },
+                  {
+                    "text": "★"
+                  }
+                ]
+              },
+              {
+                "cells": [
+                  {
+                    "text": "Detaillierte Radar-Chart-Exporte"
+                  },
+                  {
+                    "text": "—"
+                  },
+                  {
+                    "text": "★"
+                  }
+                ]
+              },
+              {
+                "cells": [
+                  {
+                    "text": "Team-Vergleichsanalysen"
+                  },
+                  {
+                    "text": "—"
+                  },
+                  {
+                    "text": "★"
+                  }
+                ]
+              },
+              {
+                "cells": [
+                  {
+                    "text": "Früher Zugang zu neuen Features"
+                  },
+                  {
+                    "text": "—"
+                  },
+                  {
+                    "text": "★"
+                  }
+                ]
+              },
+              {
+                "cells": [
+                  {
+                    "text": "Vereins-Dashboard (B2B-Add-on)"
+                  },
+                  {
+                    "text": "—"
+                  },
+                  {
+                    "text": "★ auf Anfrage"
+                  }
+                ]
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "einheiten",
+      "number": "04",
+      "nav": "Unit Econ.",
+      "eyebrow": "Unit Economics (Annahmen MVP)",
+      "title": "Was jeder Nutzer wert ist",
+      "blocks": [
+        {
+          "units": [
+            {
+              "label": "Ziel aktive User (Quartal 1)",
+              "value": "1.000",
+              "description": "Registrierte, aktiv bewertende Nutzer nach MVP-Launch"
+            },
+            {
+              "label": "Sponsor-Revenue / Spiel",
+              "value": "€200–500",
+              "description": "Schätzung: Branding-Paket + Preis-Stiftung pro Spiel"
+            },
+            {
+              "label": "Spiele / Monat (MVP)",
+              "value": "4–8",
+              "description": "Abhängig von Saison, Partnerverein, manueller Pflege"
+            },
+            {
+              "label": "Premium-Conversion (Ziel)",
+              "value": "3–5%",
+              "description": "Branchentypische Freemium-Conversion Rate"
+            },
+            {
+              "label": "ARPU Premium (Monat)",
+              "value": "€4–9",
+              "description": "Vergleichbar mit Sport-Apps wie Sofascore, Stathead"
+            },
+            {
+              "label": "CAC (Schätzung)",
+              "value": "<€5",
+              "description": "Viral-Loop + Vereinspartnerschaften = günstiger Kanal"
+            }
+          ]
+        },
+        {
+          "features": [
+            "**Viral-Loop:** Nutzer teilen ihre Platzierung → organisches Wachstum ohne Paid-Media",
+            "**Vereins-Multiplikator:** Ein Partnerverein bringt sofort 50–200 Fans auf die Plattform",
+            "**Saison-Loyalität:** Saisonrankings binden Nutzer über Monate, nicht nur für ein Spiel",
+            "**Sponsor-Anreiz:** Sponsoren bringen eigene Reichweite und Cross-Promotion mit"
+          ],
+          "title": "Wachstumshebel"
+        }
+      ]
+    },
+    {
+      "id": "partner",
+      "number": "05",
+      "nav": "Partner",
+      "eyebrow": "Partnerstrategie",
+      "title": "Mit wem wir wachsen",
+      "blocks": [
+        {
+          "partners": [
+            {
+              "icon": "⚽",
+              "title": "Fußballvereine",
+              "description": "Amateuer- und Jugendvereine als erste Nutzerbasis und Content-Partner"
+            },
+            {
+              "icon": "🏢",
+              "title": "Sponsoren",
+              "description": "Lokale und regionale Unternehmen als Preistifter und Werbepartner"
+            },
+            {
+              "icon": "📊",
+              "title": "Scouts & Medien",
+              "description": "Datenpartner für B2B-Analytics und Reporting (Phase 2+)"
+            },
+            {
+              "icon": "🏛️",
+              "title": "Verbände",
+              "description": "Regionale Fußballverbände für Reichweite und White-Label-Lizenzen"
+            },
+            {
+              "icon": "📱",
+              "title": "Influencer",
+              "description": "Sport-Creator und Fan-Kanäle für virales Wachstum und Reichweite"
+            },
+            {
+              "icon": "☁️",
+              "title": "Tech-Partner",
+              "description": "Supabase, Vercel – skalierbare Infrastruktur ohne Lock-in"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "meilensteine",
+      "number": "06",
+      "nav": "Milestones",
+      "eyebrow": "Wachstumsmeilensteine",
+      "title": "Der Weg zur Monetarisierung",
+      "blocks": [
+        {
+          "milestones": {
+            "items": [
+              {
+                "icon": "🚀",
+                "title": "M1 – MVP Live",
+                "body": "Vollständiger Bewertungsflow, Ranking, Anti-Manipulation aktiv. Erster Sponsor. Closed Beta mit Pilotverein."
+              },
+              {
+                "icon": "👥",
+                "title": "M2 – 1.000 aktive Nutzer",
+                "body": "Öffentlicher Launch. Erste Kampagne mit Sponsor. 30+ Bewertungen pro Spiel im Schnitt. Nutzer-Feedback eingearbeitet."
+              },
+              {
+                "icon": "💰",
+                "title": "M3 – Erste Revenue",
+                "body": "2–3 aktive Sponsorenverträge. Native-Advertising aktiv. Monatliche Einnahmen positiv. Premium-Feature-Launch."
+              },
+              {
+                "icon": "📈",
+                "title": "M4 – Community & Mobile",
+                "body": "PWA oder nativer App-Wrapper. Community-Features. Mehrsprachigkeit. Skalierung auf andere Sportarten gestartet."
+              },
+              {
+                "icon": "🌍",
+                "title": "M5 – Internationalisierung",
+                "body": "Rollout in weiteren europäischen Märkten. Verbands-Partnerschaften. B2B-Data-Deals. White-Label erster Verband."
+              }
+            ]
+          }
+        },
+        {
+          "swot": {
+            "variant": "full",
+            "items": [
+              {
+                "quadrant": "s",
+                "title": "Stärken",
+                "items": [
+                  "Mehrere Revenue-Streams parallelisierbar",
+                  "Sponsor-Modell: kein User-Paywall nötig",
+                  "Community wächst durch Viral-Loop",
+                  "Skalierbar auf alle Sportarten & Märkte"
+                ]
+              },
+              {
+                "quadrant": "o",
+                "title": "Chancen",
+                "items": [
+                  "First Mover: Nische unbesetzt",
+                  "Fan-Partizipation Trend wächst",
+                  "Sponsoring-Markt riesig",
+                  "White-Label als skalierbarer B2B-Kanal"
+                ]
+              },
+              {
+                "quadrant": "w",
+                "title": "Schwächen",
+                "items": [
+                  "Community-abhängig: kein Wert ohne Nutzer",
+                  "Hoher Content-Pflegeaufwand (Spielplan)",
+                  "Premium-Conversion braucht Zeit"
+                ]
+              },
+              {
+                "quadrant": "t",
+                "title": "Risiken",
+                "items": [
+                  "Sponsoren-Akquise in Early Stage schwierig",
+                  "Engagement-Abfall ohne Content-Reize",
+                  "Rechtliche Themen (Gewinnspielgesetz)"
+                ]
+              }
+            ]
+          }
+        }
+      ]
+    }
+  ]
+}

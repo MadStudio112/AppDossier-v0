@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>TEAMCHEF – Use Cases & User Flow</title>
+<link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+<header class="doc-header">
+  <div class="header-inner">
+    <div class="doc-badge">Use Cases & User Flow · 2025</div>
+    <h1 class="doc-title">TEAM<span>CHEF</span></h1>
+    <p class="doc-subtitle">Nutzerflüsse, Anwendungsfälle & Feature-Architektur</p>
+    <div class="doc-meta">
+      <div class="meta-item"><span class="meta-label">Phase</span><span class="meta-value">MVP / Phase 1</span></div>
+      <div class="meta-item"><span class="meta-label">Zielgruppe</span><span class="meta-value">Fußballfans (B2C)</span></div>
+      <div class="meta-item"><span class="meta-label">Basis</span><span class="meta-value">PRD v1.0</span></div>
+    </div>
+  </div>
+</header>
+<nav class="doc-nav">
+  <div class="nav-inner">
+    <a href="#userflow" class="nav-link active"><span class="nav-num">01</span> User Flow</a>
+    <a href="#usecases" class="nav-link"><span class="nav-num">02</span> Use Cases</a>
+    <a href="#sitemap" class="nav-link"><span class="nav-num">03</span> Sitemap</a>
+    <a href="#features" class="nav-link"><span class="nav-num">04</span> Features</a>
+    <a href="#loops" class="nav-link"><span class="nav-num">05</span> Retention</a>
+    <a href="#edge" class="nav-link"><span class="nav-num">06</span> Edge Cases</a>
+  </div>
+</nav>
+<main>
+
+<section class="section" id="userflow">
+  <div class="section-label">01 — Haupt-User-Flow</div>
+  <h2 class="section-title">Vom ersten Besuch bis zum Ranking</h2>
+  <div class="divider"></div>
+  <div class="highlight"><p class="inl-032">Der Kern-Flow ist auf <strong>maximale Einfachheit</strong> ausgelegt: Ein neuer Nutzer soll innerhalb von <strong>3 Minuten</strong> seine erste Bewertung abgegeben haben – inklusive Registrierung.</p></div>
+  <div class="card inl-011">
+    <div class="card-title">Neuer Nutzer (First-Time)</div>
+    <div class="flow-step"><div class="flow-num">1</div><div><div class="flow-title">Landing Page</div><div class="flow-desc">Nutzer kommt über Social-Link, Vereins-Website oder direkten Aufruf. Sieht sofort: aktuelle Spiele, Claim, CTA „Jetzt bewerten".</div><div class="flow-detail"><div class="flow-detail-title">Schlüsselelemente</div><ul><li>Aktuelle Spiele mit Countdown „Bewertung noch X Stunden offen"</li><li>Social Proof: „487 Fans haben bereits bewertet"</li><li>Kein Login-Wall vor der Spieleübersicht</li></ul></div></div></div>
+    <div class="flow-step"><div class="flow-num">2</div><div><div class="flow-title">Registrierung / Login</div><div class="flow-desc">Login-Aufforderung erst wenn Nutzer „Bewerten" klickt. Social Login (Google, Apple) als Default. E-Mail als Fallback.</div><div class="flow-detail"><div class="flow-detail-title">Entscheidungspunkte</div><ul><li>Social Login (1-Click) als Default-Option</li><li>E-Mail-Registrierung als Fallback</li><li>Magic Link als passwortlose Alternative (Phase 1.1)</li><li>E-Mail-Verifizierung nicht blockierend, erst für Ranking</li></ul></div></div></div>
+    <div class="flow-step"><div class="flow-num">3</div><div><div class="flow-title">Onboarding (nur First-Time)</div><div class="flow-desc">Kurzes Overlay (3 Screens max): Was ist TEAMCHEF? → Wie funktioniert Bewertung? → Was kannst du gewinnen? Skippable.</div><div class="flow-detail"><div class="flow-detail-title">Design-Regeln</div><ul><li>Max. 3 Screens, je 1 Satz + 1 Illustration</li><li>Skip-Button immer sichtbar</li><li>Wird nur beim allerersten Login gezeigt</li><li>Tooltips im Bewertungsflow ergänzen Onboarding</li></ul></div></div></div>
+    <div class="flow-step"><div class="flow-num">4</div><div><div class="flow-title">Spiel auswählen</div><div class="flow-desc">Spieleübersicht: aktive Spiele prominent, vergangene darunter. Filter nach Liga, Verein, Datum.</div><div class="flow-detail"><div class="flow-detail-title">Status-Logik</div><ul><li><span class="tag tag-green inl-033">OFFEN</span> Bewertung aktiv – CTA „Jetzt bewerten"</li><li><span class="tag tag-amber inl-033">BALD</span> Spiel steht bevor – Reminder setzen</li><li><span class="tag tag-red inl-033">GESCHLOSSEN</span> Bewertungsende – Ergebnis anzeigen</li></ul></div></div></div>
+    <div class="flow-step"><div class="flow-num">5</div><div><div class="flow-title">Bewertung abgeben</div><div class="flow-desc">Kerninteraktion: 5 Kriterien (Slider 0–10). Radar Chart aktualisiert sich live. Alle Kriterien sind Pflichtfelder.</div><div class="flow-detail"><div class="flow-detail-title">UI-Mechanik</div><ul><li>Slider pro Kriterium mit numerischem Wert</li><li>Radar Chart: eigene Werte (grün) vs. Durchschnitt (grau)</li><li>Durchschnitt sichtbar ab 3 gesetzten Kriterien</li><li>Submit erst aktiv wenn alle 5 Kriterien ausgefüllt</li><li>Zielzeit: unter 2 Minuten</li></ul></div></div></div>
+    <div class="flow-step"><div class="flow-num">6</div><div><div class="flow-title">Bestätigung & Sofortfeedback</div><div class="flow-desc">Bestätigungsscreen: eigener Radar vs. Community-Durchschnitt. Position im aktuellen Ranking. Share-Button prominent.</div><div class="flow-detail"><div class="flow-detail-title">Elemente</div><ul><li>Radar Chart Overlay: eigene Werte vs. Durchschnitt</li><li>Vorläufiges Ranking: „Du bist aktuell Platz X von Y"</li><li>Badge-Vergabe (z.B. „Erste Bewertung")</li><li>Share-CTA: Social Media, WhatsApp, Copy-Link</li><li>Sponsor-Branding (dezent, kontextuell)</li></ul></div></div></div>
+    <div class="flow-step"><div class="flow-num">7</div><div><div class="flow-title">Ranking & Preise</div><div class="flow-desc">Nach Bewertungsende: finales Ranking. Top-Bewerter (nächste am Durchschnitt) erhalten Preise.</div><div class="flow-detail"><div class="flow-detail-title">Ranking-Logik</div><ul><li>Distanz zum Community-Durchschnitt (niedrigste = beste)</li><li>Mindestens 30 Bewertungen für offizielles Ranking</li><li>Top 3 erhalten Preise (Sponsor-finanziert)</li><li>Alle Teilnehmer erhalten Punkte für Saisonwertung</li></ul></div></div></div>
+  </div>
+  <div class="card inl-017">
+    <div class="card-title">Returning User</div>
+    <div class="flow-step"><div class="flow-num alt">R1</div><div><div class="flow-title">Push/E-Mail Reminder</div><div class="flow-desc">„Neues Spiel offen – bewerte jetzt!" oder „Dein Ranking ist da!". Direkt-Link zum Bewertungsscreen.</div></div></div>
+    <div class="flow-step"><div class="flow-num alt">R2</div><div><div class="flow-title">Dashboard (Home)</div><div class="flow-desc">Aktive Spiele, letzte Bewertungen, Saisonrang, Badges. Direkt in den Bewertungsflow springen.</div></div></div>
+    <div class="flow-step"><div class="flow-num alt">R3</div><div><div class="flow-title">Bewertung → Ranking → Wiederkehr</div><div class="flow-desc">Gleicher Flow (Schritte 4–7), ohne Onboarding. Bewertung in unter 1 Minute für erfahrene Nutzer.</div></div></div>
+  </div>
+</section>
+
+<section class="section" id="usecases">
+  <div class="section-label">02 — Use Cases</div>
+  <h2 class="section-title">Wer macht was – und warum</h2>
+  <div class="divider"></div>
+
+  <div class="uc-card"><div class="uc-header"><div class="uc-id">UC-01</div><span class="tag tag-green">MVP</span></div><div class="uc-title">Spiel bewerten</div><div class="uc-desc">Als Fan möchte ich ein Fußballspiel nach 5 Kriterien bewerten, damit meine Einschätzung Teil des Community-Rankings wird und ich Preise gewinnen kann.</div><div class="uc-meta"><div class="uc-meta-block"><div class="uc-meta-label">Vorbedingung</div><div class="uc-meta-value">Eingeloggt. Spiel im Status „offen". Noch nicht bewertet.</div></div><div class="uc-meta-block"><div class="uc-meta-label">Ergebnis</div><div class="uc-meta-value">Bewertung gespeichert. Radar Chart angezeigt. Ranking-Position sichtbar. Share-Option verfügbar.</div></div></div></div>
+
+  <div class="uc-card"><div class="uc-header"><div class="uc-id">UC-02</div><span class="tag tag-green">MVP</span></div><div class="uc-title">Ranking einsehen</div><div class="uc-desc">Als Fan möchte ich nach Bewertungsende das Ranking sehen, um zu wissen wie nah ich am Community-Durchschnitt lag.</div><div class="uc-meta"><div class="uc-meta-block"><div class="uc-meta-label">Vorbedingung</div><div class="uc-meta-value">Bewertungszeitraum abgelaufen. Min. 30 Bewertungen. Nutzer hat teilgenommen.</div></div><div class="uc-meta-block"><div class="uc-meta-label">Ergebnis</div><div class="uc-meta-value">Finales Ranking. Eigene Position markiert. Preise vergeben. Saisonpunkte addiert.</div></div></div></div>
+
+  <div class="uc-card"><div class="uc-header"><div class="uc-id">UC-03</div><span class="tag tag-green">MVP</span></div><div class="uc-title">Registrierung & Login</div><div class="uc-desc">Als neuer Nutzer möchte ich mich schnell registrieren, um sofort an einer Bewertung teilzunehmen.</div><div class="uc-meta"><div class="uc-meta-block"><div class="uc-meta-label">Vorbedingung</div><div class="uc-meta-value">Keine Session. CTA „Bewerten" geklickt.</div></div><div class="uc-meta-block"><div class="uc-meta-label">Ergebnis</div><div class="uc-meta-value">Account erstellt. Session aktiv. Weiterleitung zum Bewertungsflow.</div></div></div></div>
+
+  <div class="uc-card"><div class="uc-header"><div class="uc-id">UC-04</div><span class="tag tag-green">MVP</span></div><div class="uc-title">Ergebnis teilen</div><div class="uc-desc">Als Fan möchte ich mein Ergebnis in Social Media teilen, um Freunde zur Teilnahme zu motivieren.</div><div class="uc-meta"><div class="uc-meta-block"><div class="uc-meta-label">Vorbedingung</div><div class="uc-meta-value">Bewertung abgegeben. Bestätigungs- oder Ranking-Screen aktiv.</div></div><div class="uc-meta-block"><div class="uc-meta-label">Ergebnis</div><div class="uc-meta-value">Share-Card generiert (Bild + Link). Deeplink führt neue Nutzer direkt zum Spiel.</div></div></div></div>
+
+  <div class="uc-card"><div class="uc-header"><div class="uc-id">UC-05</div><span class="tag tag-green">MVP</span></div><div class="uc-title">Profil & Badges</div><div class="uc-desc">Als regelmäßiger Nutzer möchte ich meine Badges, Saisonwertung und Bewertungshistorie sehen.</div><div class="uc-meta"><div class="uc-meta-block"><div class="uc-meta-label">Vorbedingung</div><div class="uc-meta-value">Eingeloggt. Min. 1 Bewertung abgegeben.</div></div><div class="uc-meta-block"><div class="uc-meta-label">Ergebnis</div><div class="uc-meta-value">Profilseite: Badges, Punkte, Saisonrang, alle bewerteten Spiele.</div></div></div></div>
+
+  <div class="uc-card"><div class="uc-header"><div class="uc-id">UC-06</div><span class="tag tag-blue">Phase 1.1</span></div><div class="uc-title">Push-Reminder</div><div class="uc-desc">Als Fan möchte ich benachrichtigt werden, wenn ein Spiel offen ist oder mein Ranking veröffentlicht wurde.</div><div class="uc-meta"><div class="uc-meta-block"><div class="uc-meta-label">Vorbedingung</div><div class="uc-meta-value">Notifications aktiviert. Min. 1 Bewertung.</div></div><div class="uc-meta-block"><div class="uc-meta-label">Ergebnis</div><div class="uc-meta-value">Benachrichtigung gesendet. Deeplink öffnet Bewertungs- oder Ranking-Screen.</div></div></div></div>
+
+  <div class="uc-card"><div class="uc-header"><div class="uc-id">UC-07</div><span class="tag tag-blue">Phase 1.1</span></div><div class="uc-title">Admin: Spiel verwalten</div><div class="uc-desc">Als Admin möchte ich Spiele anlegen, Zeiträume setzen und Ergebnisse freigeben.</div><div class="uc-meta"><div class="uc-meta-block"><div class="uc-meta-label">Vorbedingung</div><div class="uc-meta-value">Admin-Rolle. Zugang zum Admin-Panel.</div></div><div class="uc-meta-block"><div class="uc-meta-label">Ergebnis</div><div class="uc-meta-value">Spiel erstellt. Status-Management: Entwurf → Offen → Geschlossen → Archiv.</div></div></div></div>
+</section>
+
+<section class="section" id="sitemap">
+  <div class="section-label">03 — Sitemap & Navigation</div>
+  <h2 class="section-title">Seitenstruktur (MVP)</h2>
+  <div class="divider"></div>
+  <div class="card">
+    <div class="sitemap-item"><div class="sitemap-dot"></div><div class="sitemap-name">Landing / Home</div><div class="sitemap-route">/</div></div>
+    <div class="sitemap-level">
+      <div class="sitemap-item"><div class="sitemap-dot secondary"></div><div class="sitemap-name">Spieleübersicht</div><div class="sitemap-route">/spiele</div></div>
+      <div class="sitemap-level">
+        <div class="sitemap-item"><div class="sitemap-dot tertiary"></div><div class="sitemap-name">Spiel-Detail</div><div class="sitemap-route">/spiele/:id</div></div>
+        <div class="sitemap-item"><div class="sitemap-dot tertiary"></div><div class="sitemap-name">Bewertungsscreen</div><div class="sitemap-route">/spiele/:id/bewerten</div></div>
+        <div class="sitemap-item"><div class="sitemap-dot tertiary"></div><div class="sitemap-name">Ranking / Ergebnis</div><div class="sitemap-route">/spiele/:id/ranking</div></div>
+      </div>
+      <div class="sitemap-item"><div class="sitemap-dot secondary"></div><div class="sitemap-name">Leaderboard</div><div class="sitemap-route">/leaderboard</div></div>
+      <div class="sitemap-item"><div class="sitemap-dot secondary"></div><div class="sitemap-name">Profil</div><div class="sitemap-route">/profil</div></div>
+      <div class="sitemap-level">
+        <div class="sitemap-item"><div class="sitemap-dot tertiary"></div><div class="sitemap-name">Meine Bewertungen</div><div class="sitemap-route">/profil/bewertungen</div></div>
+        <div class="sitemap-item"><div class="sitemap-dot tertiary"></div><div class="sitemap-name">Badges</div><div class="sitemap-route">/profil/badges</div></div>
+        <div class="sitemap-item"><div class="sitemap-dot tertiary"></div><div class="sitemap-name">Einstellungen</div><div class="sitemap-route">/profil/settings</div></div>
+      </div>
+      <div class="sitemap-item"><div class="sitemap-dot secondary"></div><div class="sitemap-name">Auth</div><div class="sitemap-route">/auth</div></div>
+      <div class="sitemap-level">
+        <div class="sitemap-item"><div class="sitemap-dot tertiary"></div><div class="sitemap-name">Login</div><div class="sitemap-route">/auth/login</div></div>
+        <div class="sitemap-item"><div class="sitemap-dot tertiary"></div><div class="sitemap-name">Registrierung</div><div class="sitemap-route">/auth/register</div></div>
+        <div class="sitemap-item"><div class="sitemap-dot tertiary"></div><div class="sitemap-name">Passwort vergessen</div><div class="sitemap-route">/auth/reset</div></div>
+      </div>
+      <div class="sitemap-item"><div class="sitemap-dot secondary"></div><div class="sitemap-name">Statische Seiten</div><div class="sitemap-route"></div></div>
+      <div class="sitemap-level">
+        <div class="sitemap-item"><div class="sitemap-dot tertiary"></div><div class="sitemap-name">FAQ</div><div class="sitemap-route">/faq</div></div>
+        <div class="sitemap-item"><div class="sitemap-dot tertiary"></div><div class="sitemap-name">So funktioniert's</div><div class="sitemap-route">/how-it-works</div></div>
+        <div class="sitemap-item"><div class="sitemap-dot tertiary"></div><div class="sitemap-name">Datenschutz</div><div class="sitemap-route">/datenschutz</div></div>
+        <div class="sitemap-item"><div class="sitemap-dot tertiary"></div><div class="sitemap-name">Impressum</div><div class="sitemap-route">/impressum</div></div>
+      </div>
+    </div>
+  </div>
+  <div class="card inl-017">
+    <div class="card-title">Admin-Bereich (geschützt)</div>
+    <div class="sitemap-item"><div class="sitemap-dot inl-034"></div><div class="sitemap-name">Admin Dashboard</div><div class="sitemap-route">/admin</div></div>
+    <div class="sitemap-level inl-035">
+      <div class="sitemap-item"><div class="sitemap-dot inl-036"></div><div class="sitemap-name">Spiele verwalten</div><div class="sitemap-route">/admin/spiele</div></div>
+      <div class="sitemap-item"><div class="sitemap-dot inl-036"></div><div class="sitemap-name">Sponsoren</div><div class="sitemap-route">/admin/sponsoren</div></div>
+      <div class="sitemap-item"><div class="sitemap-dot inl-036"></div><div class="sitemap-name">User Management</div><div class="sitemap-route">/admin/users</div></div>
+      <div class="sitemap-item"><div class="sitemap-dot inl-036"></div><div class="sitemap-name">Bewertungen & Flags</div><div class="sitemap-route">/admin/bewertungen</div></div>
+    </div>
+  </div>
+</section>
+
+<section class="section" id="features">
+  <div class="section-label">04 — Feature-Architektur</div>
+  <h2 class="section-title">Was wird gebaut – nach Bereich</h2>
+  <div class="divider"></div>
+  <div class="grid-2">
+    <div class="feature-block"><div class="feature-block-title">Authentifizierung</div><div class="feature-block-sub"><span class="tag tag-green inl-033">MVP</span></div><ul><li>E-Mail + Passwort Registrierung</li><li>Social Login (Google, Apple)</li><li>E-Mail-Verifizierung (nicht blockierend)</li><li>Passwort-Reset per E-Mail</li><li>Session Management (Supabase Auth)</li><li>Rate Limiting auf Auth-Endpoints</li></ul></div>
+    <div class="feature-block"><div class="feature-block-title">Bewertungs-Engine</div><div class="feature-block-sub"><span class="tag tag-green inl-033">MVP</span></div><ul><li>5 feste Bewertungskriterien (0–10 Slider)</li><li>One-Vote-Logik pro Spiel pro User</li><li>Live-Radar-Chart (eigene vs. Durchschnitt)</li><li>Zeitfenster-Steuerung (offen/geschlossen)</li><li>Pflichtfelder-Validierung</li><li>Optimistic UI mit Error Recovery</li></ul></div>
+    <div class="feature-block"><div class="feature-block-title">Ranking & Gamification</div><div class="feature-block-sub"><span class="tag tag-green inl-033">MVP</span></div><ul><li>Automatische Ranking-Berechnung</li><li>Distanz-basierter Algorithmus</li><li>Mindest-30-Bewertungen-Schwelle</li><li>Badges: Erste Bewertung, Streak, Top, Saison</li><li>Saisonwertung (Punkte über alle Spiele)</li><li>Leaderboard (global + pro Spiel)</li></ul></div>
+    <div class="feature-block"><div class="feature-block-title">Anti-Manipulation</div><div class="feature-block-sub"><span class="tag tag-green inl-033">MVP</span></div><ul><li>One-Vote pro Account-ID</li><li>E-Mail-Verifizierung für Ranking-Teilnahme</li><li>Ausreißer-Erkennung (statistisches Flagging)</li><li>Account-Alter-Check</li><li>IP-basierte Heuristiken (Flagging, kein Blocking)</li><li>Admin-Review für geflaggte Bewertungen</li></ul></div>
+    <div class="feature-block"><div class="feature-block-title">Spielverwaltung (Admin)</div><div class="feature-block-sub"><span class="tag tag-green inl-033">MVP</span></div><ul><li>Spiel anlegen: Teams, Datum, Liga, Zeitraum</li><li>Status: Entwurf → Offen → Geschlossen → Archiv</li><li>Sponsor-Zuordnung pro Spiel</li><li>Bewertungsübersicht & Export</li><li>User-Flagging & Moderation</li></ul></div>
+    <div class="feature-block"><div class="feature-block-title">Social & Sharing</div><div class="feature-block-sub"><span class="tag tag-green inl-033">MVP</span></div><ul><li>Share-Card-Generator (OG Image)</li><li>Deeplinks pro Spiel & Ranking</li><li>WhatsApp, Instagram, X, Copy-Link</li><li>Referral-Tracking</li></ul></div>
+    <div class="feature-block"><div class="feature-block-title">Sponsor-Integration</div><div class="feature-block-sub"><span class="tag tag-blue inl-033">Phase 1.1</span></div><ul><li>Logo + Claim im Bewertungsflow</li><li>Sponsor-Bestätigungsscreen</li><li>Kampagnen-Reporting</li><li>Flexible Platzierungen</li></ul></div>
+    <div class="feature-block"><div class="feature-block-title">Notifications</div><div class="feature-block-sub"><span class="tag tag-blue inl-033">Phase 1.1</span></div><ul><li>E-Mail: Neues Spiel, Ranking veröffentlicht</li><li>Push (PWA): Spielstart-Reminder</li><li>Opt-in/Opt-out in Profileinstellungen</li><li>Frequency Capping (max 2/Woche)</li></ul></div>
+  </div>
+</section>
+
+<section class="section" id="loops">
+  <div class="section-label">05 — Retention Loops</div>
+  <h2 class="section-title">Was hält Nutzer aktiv?</h2>
+  <div class="divider"></div>
+  <div class="highlight"><p class="inl-032">TEAMCHEF basiert auf drei ineinandergreifenden Loops. Jeder adressiert einen anderen psychologischen Treiber.</p></div>
+  <div class="card inl-011"><div class="card-title inl-005">Loop 1: Bewertungs-Loop (pro Spiel)</div><div class="loop-visual"><div class="loop-node"><div class="loop-node-title">Spiel offen</div><div class="loop-node-sub">Trigger</div></div><div class="loop-arrow">→</div><div class="loop-node"><div class="loop-node-title">Bewerten</div><div class="loop-node-sub">Aktion</div></div><div class="loop-arrow">→</div><div class="loop-node"><div class="loop-node-title">Radar Chart</div><div class="loop-node-sub">Feedback</div></div><div class="loop-arrow">→</div><div class="loop-node"><div class="loop-node-title">Ranking</div><div class="loop-node-sub">Belohnung</div></div><div class="loop-arrow">→</div><div class="loop-node"><div class="loop-node-title">Teilen</div><div class="loop-node-sub">Viral</div></div></div><p class="inl-037">Treiber: <strong class="inl-006">Neugier</strong> + <strong class="inl-006">Wettbewerb</strong></p></div>
+  <div class="card inl-038"><div class="card-title inl-021">Loop 2: Saison-Loop (langfristig)</div><div class="loop-visual"><div class="loop-node"><div class="loop-node-title">Saisonstart</div><div class="loop-node-sub">Trigger</div></div><div class="loop-arrow">→</div><div class="loop-node"><div class="loop-node-title">Regelmäßig bewerten</div><div class="loop-node-sub">Habit</div></div><div class="loop-arrow">→</div><div class="loop-node"><div class="loop-node-title">Punkte sammeln</div><div class="loop-node-sub">Progression</div></div><div class="loop-arrow">→</div><div class="loop-node"><div class="loop-node-title">Saisonranking</div><div class="loop-node-sub">Status</div></div></div><p class="inl-037">Treiber: <strong class="inl-006">Progression</strong> + <strong class="inl-006">Konsistenz</strong></p></div>
+  <div class="card inl-038"><div class="card-title inl-022">Loop 3: Social Loop (Wachstum)</div><div class="loop-visual"><div class="loop-node"><div class="loop-node-title">Ergebnis teilen</div><div class="loop-node-sub">Trigger</div></div><div class="loop-arrow">→</div><div class="loop-node"><div class="loop-node-title">Freund sieht Post</div><div class="loop-node-sub">Reach</div></div><div class="loop-arrow">→</div><div class="loop-node"><div class="loop-node-title">Klickt Deeplink</div><div class="loop-node-sub">Acquisition</div></div><div class="loop-arrow">→</div><div class="loop-node"><div class="loop-node-title">Registriert sich</div><div class="loop-node-sub">Conversion</div></div></div><p class="inl-037">Treiber: <strong class="inl-006">Identität</strong> + <strong class="inl-006">Wettbewerb</strong></p></div>
+</section>
+
+<section class="section" id="edge">
+  <div class="section-label">06 — Edge Cases</div>
+  <h2 class="section-title">Was passiert wenn…</h2>
+  <div class="divider"></div>
+  <table class="doc-table">
+    <thead><tr><th>Szenario</th><th>Verhalten</th><th>UI-Feedback</th></tr></thead>
+    <tbody>
+      <tr><td><strong>< 30 Bewertungen</strong></td><td>Kein offizielles Ranking. Ergebnisse als „vorläufig" markiert.</td><td>Banner: „Noch X Bewertungen nötig"</td></tr>
+      <tr><td><strong>Doppelte Bewertung</strong></td><td>Technisch gesperrt (One-Vote). Button deaktiviert.</td><td>„Du hast bereits bewertet"</td></tr>
+      <tr><td><strong>Zeitraum abgelaufen</strong></td><td>Bewertungs-UI gesperrt. Nur Ergebnis sichtbar.</td><td>Status „Geschlossen" + nächstes Spiel</td></tr>
+      <tr><td><strong>Nicht verifiziert</strong></td><td>Bewertung möglich, aber nicht ranking-qualifiziert.</td><td>„E-Mail bestätigen für Ranking"</td></tr>
+      <tr><td><strong>Manipulationsverdacht</strong></td><td>Intern geflaggt. Vom Algorithmus gewichtet.</td><td>Kein Feedback (Silent Flagging)</td></tr>
+      <tr><td><strong>Server-Fehler</strong></td><td>Optimistic UI + Retry. Lokaler Cache. Max 3 Retries.</td><td>Toast mit Retry-Button</td></tr>
+      <tr><td><strong>Bewertung abgebrochen</strong></td><td>Session Storage Cache. Bei Rückkehr wiederhergestellt.</td><td>„Angefangene Bewertung fortsetzen?"</td></tr>
+      <tr><td><strong>Kein Spiel offen</strong></td><td>Vergangene Spiele + „Nächstes Spiel in X Tagen".</td><td>CTA: Reminder aktivieren</td></tr>
+    </tbody>
+  </table>
+</section>
+
+</main>
+<footer class="doc-footer">
+  <a class="footer-brand" href="index.html">TEAMCHEF</a>
+  <nav class="footer-nav" aria-label="Dokument Navigation">
+    <a class="footer-nav-link" href="prd.html">PRD</a>
+    <a class="footer-nav-link" href="pitch.html">Pitch Deck</a>
+    <a class="footer-nav-link" href="investorenbrief.html">Investor</a>
+    <a class="footer-nav-link" href="geschaeftsmodell.html">Geschäftsmodell</a>
+    <a class="footer-nav-link" href="marktanalyse.html">Marktanalyse</a>
+    <a class="footer-nav-link active" href="usecases.html">Use Cases</a>
+    <a class="footer-nav-link" href="techstack.html">Techstack</a>
+    <a class="footer-nav-link" href="roadmap.html">Roadmap</a>
+    <a class="footer-nav-link" href="designsystem.html">Design System</a>
+    <a class="footer-nav-link" href="finanzplan.html">Finanzplan</a>
+  </nav>
+</footer>
+<script>
+const links = document.querySelectorAll('.nav-link');
+const sections = document.querySelectorAll('.section');
+const observer = new IntersectionObserver((entries) => {
+  entries.forEach(e => {
+    if (e.isIntersecting) {
+      links.forEach(l => l.classList.remove('active'));
+      const active = document.querySelector(`.nav-link[href="#${e.target.id}"]`);
+      if (active) active.classList.add('active');
+    }
+  });
+}, { rootMargin: '-20% 0px -70% 0px' });
+sections.forEach(s => observer.observe(s));
+</script>
+</body>
+</html>
