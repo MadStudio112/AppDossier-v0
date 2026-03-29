@@ -1,10 +1,14 @@
-import React from 'react'
+import React, { useState } from 'react'
 import ReactDOM from 'react-dom/client'
 import { RouterProvider } from '@tanstack/react-router'
 import { HelmetProvider } from 'react-helmet-async'
 import { router } from '@/app/router'
 import { registryError } from '@/content/registry'
+import { AccessGate } from '@/components/guards/AccessGate'
 import '@/styles/app.css'
+
+const SESSION_KEY = 'app_unlocked'
+const ACCESS_CODE = import.meta.env.VITE_ACCESS_CODE ?? '1234'
 
 class ErrorBoundary extends React.Component<
   { children: React.ReactNode },
@@ -33,12 +37,34 @@ class ErrorBoundary extends React.Component<
   }
 }
 
-ReactDOM.createRoot(document.getElementById('root')!).render(
-  <React.StrictMode>
+function App() {
+  const [unlocked, setUnlocked] = useState(
+    () => sessionStorage.getItem(SESSION_KEY) === '1'
+  )
+
+  if (!unlocked) {
+    return (
+      <AccessGate
+        validateCode={code => code === ACCESS_CODE}
+        onSuccess={() => {
+          sessionStorage.setItem(SESSION_KEY, '1')
+          setUnlocked(true)
+        }}
+      />
+    )
+  }
+
+  return (
     <ErrorBoundary>
       <HelmetProvider>
         <RouterProvider router={router} />
       </HelmetProvider>
     </ErrorBoundary>
+  )
+}
+
+ReactDOM.createRoot(document.getElementById('root')!).render(
+  <React.StrictMode>
+    <App />
   </React.StrictMode>,
 )
