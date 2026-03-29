@@ -4,8 +4,11 @@ import { RouterProvider } from '@tanstack/react-router'
 import { HelmetProvider } from 'react-helmet-async'
 import { router } from '@/app/router'
 import { registryError } from '@/content/registry'
-import { AccessGate } from '@/components/guards/access-gate'
+import { AccessGate } from '@/components/guards/AccessGate'
 import '@/styles/app.css'
+
+const SESSION_KEY = 'app_unlocked'
+const ACCESS_CODE = (import.meta.env.VITE_ACCESS_CODE ?? '1234').trim()
 
 class ErrorBoundary extends React.Component<
   { children: React.ReactNode },
@@ -34,23 +37,21 @@ class ErrorBoundary extends React.Component<
   }
 }
 
-const SESSION_KEY = 'app_unlocked'
-
 function App() {
   const [unlocked, setUnlocked] = useState(
     () => sessionStorage.getItem(SESSION_KEY) === '1'
   )
 
-  const handleSuccess = () => {
-    sessionStorage.setItem(SESSION_KEY, '1')
-    setUnlocked(true)
-  }
-
-  const validateCode = (code: string) =>
-    code === (import.meta.env.VITE_ACCESS_CODE ?? '')
-
   if (!unlocked) {
-    return <AccessGate onSuccess={handleSuccess} validateCode={validateCode} />
+    return (
+      <AccessGate
+        validateCode={code => code === ACCESS_CODE}
+        onSuccess={() => {
+          sessionStorage.setItem(SESSION_KEY, '1')
+          setUnlocked(true)
+        }}
+      />
+    )
   }
 
   return (
