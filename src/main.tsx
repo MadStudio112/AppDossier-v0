@@ -8,7 +8,7 @@ import { AccessGate } from '@/components/guards/AccessGate'
 import '@/styles/app.css'
 
 const SESSION_KEY = 'app_unlocked'
-const ACCESS_CODE = import.meta.env.VITE_ACCESS_CODE ?? '1234'
+const ACCESS_CODE = (import.meta.env.VITE_ACCESS_CODE ?? '1234').trim()
 
 class ErrorBoundary extends React.Component<
   { children: React.ReactNode },
