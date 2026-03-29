@@ -1,0 +1,106 @@
+{
+  "title": "TEAMCHEF – Changelog",
+  "badge": "Changelog · Dossier",
+  "subtitle": "Versionshistorie, aktuelle Änderungen & geplante Features",
+  "meta": [
+    { "label": "Aktuell", "value": "v0.3" },
+    { "label": "Stand", "value": "Q1 2026" },
+    { "label": "Status", "value": "Alpha / Dossier" }
+  ],
+  "sections": [
+    {
+      "id": "aktuell",
+      "number": "01",
+      "nav": "Aktuell",
+      "eyebrow": "Aktuelle Version",
+      "title": "v0.3 — Dossier komplett",
+      "blocks": [
+        {
+          "highlight": "Version **v0.3** schließt die Dokumentationsphase ab.\nAlle Kerndokumente sind fertig – das AppDossier ist vollständig."
+        },
+        {
+          "stats": [
+            { "value": "v0.3", "label": "Version" },
+            { "value": "Q1 2026", "label": "Veröffentlicht" },
+            { "value": "13", "label": "Dossier-Seiten" }
+          ],
+          "columns": 3
+        },
+        {
+          "features": [
+            "Marketing-Strategie: SEO, Social Media, Launch-Phasen & KPIs dokumentiert",
+            "Changelog-Seite live: Versionshistorie & geplante Features",
+            "Feedback & Bug Reports-Seite: Community-Kanal etabliert",
+            "Supabase-Schema finalisiert: Auth, Profile, Ratings, Matches, Leaderboard",
+            "Design System vollständig: Farben, Typo, Komponenten, Brand Guidelines",
+            "Finanzplan aktualisiert: Break-Even-Analyse & Szenario-Prognosen"
+          ],
+          "title": "Was ist neu in v0.3"
+        }
+      ]
+    },
+    {
+      "id": "releases",
+      "number": "02",
+      "nav": "Releases",
+      "eyebrow": "Release-Historie",
+      "title": "Alle Versionen im Überblick",
+      "blocks": [
+        {
+          "timeline": {
+            "variant": "default",
+            "items": [
+              {
+                "title": "v0.1 — Projekt-Setup",
+                "body": "Vite + React + TypeScript Monorepo-Struktur. TanStack Router konfiguriert. JSON-Schema-System mit Zod implementiert. Erstes Design-Konzept (Dark Theme, Barlow Condensed). AppDossier-Grundgerüst live."
+              },
+              {
+                "title": "v0.2 — Kerndokumente",
+                "body": "PRD, Pitch Deck, Geschäftsmodell und Marktanalyse fertiggestellt. Techstack-Dokumentation und Finanzplan erstellt. 30+ Content-Block-Typen implementiert (statsGrid, cardGrid, timeline, table, …). PDF-Export mit Multi-Seiten-Auswahl."
+              },
+              {
+                "title": "v0.3 — Dossier komplett",
+                "body": "Roadmap, Design System, Use Cases & User Flow, Investorenbrief abgeschlossen. Marketing-Strategie, Changelog und Community-Seite hinzugefügt. Access Gate (4-stelliger Code) für Zugriffskontrolle. Alle 13 Seiten im Footer-Nav und PDF-Export."
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "geplant",
+      "number": "03",
+      "nav": "Geplant",
+      "eyebrow": "Geplante Versionen",
+      "title": "Was kommt als nächstes?",
+      "blocks": [
+        {
+          "text": "Ab **v1.0** verlässt das Projekt die Dokumentationsphase und tritt in die aktive Produktentwicklung ein. Alle folgenden Versionen betreffen die eigentliche TEAMCHEF-Applikation."
+        },
+        {
+          "cards": [
+            {
+              "title": "v1.0 · MVP",
+              "titleTone": "green",
+              "text": "Das Kernprodukt: Rating-Flow mit 5 Kriterien & Radar-Chart, Ranking-Algorithmus, User Auth, Spieler-Profile & Badges, Anti-Manipulation, Admin-Panel, 104 WM-Spiele.",
+              "tags": [{ "label": "In Entwicklung", "tone": "green" }, { "label": "Q3 2025", "tone": "muted" }]
+            },
+            {
+              "title": "v1.1 · Polish",
+              "titleTone": "blue",
+              "text": "Push-Notifications (E-Mail & PWA), Sponsor-Branding, historische Statistiken, Referral-Tracking, Performance-Optimierung, Closed Beta-Feedback eingearbeitet.",
+              "tags": [{ "label": "Geplant", "tone": "blue" }, { "label": "Q4 2025", "tone": "muted" }]
+            },
+            {
+              "title": "v2.0 · Public Launch",
+              "titleTone": "amber",
+              "text": "Öffentlicher Start zur WM 2026. Premium-Features (erweiterte Stats), Multi-Language (DE/EN), Community-Features, erste Vereins-API-Integrationen.",
+              "tags": [{ "label": "Geplant", "tone": "amber" }, { "label": "Q1 2026", "tone": "muted" }]
+            }
+          ],
+          "columns": 3
+        }
+      ]
+    }
+  ]
+}

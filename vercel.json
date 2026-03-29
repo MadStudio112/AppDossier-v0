@@ -1,4 +1,5 @@
 {
+  "name": "appdossier",
   "rewrites": [
     {
       "source": "/(.*)",

@@ -19,3 +19,5 @@ coverage
 Thumbs.db
 *.swp
 .idea
+
+.vercel

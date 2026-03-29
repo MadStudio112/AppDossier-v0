@@ -1,0 +1,145 @@
+{
+  "title": "TEAMCHEF – Feedback & Bugs",
+  "badge": "Community · Feedback & Bugs",
+  "subtitle": "Nutzerfeedback, bekannte Probleme & Bug-Meldungen",
+  "meta": [
+    { "label": "Phase", "value": "Closed Beta" },
+    { "label": "Offene Bugs", "value": "4" },
+    { "label": "Feedback-Runden", "value": "2" }
+  ],
+  "sections": [
+    {
+      "id": "feedback",
+      "number": "01",
+      "nav": "Feedback",
+      "eyebrow": "Nutzerfeedback",
+      "title": "Was sagen frühe Tester?",
+      "blocks": [
+        {
+          "text": "Das folgende Feedback stammt aus zwei internen Testrunden mit Fokusgruppen aus der Zielgruppe (18–35 Jahre, fußballaffin, DACH). Themen mit mehrfacher Nennung sind hier zusammengefasst."
+        },
+        {
+          "cards": [
+            {
+              "title": "UX & Onboarding",
+              "titleTone": "green",
+              "text": "Der erste Eindruck überzeugt – das Design wirkt professionell. Verbesserungsbedarf besteht beim Onboarding-Flow: zu viele Schritte bis zur ersten Bewertung.",
+              "items": [
+                "Bewertungs-Button soll prominenter platziert sein",
+                "Onboarding in max. 3 Schritte reduzieren",
+                "Fortschrittsanzeige beim Erstellen des Profils fehlt"
+              ],
+              "tags": [{ "label": "Häufig genannt", "tone": "green" }]
+            },
+            {
+              "title": "Performance",
+              "titleTone": "blue",
+              "text": "Ladezeiten auf Desktop werden als gut bewertet. Mobile-Optimierung für ältere Android-Geräte (unter 4 GB RAM) zeigt spürbare Verzögerungen.",
+              "items": [
+                "Radar-Chart auf iOS manchmal verzerrt",
+                "Spieler-Profilbilder laden verzögert",
+                "Erste Bewertung nach App-Start dauert länger als erwartet"
+              ],
+              "tags": [{ "label": "Mobile", "tone": "blue" }]
+            },
+            {
+              "title": "Feature-Requests",
+              "titleTone": "amber",
+              "text": "Nutzer wünschen sich mehr soziale Interaktion und Möglichkeiten, ihre Meinungen zu teilen und zu diskutieren.",
+              "items": [
+                "Kommentar-Funktion unter Spieler-Bewertungen",
+                "Direktes Teilen einzelner Ratings in Social Media",
+                "Push-Benachrichtigung bei Match-Start",
+                "Vergleichsansicht: meine Note vs. Community-Note"
+              ],
+              "tags": [{ "label": "Roadmap-Kandidaten", "tone": "amber" }]
+            }
+          ],
+          "columns": 3
+        }
+      ]
+    },
+    {
+      "id": "bugs",
+      "number": "02",
+      "nav": "Known Issues",
+      "eyebrow": "Bug-Tracker",
+      "title": "Bekannte Probleme",
+      "blocks": [
+        {
+          "table": {
+            "variant": "default",
+            "title": "Offene & In-Bearbeitung-Bugs",
+            "columns": ["Bug / Problem", "Status", "Priorität", "Ziel-Version"],
+            "rows": [
+              {
+                "highlight": true,
+                "cells": [
+                  { "text": "Radar-Chart auf iOS verzerrt (Safari 17)" },
+                  { "text": "In Bearbeitung", "tone": "amber" },
+                  { "text": "Hoch", "tone": "red" },
+                  { "text": "v1.0", "tone": "muted" }
+                ]
+              },
+              {
+                "highlight": true,
+                "cells": [
+                  { "text": "Mobile Navigation Overflow bei Geräten < 375px Breite" },
+                  { "text": "In Bearbeitung", "tone": "amber" },
+                  { "text": "Hoch", "tone": "red" },
+                  { "text": "v1.0", "tone": "muted" }
+                ]
+              },
+              {
+                "cells": [
+                  { "text": "Leere Ratings nach Hard-Refresh (State-Verlust)" },
+                  { "text": "Offen", "tone": "red" },
+                  { "text": "Mittel", "tone": "amber" },
+                  { "text": "v1.0", "tone": "muted" }
+                ]
+              },
+              {
+                "cells": [
+                  { "text": "Spieler-Profil Ladezeit > 3 Sek. bei schlechter Verbindung" },
+                  { "text": "Geplant", "tone": "blue" },
+                  { "text": "Mittel", "tone": "amber" },
+                  { "text": "v1.1", "tone": "muted" }
+                ]
+              },
+              {
+                "cells": [
+                  { "text": "Leaderboard zeigt falsche Reihenfolge nach Tie-Break" },
+                  { "text": "Offen", "tone": "red" },
+                  { "text": "Niedrig", "tone": "muted" },
+                  { "text": "v1.1", "tone": "muted" }
+                ]
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "melden",
+      "number": "03",
+      "nav": "Bug melden",
+      "eyebrow": "Bug melden",
+      "title": "So meldest du einen Bug",
+      "blocks": [
+        {
+          "highlight": "Bitte prüfe zuerst die Liste oben – vielleicht ist dein Bug bereits erfasst.\nNeue Bugs werden über GitHub Issues verwaltet."
+        },
+        {
+          "text": "Ein guter Bug-Report enthält: **Was hast du getan?** — **Was ist passiert?** — **Was hattest du erwartet?** — **Gerät & Browser/OS-Version.** Screenshots oder Screen-Recordings sind immer hilfreich und beschleunigen die Bearbeitung deutlich."
+        },
+        {
+          "cta": {
+            "title": "Bug melden",
+            "subtitle": "Öffne ein GitHub Issue und schildere das Problem so präzise wie möglich.",
+            "slogan": "Hilf uns, TEAMCHEF besser zu machen."
+          }
+        }
+      ]
+    }
+  ]
+}

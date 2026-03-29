@@ -79,6 +79,24 @@
         "nav": "Finanzplan",
         "title": "Kosten & Finanzplan",
         "summary": "Budget-Aufschlüsselung, laufende Kosten, Break-Even-Analyse, Burn Rate, Finanzprognosen & Szenario-Analyse."
+      },
+      {
+        "slug": "marketing",
+        "nav": "Marketing",
+        "title": "Marketing-Strategie",
+        "summary": "Positionierung & Messaging, SEO-Keyword-Strategie, Social-Media-Kanäle, Launch-Phasen (Pre/Launch/Post) und KPIs & Tracking-Tools."
+      },
+      {
+        "slug": "changelog",
+        "nav": "Changelog",
+        "title": "Changelog",
+        "summary": "Versionshistorie des Projekts: aktuelle Version, alle bisherigen Releases mit Änderungsübersicht und geplante Features der nächsten Versionen."
+      },
+      {
+        "slug": "community",
+        "nav": "Feedback & Bugs",
+        "title": "Feedback & Bug Reports",
+        "summary": "Nutzerfeedback aus Testrunden, bekannte Probleme mit Status & Priorität, sowie Anleitung zum Melden neuer Bugs."
       }
     ]
   }

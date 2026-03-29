@@ -1,0 +1,222 @@
+{
+  "title": "TEAMCHEF – Marketing",
+  "badge": "Marketing · 2026",
+  "subtitle": "SEO, Social Media, Launch-Strategie & KPIs",
+  "meta": [
+    { "label": "Launch", "value": "Q1 2026" },
+    { "label": "Zielmarkt", "value": "DACH + EU" },
+    { "label": "Fokus", "value": "WM 2026" }
+  ],
+  "sections": [
+    {
+      "id": "positionierung",
+      "number": "01",
+      "nav": "Positionierung",
+      "eyebrow": "Positionierung & Messaging",
+      "title": "Wofür steht TEAMCHEF?",
+      "blocks": [
+        {
+          "highlight": "TEAMCHEF ist **die** Community-Plattform für Fußball-Bewertungen.\nTransparent, anti-manipuliert, emotional – gebaut für echte Fans."
+        },
+        {
+          "cards": [
+            {
+              "title": "Community-First",
+              "titleTone": "green",
+              "text": "Echte Fans, echte Bewertungen. Kein Algorithmus, der Ergebnisse verfälscht – nur kollektive Meinungen der Community.",
+              "tags": [{ "label": "USP #1" }]
+            },
+            {
+              "title": "WM 2026 Timing",
+              "titleTone": "blue",
+              "text": "Der größte Sportevent der Welt als Launch-Katalysator. 48 Teams, 104 Spiele, Millionen von Fans weltweit.",
+              "tags": [{ "label": "USP #2" }]
+            },
+            {
+              "title": "Anti-Manipulation",
+              "titleTone": "amber",
+              "text": "Proprietäres System gegen Fake-Bewertungen schützt die Integrität der Rankings und baut langfristiges Vertrauen auf.",
+              "tags": [{ "label": "USP #3" }]
+            }
+          ],
+          "columns": 3
+        },
+        {
+          "text": "**Kernbotschaft:** TEAMCHEF gibt Fußball-Fans eine Stimme. Wer war der beste Spieler des Abends? Jetzt gibt es eine verlässliche, community-getriebene Antwort."
+        }
+      ]
+    },
+    {
+      "id": "seo",
+      "number": "02",
+      "nav": "SEO & Keywords",
+      "eyebrow": "SEO-Strategie",
+      "title": "Keyword-Strategie & organische Reichweite",
+      "blocks": [
+        {
+          "text": "TEAMCHEF zielt auf drei Keyword-Cluster: **Event-Keywords** rund um die WM 2026, **Feature-Keywords** für Rating & Ranking, und **Community-Keywords** für die DACH-Fußball-Szene. Ziel: Top-10-Rankings bis März 2026."
+        },
+        {
+          "table": {
+            "variant": "default",
+            "title": "Priorisierte Keywords",
+            "columns": ["Keyword", "Volumen / Mo.", "Intent", "Priorität"],
+            "rows": [
+              { "highlight": true, "cells": [{ "text": "WM 2026 App" }, { "text": "18.000" }, { "text": "Navigational" }, { "text": "Sehr Hoch", "tone": "green" }] },
+              { "cells": [{ "text": "Fußball Spieler bewerten" }, { "text": "2.400" }, { "text": "Informational" }, { "text": "Hoch", "tone": "green" }] },
+              { "cells": [{ "text": "Fußball Community App" }, { "text": "3.600" }, { "text": "Informational" }, { "text": "Hoch", "tone": "green" }] },
+              { "cells": [{ "text": "WM Tipp App" }, { "text": "8.000" }, { "text": "Transactional" }, { "text": "Hoch", "tone": "blue" }] },
+              { "cells": [{ "text": "Spieler Ranking App" }, { "text": "1.200" }, { "text": "Transactional" }, { "text": "Mittel", "tone": "amber" }] },
+              { "cells": [{ "text": "Fußball Statistik App Österreich" }, { "text": "880" }, { "text": "Navigational" }, { "text": "Mittel", "tone": "amber" }] }
+            ]
+          }
+        },
+        {
+          "cards": [
+            {
+              "title": "WM & Turniere",
+              "text": "Hohe Suchvolumina rund um den Event-Kalender. Saisonale Peaks maximal ausnutzen.",
+              "items": ["wm-2026-spieler-bewertung", "fussball-wm-app", "weltmeisterschaft-ranking", "wm-tipp-community"]
+            },
+            {
+              "title": "Rating & Community",
+              "text": "Dauerhafte Nachfrage nach Plattformen, auf denen Fans mitdiskutieren und bewerten können.",
+              "items": ["spieler-rating-app", "fussball-community-plattform", "fan-bewertungen-bundesliga", "spieler-note-heute"]
+            },
+            {
+              "title": "DACH-Lokalisierung",
+              "text": "Lokale SEO für AT, DE, CH mit eigenen Landingpages und lokalisierten Inhalten.",
+              "items": ["fussball-app-oesterreich", "bundesliga-bewertung-app", "schweizer-fussball-community"]
+            }
+          ],
+          "columns": 3
+        }
+      ]
+    },
+    {
+      "id": "social",
+      "number": "03",
+      "nav": "Social Media",
+      "eyebrow": "Social Media",
+      "title": "Kanäle, Tone & Content-Strategie",
+      "blocks": [
+        {
+          "cards": [
+            {
+              "title": "TikTok",
+              "titleTone": "green",
+              "text": "Virale After-Match-Clips, Spieler-Rating-Reveals, Community-Reaktionen. Primärkanal für Reichweite.",
+              "items": ["Zielgruppe: 16–28 Jahre", "Post-Frequenz: täglich in WM-Phase", "Format: 15–45 Sek. Clips", "Hook: 'Wer war euer MVP heute Abend?'"]
+            },
+            {
+              "title": "Instagram",
+              "titleTone": "blue",
+              "text": "Match-Grafiken, Spieler-Stats, Stories mit Live-Ratings. Visuell starke Marken-Präsenz.",
+              "items": ["Zielgruppe: 20–35 Jahre", "Post-Frequenz: 4–5x pro Woche", "Format: Infografiken, Reels, Stories", "CTA: 'Jetzt auf TEAMCHEF bewerten'"]
+            },
+            {
+              "title": "Twitter / X",
+              "titleTone": "muted",
+              "text": "Live-Kommentare während Matches, Rating-Updates in Echtzeit, Fan-Debatten befeuern.",
+              "items": ["Zielgruppe: News-affine Fans, 25–45 Jahre", "Post-Frequenz: 5–10x am Spieltag", "Format: Threads, Polls, Quote-Tweets", "Ton: direkt, provokativ, datengetrieben"]
+            },
+            {
+              "title": "YouTube",
+              "titleTone": "amber",
+              "text": "WM-Analyse-Videos, Feature-Walkthroughs, Behind the Scenes. Langfristiger SEO-Vorteil.",
+              "items": ["Zielgruppe: 22–40 Jahre", "Post-Frequenz: 1–2x pro Woche", "Format: 5–15 Min. Analyse-Videos", "Fokus: 'Warum hat X so schlecht abgeschnitten?'"]
+            }
+          ],
+          "columns": 2
+        },
+        {
+          "features": ["Ton immer: leidenschaftlich, direkt, pro-Community – nie corporate", "Jeder Post verlinkt auf relevante TEAMCHEF-Seite oder App-Store", "User-Generated Content (Ratings, Kommentare) aktiv resharen", "Influencer-Kooperationen: Fußball-Creator mit 50k+ Followern (DACH)", "Hashtag-Strategie: #TEAMCHEF #WM2026 #SpielerRating #FußballApp"],
+          "title": "Posting-Grundregeln"
+        }
+      ]
+    },
+    {
+      "id": "launch",
+      "number": "04",
+      "nav": "Launch-Phasen",
+      "eyebrow": "Launch-Strategie",
+      "title": "Pre-Launch · Launch · Post-Launch",
+      "blocks": [
+        {
+          "highlight": "Der WM 2026-Start (Juni 2026) ist der zentrale Timing-Anker.\nAlle Marketing-Aktivitäten bauen auf diesen Moment hin."
+        },
+        {
+          "timeline": {
+            "variant": "default",
+            "items": [
+              {
+                "title": "Phase 1 — Aufbau (Jan–Feb 2026)",
+                "body": "Waitlist-Landingpage live, erste SEO-Inhalte veröffentlichen, Social-Media-Accounts aufbauen, Teaser-Content starten, Influencer identifizieren & kontaktieren."
+              },
+              {
+                "title": "Phase 2 — Pre-Launch (Mrz–Apr 2026)",
+                "body": "Closed Beta mit 500 ausgewählten Nutzern, Feedback einarbeiten, Influencer-Seeding, Press-Kit vorbereiten, bezahlte Vorregistrierungskampagne (Meta Ads)."
+              },
+              {
+                "title": "Phase 3 — Soft Launch (Mai 2026)",
+                "body": "Öffentlicher Launch vor WM-Start, App Store Optimierung (ASO), erste Pressemitteilung, Creator-Content geht live, Sponsor-Onboarding startet."
+              },
+              {
+                "title": "Phase 4 — WM-Push (Jun–Jul 2026)",
+                "body": "Vollgasphase: täglich neuer Content, Live-Rating-Sessions, Paid-Ads auf Spieltag-Peaks, Community-Challenges, Real-Time PR bei viralen Momenten."
+              },
+              {
+                "title": "Phase 5 — Post-WM (Aug 2026+)",
+                "body": "Retention-Daten auswerten, erste Saison-Kampagnen (Bundesliga, CL), Premium-Features promoten, Community verstetigen, internationale Expansion vorbereiten."
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "kpis",
+      "number": "05",
+      "nav": "KPIs & Tracking",
+      "eyebrow": "KPIs & Tracking",
+      "title": "Erfolgsmessung & Tools",
+      "blocks": [
+        {
+          "stats": [
+            { "value": "10.000", "label": "Nutzer Monat 1" },
+            { "value": "50 %", "label": "Week-2 Retention" },
+            { "value": "5,0", "label": "Ø Bewertungen/Match" },
+            { "value": "3", "label": "Sponsoren Q3 2026" }
+          ],
+          "columns": 2
+        },
+        {
+          "cards": [
+            {
+              "title": "Google Analytics 4",
+              "titleTone": "blue",
+              "text": "Sessions, Pageviews, Conversion-Funnels, Geografie. Tägliches Dashboard für Growth-Team.",
+              "tags": [{ "label": "Web Analytics", "tone": "blue" }]
+            },
+            {
+              "title": "UTM-Tracking",
+              "titleTone": "green",
+              "text": "Alle Social Posts, Influencer-Links und Paid-Kampagnen erhalten UTM-Parameter für saubere Kanal-Attribution.",
+              "tags": [{ "label": "Attribution", "tone": "green" }]
+            },
+            {
+              "title": "Hotjar",
+              "titleTone": "amber",
+              "text": "Heatmaps und Session-Recordings zur UX-Optimierung von Onboarding-Flow und Rating-Seite.",
+              "tags": [{ "label": "UX Analytics", "tone": "amber" }]
+            }
+          ],
+          "columns": 3
+        },
+        {
+          "text": "Wöchentliche Marketing-Review: Was hat funktioniert? Was nicht? Daten aus GA4, Social Insights und In-App-Events fließen in den nächsten Sprint ein."
+        }
+      ]
+    }
+  ]
+}

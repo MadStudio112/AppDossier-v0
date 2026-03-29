@@ -1,8 +1,11 @@
 import appConfigData from '@/content/manual/app-config.json'
+import changelogData from '@/content/manual/pages/changelog.json'
+import communityData from '@/content/manual/pages/community.json'
 import designsystemData from '@/content/manual/pages/designsystem.json'
 import finanzplanData from '@/content/manual/pages/finanzplan.json'
 import geschaeftsmodellData from '@/content/manual/pages/geschaeftsmodell.json'
 import investorenbriefData from '@/content/manual/pages/investorenbrief.json'
+import marketingData from '@/content/manual/pages/marketing.json'
 import marktanalyseData from '@/content/manual/pages/marktanalyse.json'
 import pitchData from '@/content/manual/pages/pitch.json'
 import prdData from '@/content/manual/pages/prd.json'
@@ -25,6 +28,9 @@ const rawPages = [
   { slug: 'roadmap', data: roadmapData },
   { slug: 'designsystem', data: designsystemData },
   { slug: 'finanzplan', data: finanzplanData },
+  { slug: 'marketing', data: marketingData },
+  { slug: 'changelog', data: changelogData },
+  { slug: 'community', data: communityData },
 ] as const
 
 let _appConfig: AppConfig | undefined
