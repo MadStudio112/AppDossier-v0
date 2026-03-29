@@ -1,0 +1,544 @@
+{
+  "title": "TEAMCHEF \u2013 Campaign Plan",
+  "badge": "Campaign Plan \u00b7 2026",
+  "subtitle": "Launch-Kampagne zur WM 2026 \u2013 Ziele, Zielgruppen, Messaging, Kanalstrategie & KPIs",
+  "meta": [
+    { "label": "Launch", "value": "Mai 2026" },
+    { "label": "WM-Push", "value": "Jun\u2013Jul 2026" },
+    { "label": "Zielmarkt", "value": "DACH + EU" }
+  ],
+  "lead": {
+    "claim": "Vom Zero-to-Fan \u2013 TEAMCHEF trifft den gr\u00f6\u00dften Sportevent der Welt.",
+    "intro": "Die WM 2026 ist der seltene Moment, in dem 48 Nationen, 104 Spiele und Milliarden Fans gleichzeitig \u00fcber Spieler reden. TEAMCHEF positioniert sich als die Plattform, die dieser Meinung eine Stimme gibt \u2013 transparent, community-getrieben, anti-manipuliert."
+  },
+  "sections": [
+    {
+      "id": "uebersicht",
+      "number": "01",
+      "nav": "Kampagnen\u00fcbersicht",
+      "eyebrow": "Campaign Overview",
+      "title": "Kampagnenname & Ziel",
+      "blocks": [
+        {
+          "highlight": "**\u201eRate the Game\u201c \u2013 Die Stimme der Fans zur WM 2026.**\nTEAMCHEF etabliert sich als erste Anlaufstelle f\u00fcr Community-Spielerbewertungen \u2013 p\u00fcnktlich zum gr\u00f6\u00dften Fu\u00dfballereignis der Welt."
+        },
+        {
+          "stats": [
+            { "value": "10.000", "label": "Nutzer Monat 1 (Prim\u00e4rziel)" },
+            { "value": "50.000", "label": "Nutzer bis WM-Ende (Jul 2026)" },
+            { "value": "50 %", "label": "Woche-2-Retention-Ziel" },
+            { "value": "5", "label": "\u00d8 Bewertungen pro Match" }
+          ],
+          "columns": 2
+        },
+        {
+          "cards": [
+            {
+              "title": "Prim\u00e4res Ziel",
+              "titleTone": "green",
+              "text": "10.000 aktive Nutzer im ersten Monat nach Launch (Mai 2026) durch organische Kan\u00e4le, Influencer-Seeding und gezielte WM-Paid-Kampagnen."
+            },
+            {
+              "title": "Sekund\u00e4re Ziele",
+              "titleTone": "blue",
+              "text": "Markenbekanntheit in der DACH-Fu\u00dfball-Community aufbauen, erste 3 Brand-Sponsoren gewinnen und 500 Community-UGC-Beitr\u00e4ge bis Ende Q2 2026 generieren."
+            },
+            {
+              "title": "\u00dcbergeordnete Vision",
+              "titleTone": "amber",
+              "text": "TEAMCHEF als Synonymbegriff f\u00fcr Fan-Spielerbewertungen verankern \u2013 \u00e4hnlich wie Rotten Tomatoes f\u00fcr Film oder Goodreads f\u00fcr B\u00fccher."
+            }
+          ],
+          "columns": 3
+        }
+      ]
+    },
+    {
+      "id": "zielgruppen",
+      "number": "02",
+      "nav": "Zielgruppen",
+      "eyebrow": "Target Audience",
+      "title": "Wen wir erreichen \u2013 und warum",
+      "blocks": [
+        {
+          "text": "Zwei klar unterscheidbare Segmente stehen im Fokus der Kampagne: **die leidenschaftlichen Match-Fans** als Kerntreiber und **die datenhungrigen Fu\u00dfball-Nerds** als Multiplikatoren."
+        },
+        {
+          "personas": [
+            {
+              "avatar": "\u26bd",
+              "name": "Der Leidenschaftliche",
+              "role": "Fu\u00dfballfan, 16\u201328 Jahre, DACH",
+              "needs": "Will nach jedem Match seine Meinung teilen \u2013 wer war gut, wer war schwach. Sucht Best\u00e4tigung und Debatte. Konsumiert TikTok, Instagram Stories und schaut Live-Streams."
+            },
+            {
+              "avatar": "\ud83d\udcca",
+              "name": "Der Statistik-Nerd",
+              "role": "Data-affiner Fan, 25\u201340 Jahre, DACH + EU",
+              "needs": "Liebt Daten, Vergleiche und Rankings. Nutzt FotMob, Sofascore, Reddit-Football-Threads. Sucht verl\u00e4ssliche, community-basierte Performance-Metriken statt redaktioneller Noten."
+            },
+            {
+              "avatar": "\ud83d\udde3\ufe0f",
+              "name": "Der Community-Builder",
+              "role": "Fu\u00dfball-Influencer / Content Creator, 20\u201335 Jahre",
+              "needs": "Produziert Fu\u00dfball-Content und sucht engagement-starke Tools und Daten f\u00fcr Posts. Gibt TEAMCHEF-Ratings als Story-Basis, wenn Reichweite und Einfachheit stimmen."
+            }
+          ]
+        },
+        {
+          "cards": [
+            {
+              "title": "Awareness-Stufe",
+              "titleTone": "muted",
+              "text": "Segment 1 (Der Leidenschaftliche) kennt das Problem: Spielernoten im Sport1 oder Kicker f\u00fchlen sich unrepr\u00e4sentativ an. L\u00f6sung noch unbekannt \u2192 Top-of-Funnel."
+            },
+            {
+              "title": "Consideration-Stufe",
+              "titleTone": "blue",
+              "text": "Segment 2 (Der Statistik-Nerd) kennt alternative Apps, ist aber nicht loyal. TEAMCHEF muss sich als relevante Alternative positionieren \u2192 Mid-Funnel."
+            },
+            {
+              "title": "Advocacy-Stufe",
+              "titleTone": "green",
+              "text": "Segment 3 (Creator) kann organischen Reichweiten-Multiplikator werden. Fr\u00fchzeitiges Influencer-Seeding und exklusiver Beta-Zugang als Einstieg \u2192 Bottom-Funnel."
+            }
+          ],
+          "columns": 3
+        }
+      ]
+    },
+    {
+      "id": "messaging",
+      "number": "03",
+      "nav": "Messaging",
+      "eyebrow": "Key Messages",
+      "title": "Kernbotschaft & Messaging-Architektur",
+      "blocks": [
+        {
+          "highlight": "**Kernbotschaft:** Deine Stimme. Deine Wertung. Wer war euer MVP heute Abend?\nTEAMCHEF gibt Millionen Fu\u00dfballfans eine verl\u00e4ssliche, manipulationsfreie Plattform f\u00fcr das, was sie ohnehin tun: \u00fcber Spieler urteilen."
+        },
+        {
+          "features": [
+            "**Warum sollte ich mich interessieren?** \u2014 Nach jedem Match diskutieren Fans \u00fcber Leistungen, aber es gibt keine verl\u00e4ssliche, community-basierte Bewertungsplattform. TEAMCHEF schlie\u00dft diese L\u00fccke.",
+            "**Was ist die L\u00f6sung?** \u2014 Eine App, auf der Fans Spieler nach dem Match bewerten (1\u201310), kollektive Rankings entstehen und Ergebnisse transparent und Anti-Manipulation-gesichert sind.",
+            "**Warum TEAMCHEF?** \u2014 Einzige Plattform mit propriet\u00e4rem Anti-Manipulations-System. Community-first statt Redaktion. Kostenlos. WM 2026 als perfekter Launch-Zeitpunkt.",
+            "**Was soll ich tun?** \u2014 Jetzt vorregistrieren, Beta-Zugang sichern und beim ersten WM-Spiel als einer der Ersten bewerten."
+          ],
+          "title": "Messaging-Hierarchie"
+        },
+        {
+          "cards": [
+            {
+              "title": "TikTok / Instagram",
+              "titleTone": "green",
+              "text": "Ton: provokativ, emotional, Fan-Sprache. Beispiel-Hook: Dein Lieblings-Experte hat ihn mit 7 bewertet \u2013 die Community gibt 4.2. Wer hat Recht?",
+              "tags": [{ "label": "Awareness" }]
+            },
+            {
+              "title": "Twitter / X",
+              "titleTone": "muted",
+              "text": "Ton: direkt, datengetrieben, debattenfreudig. Real-Time-Ratings als Screenshot-Content. Format: TEAMCHEF Community: Messis WM-Auftritt \u2013 8.1 nach 12.000 Stimmen.",
+              "tags": [{ "label": "Engagement" }]
+            },
+            {
+              "title": "YouTube / Podcast",
+              "titleTone": "amber",
+              "text": "Ton: analytisch, erkl\u00e4render Stil. Tiefgang \u00fcber Community-Ratings vs. Experten-Noten, Feature-Walkthroughs, WM-Analyse-Videos mit integrierten TEAMCHEF-Daten.",
+              "tags": [{ "label": "Education" }]
+            }
+          ],
+          "columns": 3
+        }
+      ]
+    },
+    {
+      "id": "kanalstrategie",
+      "number": "04",
+      "nav": "Kanalstrategie",
+      "eyebrow": "Channel Strategy",
+      "title": "Owned, Earned & Paid \u2013 Kanalwahl & Priorisierung",
+      "blocks": [
+        {
+          "text": "Die Kampagne setzt auf einen dreistufigen Kanal-Mix: **Owned** f\u00fcr langfristige SEO-Pr\u00e4senz, **Earned** durch Influencer-Seeding und Community-Aufbau, **Paid** als WM-Phasen-Beschleuniger."
+        },
+        {
+          "table": {
+            "variant": "default",
+            "title": "Kanal-\u00dcbersicht nach Priorit\u00e4t",
+            "columns": ["Kanal", "Typ", "Ziel", "Aufwand", "Priorit\u00e4t"],
+            "rows": [
+              { "highlight": true, "cells": [{ "text": "TikTok" }, { "text": "Owned / Earned" }, { "text": "Reichweite, Awareness" }, { "text": "Hoch" }, { "text": "Sehr Hoch", "tone": "green" }] },
+              { "highlight": true, "cells": [{ "text": "Instagram" }, { "text": "Owned" }, { "text": "Markenbildung, CTA" }, { "text": "Mittel" }, { "text": "Sehr Hoch", "tone": "green" }] },
+              { "cells": [{ "text": "Meta Ads (FB/IG)" }, { "text": "Paid" }, { "text": "App Installs, Vorregistrierung" }, { "text": "Mittel" }, { "text": "Hoch", "tone": "green" }] },
+              { "cells": [{ "text": "Twitter / X" }, { "text": "Owned" }, { "text": "Live-Engagement, PR" }, { "text": "Hoch (Spieltage)" }, { "text": "Hoch", "tone": "green" }] },
+              { "cells": [{ "text": "Influencer-Seeding" }, { "text": "Earned" }, { "text": "Credibility, Reichweite" }, { "text": "Mittel" }, { "text": "Hoch", "tone": "blue" }] },
+              { "cells": [{ "text": "SEO / Blog" }, { "text": "Owned" }, { "text": "Organischer Traffic" }, { "text": "Mittel" }, { "text": "Mittel", "tone": "blue" }] },
+              { "cells": [{ "text": "YouTube" }, { "text": "Owned" }, { "text": "Education, SEO" }, { "text": "Hoch" }, { "text": "Mittel", "tone": "amber" }] },
+              { "cells": [{ "text": "Google Search Ads" }, { "text": "Paid" }, { "text": "High-Intent Capture" }, { "text": "Niedrig" }, { "text": "Mittel", "tone": "amber" }] },
+              { "cells": [{ "text": "PR / Fachmedien" }, { "text": "Earned" }, { "text": "Credibility, Coverage" }, { "text": "Hoch" }, { "text": "Launch-Phase", "tone": "muted" }] }
+            ]
+          }
+        },
+        {
+          "features": [
+            "**TikTok** \u2013 Prim\u00e4rkanal f\u00fcr Reichweite. T\u00e4glich 1\u20132 Posts in WM-Phase. After-Match-Clips, Rating-Reveals, Community-Reaktionen. Hook immer als Frage formulieren.",
+            "**Instagram** \u2013 Sekund\u00e4rkanal f\u00fcr Markenbildung. Match-Grafiken, Spieler-Stats, Stories mit Live-Ratings. Visuell koh\u00e4rentes Brand-Design. 4\u20135 Posts/Woche.",
+            "**Meta Ads** \u2013 Paid-Beschleuniger in Pre-Launch (Vorregistrierung) und WM-Phase (App-Installs). Zielgruppe: Fu\u00dfballfans 16\u201340 in DACH.",
+            "**Influencer-Seeding** \u2013 10 DACH-Fu\u00dfball-Creator (50k\u2013500k Follower) erhalten 4 Wochen vor Launch exklusiven Beta-Zugang. Keine bezahlten Posts required \u2013 authentischer Content reicht.",
+            "**SEO** \u2013 Landingpages f\u00fcr WM-Keywords ab Januar 2026. Ziel: Top-10-Rankings f\u00fcr WM 2026 App und Fu\u00dfball Spieler bewerten bis M\u00e4rz 2026."
+          ],
+          "title": "Kanal-Details"
+        }
+      ]
+    },
+    {
+      "id": "content-calendar",
+      "number": "05",
+      "nav": "Content-Kalender",
+      "eyebrow": "Content Calendar",
+      "title": "Woche-f\u00fcr-Woche Kampagnenplan",
+      "blocks": [
+        {
+          "highlight": "**Timing-Anker: WM-Start 11. Juni 2026.**\nAlle Phasen bauen auf dieses Datum hin \u2013 mit 20 Wochen Vorlauf ab Januar 2026."
+        },
+        {
+          "timeline": {
+            "variant": "default",
+            "items": [
+              {
+                "title": "Phase 1 \u2013 Aufbau (Jan\u2013Feb 2026, KW 1\u20138)",
+                "body": "Waitlist-Landingpage live (KW 1). SEO-Cluster-Content ver\u00f6ffentlichen (2 Posts/Woche). Social-Media-Accounts aufbauen, erste Teaser-Posts. Influencer-Liste erstellen und erste Outreach-Mails versenden. KPIs: 1.000 Waitlist-Eintr\u00e4ge, 500 Social-Follower pro Kanal."
+              },
+              {
+                "title": "Phase 2 \u2013 Pre-Launch (Mrz\u2013Apr 2026, KW 9\u201316)",
+                "body": "Closed Beta mit 500 Nutzern (KW 9). Influencer-Seeding: Beta-Zug\u00e4nge an 10 Creator versenden (KW 10). Meta Ads Pre-Registration-Kampagne starten (Budget: 20% des Gesamtbudgets). Press-Kit fertigstellen. KPIs: 5.000 Vorregistrierungen, erste Creator-Posts gehen live."
+              },
+              {
+                "title": "Phase 3 \u2013 Soft Launch (Mai 2026, KW 17\u201322)",
+                "body": "\u00d6ffentlicher App-Launch (KW 17, 1. Mai). App Store Optimierung (ASO) abgeschlossen. Erste Pressemitteilung an Sportmedien. Creator-Content geht geb\u00fcndelt live (KW 18\u201319). KPIs: 10.000 aktive Nutzer, 4,5-Sterne App-Store-Rating."
+              },
+              {
+                "title": "Phase 4 \u2013 WM-Push (Jun\u2013Jul 2026, KW 23\u201332)",
+                "body": "Vollgasphase ab WM-Er\u00f6ffnung 11. Juni. T\u00e4glich neuer Content auf allen Kan\u00e4len. Live-Rating-Sessions nach jedem Match. Paid-Ads: 60% des Budgets in dieser Phase. Community-Challenges. KPIs: 50.000 Nutzer, viraler Moment (>1 Mio. Impressions/Post)."
+              },
+              {
+                "title": "Phase 5 \u2013 Post-WM Retention (Aug 2026+, KW 33+)",
+                "body": "Retention-Analyse: Was hat gewirkt? Erste Bundesliga/CL-Saison-Kampagne vorbereiten. Premium-Features promoten. Community verstetigen. KPIs: 40% der WM-Nutzer bleiben aktiv, erste 3 Sponsoring-Deals abgeschlossen."
+              }
+            ]
+          }
+        },
+        {
+          "table": {
+            "variant": "default",
+            "title": "Content-Kalender (Auszug \u2013 KW 1\u201312)",
+            "columns": ["Woche", "Content-St\u00fcck", "Kanal", "Typ", "Status"],
+            "rows": [
+              { "highlight": true, "cells": [{ "text": "KW 1" }, { "text": "Waitlist-Landingpage live" }, { "text": "Website" }, { "text": "Must-Have" }, { "text": "geplant", "tone": "amber" }] },
+              { "cells": [{ "text": "KW 1" }, { "text": "Social-Teaser: Etwas kommt..." }, { "text": "TikTok, IG" }, { "text": "Must-Have" }, { "text": "geplant", "tone": "amber" }] },
+              { "cells": [{ "text": "KW 2\u20134" }, { "text": "SEO-Blogartikel: WM 2026 App Guide" }, { "text": "Blog" }, { "text": "Must-Have" }, { "text": "offen", "tone": "muted" }] },
+              { "cells": [{ "text": "KW 3" }, { "text": "Influencer-Outreach: 10 Creator kontaktiert" }, { "text": "E-Mail / DM" }, { "text": "Must-Have" }, { "text": "offen", "tone": "muted" }] },
+              { "cells": [{ "text": "KW 5\u20138" }, { "text": "Brand-Content-Serie: Was ist TEAMCHEF?" }, { "text": "TikTok, YouTube" }, { "text": "Should-Have" }, { "text": "offen", "tone": "muted" }] },
+              { "highlight": true, "cells": [{ "text": "KW 9" }, { "text": "Closed Beta Launch (500 Nutzer)" }, { "text": "App Store" }, { "text": "Must-Have" }, { "text": "geplant", "tone": "amber" }] },
+              { "cells": [{ "text": "KW 10" }, { "text": "Influencer-Seeding: Beta-Zug\u00e4nge versenden" }, { "text": "Earned" }, { "text": "Must-Have" }, { "text": "offen", "tone": "muted" }] },
+              { "cells": [{ "text": "KW 11\u201312" }, { "text": "Meta Ads Pre-Registration (DACH)" }, { "text": "Paid / Meta" }, { "text": "Must-Have" }, { "text": "offen", "tone": "muted" }] },
+              { "cells": [{ "text": "KW 12" }, { "text": "Press-Kit fertig & an Medien versenden" }, { "text": "PR" }, { "text": "Must-Have" }, { "text": "offen", "tone": "muted" }] }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "content-assets",
+      "number": "06",
+      "nav": "Content Assets",
+      "eyebrow": "Content Pieces Needed",
+      "title": "Alle ben\u00f6tigten Content-Assets",
+      "blocks": [
+        {
+          "text": "Diese Assets m\u00fcssen bis zum jeweiligen Meilenstein fertig sein. Must-Haves blockieren den Launch direkt, Should-Haves verst\u00e4rken die Kampagne."
+        },
+        {
+          "featureGrid": {
+            "columns": 2,
+            "items": [
+              {
+                "title": "Must-Have Assets",
+                "tag": { "label": "Pflicht", "tone": "green" },
+                "items": [
+                  "Waitlist-Landingpage mit E-Mail-Capture (fertig: KW 1)",
+                  "App Store Listing (iOS & Android) mit ASO-Texten (fertig: KW 16)",
+                  "Brand-Visual-Kit: Logo, Farben, Vorlagen f\u00fcr Social Posts (fertig: KW 2)",
+                  "Press-Kit: One-Pager, Screenshots, Founder-Bio, Key Stats (fertig: KW 12)",
+                  "Pressemitteilung Soft Launch (fertig: KW 17)",
+                  "Onboarding-E-Mail-Sequenz: 3 E-Mails nach Registrierung (fertig: KW 8)",
+                  "TikTok/IG-Contentreihe: 20 Teaser-Posts Pre-Launch (fertig: KW 16)",
+                  "Influencer-Brief: Produktbeschreibung + Talking Points (fertig: KW 3)"
+                ]
+              },
+              {
+                "title": "Should-Have Assets",
+                "tag": { "label": "Empfohlen", "tone": "blue" },
+                "items": [
+                  "YouTube-Video: TEAMCHEF erklaert in 3 Minuten (fertig: KW 15)",
+                  "SEO-Blogartikel-Cluster (6 Artikel, WM + Feature-Keywords, fertig: KW 12)",
+                  "Match-Rating-Templates: IG-Stories-Format f\u00fcr Community-Sharing",
+                  "Paid-Ad-Creatives: 3\u20135 Varianten f\u00fcr Meta Ads A/B-Test (fertig: KW 10)",
+                  "FAQ-Landingpage: Anti-Manipulation-System erkl\u00e4rt (fertig: KW 14)",
+                  "Creator-Content-Guide: Dos & Don'ts f\u00fcr Influencer (fertig: KW 8)",
+                  "Community-Challenge-Konzept: Voted MVP des Turniers (fertig: KW 22)",
+                  "WM-spezifische Landing Pages f\u00fcr Top-10-SEO-Keywords (fertig: KW 8)"
+                ]
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "budget",
+      "number": "07",
+      "nav": "Budget",
+      "eyebrow": "Budget Allocation",
+      "title": "Budgetverteilung & Mittelplanung",
+      "blocks": [
+        {
+          "text": "Das Kampagnenbudget ist auf die WM-Phase konzentriert. 60% flie\u00dfen in den bezahlten WM-Push (Juni\u2013Juli 2026), da hier Reichweite und Konversion am h\u00f6chsten sind."
+        },
+        {
+          "investment": [
+            {
+              "label": "Paid Social (Meta/TikTok Ads)",
+              "value": "35 %",
+              "description": "App-Install-Kampagnen und Vorregistrierungs-Ads. Hauptkanal in WM-Phase. Budget: 35% vom Gesamtbudget, davon 70% in KW 23\u201332.",
+              "filledSegments": 7,
+              "totalSegments": 10
+            },
+            {
+              "label": "Content-Produktion",
+              "value": "25 %",
+              "description": "Grafiken, Video-Produktion, Copywriting f\u00fcr alle Kan\u00e4le. Einmalige Brand-Visual-Kit-Produktion + laufende Match-Content-Erstellung.",
+              "filledSegments": 5,
+              "totalSegments": 10
+            },
+            {
+              "label": "Influencer-Kooperationen",
+              "value": "20 %",
+              "description": "10 DACH-Creator (50k\u2013500k Follower). Mix aus kostenlosen Beta-Zug\u00e4ngen und bezahlten Kollabs f\u00fcr die Top-3-Creator mit gr\u00f6\u00dfter Reichweite.",
+              "filledSegments": 4,
+              "totalSegments": 10
+            },
+            {
+              "label": "SEO / Google Ads",
+              "value": "10 %",
+              "description": "Keyword-Recherche, Blog-Content-Erstellung und Google Search Ads f\u00fcr High-Intent-Queries rund um WM 2026.",
+              "filledSegments": 2,
+              "totalSegments": 10
+            },
+            {
+              "label": "Tools & Analytics",
+              "value": "5 %",
+              "description": "GA4, Hotjar, UTM-Tracking-Setup, Social-Scheduling-Tools, App Store Analytics.",
+              "filledSegments": 1,
+              "totalSegments": 10
+            },
+            {
+              "label": "Contingency (Reserve)",
+              "value": "5 %",
+              "description": "Puffer f\u00fcr virale Reaktionskampagnen, spontane Sponsorings oder Budgetumschichtungen bei Underperformance einzelner Kan\u00e4le.",
+              "filledSegments": 1,
+              "totalSegments": 10
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "kpis",
+      "number": "08",
+      "nav": "KPIs",
+      "eyebrow": "Success Metrics",
+      "title": "Erfolgsmessung & KPI-Framework",
+      "blocks": [
+        {
+          "stats": [
+            { "value": "10.000", "label": "Aktive Nutzer \u2013 Monat 1" },
+            { "value": "50.000", "label": "Nutzer \u2013 WM-Ende (Jul 2026)" },
+            { "value": "50 %", "label": "Woche-2-Retention" },
+            { "value": "< 3 \u20ac", "label": "Cost per Install (Ziel)" }
+          ],
+          "columns": 2
+        },
+        {
+          "table": {
+            "variant": "default",
+            "title": "KPI-Framework nach Kampagnenphase",
+            "columns": ["KPI", "Zielwert", "Tracking-Tool", "Reporting"],
+            "rows": [
+              { "highlight": true, "cells": [{ "text": "Aktive Nutzer Monat 1" }, { "text": "10.000" }, { "text": "In-App Analytics" }, { "text": "T\u00e4glich" }] },
+              { "cells": [{ "text": "Vorregistrierungen (Waitlist)" }, { "text": "5.000" }, { "text": "Landingpage Analytics" }, { "text": "W\u00f6chentlich" }] },
+              { "cells": [{ "text": "Woche-2-Retention" }, { "text": "\u2265 50 %" }, { "text": "In-App Analytics" }, { "text": "W\u00f6chentlich" }] },
+              { "cells": [{ "text": "\u00d8 Bewertungen / Match" }, { "text": "\u2265 5" }, { "text": "In-App Analytics" }, { "text": "Pro Spieltag" }] },
+              { "cells": [{ "text": "App Store Rating" }, { "text": "\u2265 4,5" }, { "text": "App Store Connect" }, { "text": "W\u00f6chentlich" }] },
+              { "cells": [{ "text": "Social Follower (gesamt)" }, { "text": "25.000 bis Launch" }, { "text": "Native Insights" }, { "text": "W\u00f6chentlich" }] },
+              { "cells": [{ "text": "Cost per Install (Paid)" }, { "text": "< 3 \u20ac (DACH)" }, { "text": "Meta Ads / GA4" }, { "text": "T\u00e4glich in WM-Phase" }] },
+              { "cells": [{ "text": "Influencer Content Reach" }, { "text": "\u2265 2 Mio. Impressions" }, { "text": "Creator Reporting" }, { "text": "Pro Kampagne" }] },
+              { "highlight": true, "cells": [{ "text": "Nutzer WM-Ende" }, { "text": "50.000" }, { "text": "In-App Analytics" }, { "text": "Monatlich" }] },
+              { "cells": [{ "text": "Sponsor-Deals Q3 2026" }, { "text": "3 Partner" }, { "text": "CRM" }, { "text": "Monatlich" }] }
+            ]
+          }
+        },
+        {
+          "text": "**Reporting-Rhythmus:** T\u00e4gliches Dashboard f\u00fcr Growth-Team in WM-Phase (GA4 + In-App). W\u00f6chentlicher Marketing-Review-Call. Monatlicher Board-Report mit Kanal-Attribution via UTM."
+        }
+      ]
+    },
+    {
+      "id": "risiken",
+      "number": "09",
+      "nav": "Risiken",
+      "eyebrow": "Risks & Mitigations",
+      "title": "Potenzielle Risiken & Gegenma\u00dfnahmen",
+      "blocks": [
+        {
+          "swot": {
+            "variant": "full",
+            "title": "Kampagnen-Risiko-Analyse",
+            "items": [
+              {
+                "quadrant": "s",
+                "title": "St\u00e4rken (Enabler)",
+                "items": [
+                  "WM 2026 als nat\u00fcrlicher Demand-Katalysator",
+                  "Klares, einfach erkl\u00e4rbares Value Proposition",
+                  "Anti-Manipulation als differenzierendes Alleinstellungsmerkmal",
+                  "Freemium senkt Eintrittsbarriere auf null"
+                ]
+              },
+              {
+                "quadrant": "w",
+                "title": "Schw\u00e4chen (Risiken intern)",
+                "items": [
+                  "Kleines Team \u2013 Content-Produktion k\u00f6nnte zum Bottleneck werden",
+                  "Keine historischen Kampagnendaten f\u00fcr Benchmarking",
+                  "App-Store-Abh\u00e4ngigkeit: iOS/Android-Review-Prozess kann verz\u00f6gern",
+                  "Community-Kaltstart-Problem: ohne Nutzer keine Ratings"
+                ]
+              },
+              {
+                "quadrant": "o",
+                "title": "Chancen",
+                "items": [
+                  "Virales Potenzial durch kontroverses Community-Rating nach gro\u00dfen Spielen",
+                  "Sponsoring-Interesse von Sportmarken rund um WM sehr hoch",
+                  "Influencer-Kooperationen zu niedrigen Kosten m\u00f6glich (fr\u00fche Phase)",
+                  "EU-Datenschutz als Vertrauens-USP gegen\u00fcber US-Konkurrenz"
+                ]
+              },
+              {
+                "quadrant": "t",
+                "title": "Risiken (extern)",
+                "items": [
+                  "Etablierte Apps (Sofascore, FotMob) reagieren mit eigenen Community-Features",
+                  "WM-Timeline-Verschiebung oder Kontroverse mindert Interesse",
+                  "App Store Ablehnung verz\u00f6gert Launch",
+                  "Spam-/Bot-Attacken auf Rating-System trotz Anti-Manipulation"
+                ]
+              }
+            ]
+          }
+        },
+        {
+          "cards": [
+            {
+              "title": "Risiko: Content-Bottleneck",
+              "titleTone": "amber",
+              "text": "Kleines Team kann Posting-Frequenz in WM-Phase nicht halten.",
+              "items": [
+                "Mitigation: Content-Batching 4 Wochen im Voraus",
+                "Mitigation: Templates f\u00fcr Match-Content vorproduzieren",
+                "Mitigation: UGC aktiv resharen statt alles selbst erstellen"
+              ]
+            },
+            {
+              "title": "Risiko: Kaltstart-Problem",
+              "titleTone": "amber",
+              "text": "Ohne initiale Nutzer entstehen keine Ratings \u2013 ohne Ratings kommt kein Wachstum.",
+              "items": [
+                "Mitigation: Closed Beta f\u00fcllt initialen Datenpool",
+                "Mitigation: Influencer-Seeding bringt erste kritische Masse",
+                "Mitigation: Team bewertet intern alle WM-Spiele in ersten 2 Wochen"
+              ]
+            },
+            {
+              "title": "Risiko: Kanal-Underperformance",
+              "titleTone": "red",
+              "text": "Ein Paid-Kanal verfehlt CPI-Ziel oder organische Reichweite bleibt aus.",
+              "items": [
+                "Mitigation: 5% Contingency-Budget f\u00fcr Budget-Umschichtung",
+                "Mitigation: W\u00f6chentliche Performance-Reviews mit definierter Kill-Threshold",
+                "Mitigation: Zweite Paid-Plattform (TikTok Ads) als Fallback vorbereitet"
+              ]
+            }
+          ],
+          "columns": 3
+        }
+      ]
+    },
+    {
+      "id": "naechste-schritte",
+      "number": "10",
+      "nav": "N\u00e4chste Schritte",
+      "eyebrow": "Next Steps",
+      "title": "Sofortma\u00dfnahmen & Meilenstein-\u00dcbersicht",
+      "blocks": [
+        {
+          "highlight": "**Start jetzt \u2013 20 Wochen bis WM-Er\u00f6ffnung.**\nDie ersten 4 Wochen sind entscheidend f\u00fcr SEO-Vorlauf, Influencer-Onboarding und technischen Launch-Readiness."
+        },
+        {
+          "milestones": {
+            "items": [
+              {
+                "icon": "\ud83d\ude80",
+                "title": "Woche 1: Foundation",
+                "body": "Waitlist-Landingpage live schalten. Social-Media-Accounts einrichten. Brand-Visual-Kit in Auftrag geben. Influencer-Liste der Top 20 DACH-Creator erstellen."
+              },
+              {
+                "icon": "\ud83d\udcdd",
+                "title": "Woche 2\u20134: Content & SEO",
+                "body": "Ersten SEO-Blogartikel ver\u00f6ffentlichen. Teaser-Content auf TikTok & Instagram starten. Influencer-Outreach: 20 Creator kontaktieren, 10 Beta-Zug\u00e4nge zusagen."
+              },
+              {
+                "icon": "\ud83e\uddea",
+                "title": "KW 9: Closed Beta",
+                "body": "500 Beta-Nutzer rekrutieren (Waitlist, Community, Freundeskreis). Feedback-Loop aktivieren. Influencer-Seeding: Beta-Zugang + Briefing versenden. Erste organische Creator-Posts gehen live."
+              },
+              {
+                "icon": "\ud83d\udcb0",
+                "title": "KW 10\u201312: Paid Launch",
+                "body": "Meta Ads Vorregistrierungs-Kampagne starten. A/B-Test mit 3 Creative-Varianten. Budget: 20% des Gesamtbudgets. Ziel: 5.000 Vorregistrierungen bis Ende Phase 2."
+              },
+              {
+                "icon": "\ud83c\udfaf",
+                "title": "KW 17: Public Launch",
+                "body": "App Store Launch (iOS & Android). Pressemitteilung an 50 Sportmedien. Koordinierter Creator-Content-Drop \u00fcber alle Influencer gleichzeitig. PR-Push in Fachmedien."
+              },
+              {
+                "icon": "\u26bd",
+                "title": "11. Jun 2026: WM-Er\u00f6ffnung",
+                "body": "Vollgasphase startet. Daily Content, Live-Rating-Sessions, Paid-Ads auf Maximum. Community-Challenge Voted MVP des Turniers launcht. Echtzeit-PR-Monitoring f\u00fcr virale Momente."
+              }
+            ]
+          }
+        },
+        {
+          "cta": {
+            "title": "Bereit zum Start?",
+            "subtitle": "Der erste Schritt ist die Waitlist-Landingpage \u2013 alles andere baut darauf auf.",
+            "slogan": "20 Wochen. 50.000 Fans. WM 2026."
+          }
+        }
+      ]
+    }
+  ]
+}

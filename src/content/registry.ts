@@ -5,6 +5,7 @@ import designsystemData from '@/content/manual/pages/designsystem.json'
 import finanzplanData from '@/content/manual/pages/finanzplan.json'
 import geschaeftsmodellData from '@/content/manual/pages/geschaeftsmodell.json'
 import investorenbriefData from '@/content/manual/pages/investorenbrief.json'
+import campaignPlanData from '@/content/manual/pages/campaign-plan.json'
 import marketingData from '@/content/manual/pages/marketing.json'
 import marktanalyseData from '@/content/manual/pages/marktanalyse.json'
 import pitchData from '@/content/manual/pages/pitch.json'
@@ -29,6 +30,7 @@ const rawPages = [
   { slug: 'designsystem', data: designsystemData },
   { slug: 'finanzplan', data: finanzplanData },
   { slug: 'marketing', data: marketingData },
+  { slug: 'campaign-plan', data: campaignPlanData },
   { slug: 'changelog', data: changelogData },
   { slug: 'community', data: communityData },
 ] as const
